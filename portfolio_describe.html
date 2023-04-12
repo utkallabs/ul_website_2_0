@@ -44,12 +44,11 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="assets/css/common.css">
 
 
+
+
 </head>
 
 <body>
-
-
-
 <!-- /*--------------------------------------------------------------
 # Start topnavbar
 --------------------------------------------------------------*/ -->
@@ -59,18 +58,23 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <div class="upper-section">
             <div class="letside-topnavbar">
                 <div class="topnavbar-email">
+                    
                     <img src="assets/images/icon/email-icon.svg">
-                    <span> help@utkallabs.com</span>
+                    <span>sales@utkallabs.com</span>
                 </div>
-                <div class="topnavbar-call">
+                <!-- <div class="topnavbar-call">
                     <img src="assets/images/icon/call-icon.svg">
                     <span>+91 9856 4747 58</span>
-                </div>
+                </div> -->
             </div>
             <div class="right-side">
-                <div class="search">
-                    <input type="text" placeholder="Search.." name="search">
+                <div class="search-bar">
+                <form class="header-search-form">
+                    <input type="search" name="keyword" placeholder="Search" autocomplete="off">
+                    <button class="header-search-btn"><i class="las la-search"></i></button>
+                </form>
                 </div>
+
                 <div class="schedule-meeting">
                     <img src="assets/images/icon/calendar.png">
                     <p>Schedule a meeting
@@ -97,7 +101,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <!--  nav -->
         <nav class="nav-menu d-none d-lg-block">
             <ul>
-                <li ><a href="#">Home</a></li>
+                <li ><a href="index.html">Home</a></li>
                 <li class="active"><a href="aboutus.html">About us</a></li>
                 <li class="drop-down"><a href="service.html">Services <i class="las la-angle-down"></i></a>
                     <ul>
@@ -105,15 +109,15 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         <li><a href="#">Enterprise Solution</a></li>
                         <li><a href="#">Devops Consulting</a></li>
                         <li><a href="#">EDigital Transformation</a></li>
-                        <li><a href="#">Web3, Blockchain & NFT</a></li>
+                        <li><a href="Web3, Blockchain & NFT.html">Web3, Blockchain & NFT</a></li>
                         <li><a href="#">Al/ML solution</a></li>
                         <li><a href="#">Web Based Application dev</a></li>
                         <li><a href="#">QA Services</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
 
-                <li class="drop-down"><a href="">Activities <i class="las la-angle-down"></i></a>
+                <li class="drop-down"><a href="activities.html">Activities <i class="las la-angle-down"></i></a>
                     <ul>
                         <li><a href="newsletter.html">Newsletter</a></li>
                         <li><a href="#">Whats New?</a></li>
@@ -121,12 +125,11 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         <li><a href="#">People’s Corner</a></li>
                         <li><a href="Gallery.html">Gallery</a></li>
 
-
                     </ul>
                 </li>
 
                 <li><a href="career.html">Career</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
             </ul>
         </nav>
@@ -141,12 +144,6 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 # Navbar Header end
 --------------------------------------------------------------*/ -->
 
-<!--   Start Preloader-->
-<div id="preloader"></div>
-
-<!--====================
-    End Preloader====================-->
-
 <!--====================Start Scroll-To-Top====================-->
     <a href="#" class="scrollToTop">
         <i class="las la-angle-double-up"></i>
@@ -156,33 +153,29 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     End Scroll-To-Top====================-->
 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  2.  Portfolio_decribe~~~~~~~~~~~~~~~~~-->
-<section class="banner-section two inner">
-    <div class="container">
-        <div class="row justify-content-center align-items-center mb-30-none">
-            <div class="col-xl-12 mb-30">
-                <div class="banner-content two">
-                   <div class="banner-content-header">
-                        <h2 class="title">Portfolio</h2>
-                        <div class="breadcrumb-area">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
-                                </ol>
-                            </nav>
-                        </div>
-                   </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2.Portfolio_decribe end
-~~~~~~~~-->
+  <!-- ======= Breadcrumbs ======= -->
+  <section id="breadcrumbs" class="breadcrumbs">
+    <div class="breadcrumb-hero">
+      <div class="container">
+     
+          <h2>Web3, Blockchain & NFT</h2>
+          <div class="breadcrumb-area">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Web3, Blockchain & NFT</li>
+                    
+                </ol>
+            </nav>
+        </div>
+    
+      </div>
+    </div>
+
+
+  </section>
+  <!-- ======= Breadcrumbs ======= -->
 
 <!-- /*--------------------------------------------------------------
    3.casestudy_descrb slider 
@@ -340,7 +333,6 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
    <!-- /*--------------------------------------------------------------
    4.project-widget-item-section all slider  end
 ---------------------*/ -->
-
 <!--==================== Start Footer ====================-->
 <footer class="footer-section pt-120">
     <div class="container">
@@ -349,7 +341,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                 <div class="footer-widget">
                     <div class="footer-logo">
                         <a href="index.html">
-                            <img src="assets/images/logo-two.png" alt="site-logo">
+                            <img src="assets/images/logo-two-white.png" alt="site-logo">
                         </a>
                     </div>
                     <p>We are constantly evolving and committed to serve the best to our customers. Delivering
@@ -358,8 +350,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                     <ul class="footer-social">
                         <li><a href="#"><i class='lab la-facebook-f'></i></a></li>
                         <li><a href="#"><i class="lab la-twitter"></i></a></li>
-                        <li><a href="#"><i class="lab la-instagram"></i></a></li>
-                        <li><a href="#"><i class="lab la-google"></i></a></li>
+                        <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -370,8 +361,9 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="#">History</a></li>
                         <li><a href="#">Our Core value</a></li>
-                        <li><a href="#">Meet Our Management</a></li>
                         <li><a href="#">Meet Our Team</a></li>
+                        <li><a href="#">Meet Our Management</a></li>
+                   
                     </ul>
                 </div>
             </div>
@@ -379,22 +371,24 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                 <div class="footer-widget">
                     <h4 class="title">Explore Utkallabs</h4>
                     <ul class="footer-list">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">Join Utkallabs</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
                         <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="#">What's New?</a></li>
                         <li><a href="#">People’s Corner</a></li>
+                        <li><a href="#">Up Coming Events</a></li>
+                 
                     </ul>
-                </div>
+                </div> 
             </div>
             <div class="col-xl-2 col-lg-2 col-md-6 mb-30">
                 <div class="footer-widget">
                     <h4 class="title">Quick Links </h4>
                     <ul class="footer-list">
-                        <li><a href="aboutus.html">About us</a></li>
-                        <li><a href="#"> Portfolio</a></li>
-                        <li><a href="career.html">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="aboutus.html">Activities</a></li>
+                          <li><a href="career.html">Career</a></li>
+                        <li><a href="contact.html">Contact</a></li>
 
                     </ul>
                 </div>
@@ -406,8 +400,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
             <div class="row justify-content-center">
                 <div class="col-xl-12 text-center">
                     <div class="copyright-area">
-                        <p>Copyright © 2022 <a href="#"><span>Utkallabs</span></a>. All Rights Reserved. Designed by
-                            Utkallabs</p>
+                        <p>Copyright © 2023 <a href="#"><span>Utkal Labs Pvt. Ltd</span></a>. All Rights Reserved</p>
                     </div>
                 </div>
             </div>
@@ -420,30 +413,28 @@ End Footer
  
 <!-- jquery -->
 <script src="assets/js/jquery-3.6.0.min.js"></script>
-    
+<script src="assets/js/jquery.min.js"></script>
+
 <!-- bootstrap js -->
-    <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 
 <!-- aos js file -->
 <script src="assets/js/aos.js"></script>
 
 <!-- isotope js //hero slider -->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-
-<!-- swipper js// client slide -->
-    <script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
 
 <!-- nice select js// client slider//meet our mangement -->
-    <script src="assets/js/jquery.nice-select.js"></script>
-    
+<script src="assets/js/jquery.nice-select.js"></script>
+
 <!-- lightcase js//  client slider-->
-    <script src="assets/js/lightcase.js"></script>
+<script src="assets/js/lightcase.js"></script>
+
+<!-- swipper js// client slide -->
+<script src="assets/js/swiper.min.js"></script>
 
 <!-- main -->
-    <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 
-  
-    
 </body>
-
 </html>
