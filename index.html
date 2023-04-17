@@ -49,6 +49,54 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 <body>
 
+
+        <!--@@@ Modal Start @@@-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+                    <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name"
+                                placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" id="email"
+                                placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" class="form-control" id="phone"
+                                placeholder="Enter phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="Enter message"></textarea>
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--//// Modal end ////-->
+
 <!-- /*--------------------------------------------------------------
 # Start topnavbar
 --------------------------------------------------------------*/ -->
@@ -88,9 +136,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 # end topnavbar
 --------------------------------------------------------------*/ -->
 
-    <!--
-
-/*--------------------------------------------------------------
+ <!--/*--------------------------------------------------------------
 # Navbar Header
 --------------------------------------------------------------*/ -->
     <header id="header" class="fixed-top">
@@ -100,9 +146,9 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                 <img src="assets/images/logo.png" alt=""></a>
             <!--  nav -->
             <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="aboutus.html">About us</a></li>
+              <ul class="nav-list">    <!-- added a class for active -->
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="#"><a href="aboutus.html">About us</a></li>
                     <li class="drop-down"><a href="service.html">Services <i class="las la-angle-down"></i></a>
                         <ul>
                             <li><a href="#">Web & Mobile Application</a></li>
@@ -123,7 +169,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                             <li><a href="#">Whats New?</a></li>
                             <li><a href="#">Up Coming events</a></li>
                             <li><a href="#">People’s Corner</a></li>
-                        <li><a href="Gallery.html">Gallery</a></li>
+                            <li><a href="Gallery.html">Gallery</a></li>
 
                         </ul>
                     </li>
@@ -133,7 +179,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
                 </ul>
             </nav>
-            <!-- .nav-menu -->
+            <!-- .nav-menu end-->
 
 
         </div>
@@ -198,52 +244,7 @@ Start Banner====================-->
                                             Talk</a>
                                     </div>
 
-              <!-- Modal -->
-                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
-                                        aria-labelledby="myModalLabel">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span
-                                                            aria-hidden="true">&times;</span></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form>
-                                                        <div class="form-group">
-                                                            <label for="name">Name:</label>
-                                                            <input type="text" class="form-control" id="name"
-                                                                placeholder="Enter name">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="email">Email:</label>
-                                                            <input type="text" class="form-control" id="email"
-                                                                placeholder="Enter email">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="phone">Phone:</label>
-                                                            <input type="tel" class="form-control" id="phone"
-                                                                placeholder="Enter phone number">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="message">Message:</label>
-                                                            <textarea class="form-control" id="message" rows="3"
-                                                                placeholder="Enter message"></textarea>
-                                                        </div>
-                                                    </form>
-
-
-                                                </div>
-                                                <div class="modal-footer">
-
-                                                    <button type="button" class="btn btn-primary">Send message</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Modal end-->
+                               
 
 
 
@@ -808,60 +809,7 @@ End Banner
     7.Get Newsletter From UtkalLabsEnd Call-to-action
 ====================-->
 
-    <!--==================== Start Footer ====================-->
-    <footer class="footer-section pt-120">
-        <div class="container">
-            <div class="row mb-30-none">
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <div class="footer-logo">
-                            <a href="index.html">
-                                <img src="assets/images/logo-two.png" alt="site-logo">
-                            </a>
-                        </div>
-                        <p>We are constantly evolving and committed to serve the best to our customers. Delivering
-                            quality solutions has been a top priority
-                            for us.</p>
-                        <ul class="footer-social">
-                            <li><a href="#"><i class='lab la-facebook-f'></i></a></li>
-                            <li><a href="#"><i class="lab la-twitter"></i></a></li>
-                            <li><a href="#"><i class="lab la-instagram"></i></a></li>
-                            <li><a href="#"><i class="lab la-google"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <h5 class="title">About us </h5>
-                        <ul class="footer-list">
-                            <li><a href="aboutus.html">About Us</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Our Core value</a></li>
-                            <li><a href="#">Meet Our Management</a></li>
-                            <li><a href="#">Meet Our Team</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <h4 class="title">Explore UtkalLabs</h4>
-                        <ul class="footer-list">
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Case Studies</a></li>
-                            <li><a href="#">Join UtkalLabs</a></li>
-                            <li><a href="newsletter.html">Newsletter</a></li>
-                            <li><a href="#">People’s Corner</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <h4 class="title">Quick Links </h4>
-                        <ul class="footer-list">
-                            <li><a href="aboutus.html">About us</a></li>
-                            <li><a href="#"> Portfolio</a></li>
-                            <li><a href="career.html">Careers</a></li>
-                            <li><a href="#">Contact</a></li>
+   
 <!--==================== Start Footer ====================-->
 <footer class="footer-section pt-120">
     <div class="container">
@@ -873,7 +821,8 @@ End Banner
                             <img src="assets/images/logo-two-white.png" alt="site-logo">
                         </a>
                     </div>
-                    <p>We are constantly evolving and committed to serve the best to our customers. Delivering
+                    <p>We are constantly evolving and committed to serve the best to our customers. 
+                        Delivering
                         quality solutions has been a top priority
                         for us.</p>
                     <ul class="footer-social">
@@ -915,7 +864,7 @@ End Banner
                     <ul class="footer-list">
                         <li><a href="service.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="aboutus.html">Activities</a></li>
+                        <li><a href="#">Activities</a></li>
                           <li><a href="career.html">Career</a></li>
                         <li><a href="contact.html">Contact</a></li>
 
@@ -937,27 +886,9 @@ End Banner
     </div>
 </footer>
 <!--====================
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-wrapper">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-12 text-center">
-                        <div class="copyright-area">
-                            <p>Copyright © 2022 <a href="#"><span>UtkalLabs</span></a>. All Rights Reserved. Designed by
-                                UtkalLabs</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--====================
 End Footer
 ====================-->
+
 
     <!-- jquery -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
