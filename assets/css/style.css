@@ -30,14 +30,14 @@
   
   .banner-section .banner-text {
     position: absolute;
-    top: 6%;
+    top: 12%;
     left: -5px;
-      margin-left: 40px;
+    margin-left: 40px;
 }
   
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 726rm -f .git/index.lockpx) {
     .banner-section .banner-text {
-        top: 14%;
+        top: 6%;
     }
   }
   
@@ -242,8 +242,16 @@
   
   .modal {
     left: auto;
-  
+    background-color: #000000eb;
   }
+  .close-css{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #009798;
+    opacity: 0.6;
+    background-color: transparent;
+    border: 0;
+}
   
   .modal-footer .btn{
     border-radius: 5px;
@@ -3056,7 +3064,7 @@
     margin-left: 20px;
     justify-content:space-around;
     display: flex;
-    width: 160px;
+    width: 170px;
     height: 30px;
     align-items: center;
     padding: 0 0 0 10px;
@@ -3065,24 +3073,18 @@
   
   }
   
-  .schedule-meeting p{
-    margin-top: 10px;
-    display: flex;
-    color: black  ;
-    margin-top: 15px;
+  .schedule-meeting h1{
+    margin-top: 9px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-  
-  
+    font-size: 15px;
     color: #003939;
-  
   }
   
   .schedule-meeting img{
-    width: 14.37px;
-    height: 15.97px;
+    width: 16px;
+    height: 16px;
   }
   
   .d-flex{
