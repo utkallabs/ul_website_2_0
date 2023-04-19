@@ -53,17 +53,34 @@
     letter-spacing: 3px;
   }
   
+
+  @media only screen and (max-width: 726px){
+    .banner-section .banner-text span {
+      font-size: 85px;
+      line-height: 240px;
+    }
+  }
+
   @media only screen and (max-width: 575px) {
     .banner-section .banner-text span {
-        font-size: 89px;
+        font-size: 65px;
         line-height: 180px;
     }
   }
-  @media only screen and (max-width: 991px) {
-    .banner-section  {
-        /* display: none; */
+
+  @media only screen and (max-width: 400px) {
+    .banner-section .banner-text span {
+        font-size: 55px;
+        line-height: 90px;
     }
   }
+
+  @media only screen and (max-width: 1840px) and (min-width:726px) {
+    .custom-container{
+      margin-top: 75px;
+    }
+  }
+
   
   .banner-widget {
     margin-left: 20px;
@@ -2057,14 +2074,7 @@
     font-size: 16px;
   }
   
-  .Services ul {
-    margin-left: -8%;
-  }
-  
-  .service-details img {
-    width: 600px;
-  }
-  
+
   .service-details h2 {
     margin-top: 20px;
     font-weight: 700;
