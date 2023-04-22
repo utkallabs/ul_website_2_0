@@ -274,7 +274,7 @@ opacity: .5;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -311,14 +311,14 @@ opacity: .5;
   user-select: none;
   text-decoration: none;
 }
-/* 
+/*
 / Position the "next button" to the right / */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* 
+/*
 / The dots/bullets/indicators / */
 .dot_indicter{
     text-align:center
@@ -363,7 +363,7 @@ opacity: .5;
   to {left: 200px;}
 }
 
-/* 
+/*
 / On smaller screens, decrease text size / */
 /* @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
@@ -372,7 +372,7 @@ opacity: .5;
 
 
 
-/* 
+/*
 <!-- Carousel wrapper --> */
 
 /*--------------------------------------------------------------
@@ -993,7 +993,7 @@ opacity: .5;
 .project-thumb.two:hover .project-overlay {
   opacity: 1;
   visibility: visible;
-} 
+}
 
 
 
@@ -1062,11 +1062,11 @@ opacity: .5;
   }
 }
 /*-------------------------------------------------------------------------------
- /////// 6.[Have A Project In Mind? Let's Connect /// about block ] end ////indexpage 
+ /////// 6.[Have A Project In Mind? Let's Connect /// about block ] end ////indexpage
 -------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
- @@@@@@ 7. [ ## Testimonial[ ### client block ] Start //indexpage  @@@@@ 
+ @@@@@@ 7. [ ## Testimonial[ ### client block ] Start //indexpage  @@@@@
 --------------------------------------------------------------*/
 
 
@@ -1166,7 +1166,7 @@ opacity: .5;
 
 .client-pagination {
   margin-top: 25px;
-} 
+}
 .client-section .client-pagination {
   text-align: center;
   margin-top: 55px;
@@ -2001,7 +2001,7 @@ opacity: .5;
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-   @@@@@@@@@@@@ C. Servicepage start @@@@@@@@@@@@@@ 
+   @@@@@@@@@@@@ C. Servicepage start @@@@@@@@@@@@@@
 --------------------------------------------------------------*/
 
 /* 3. service card section start // servicepage */
@@ -2069,12 +2069,12 @@ opacity: .5;
 
 .service-item.three:hover .service-content .service-btn a {
   color: #fff;
-} 
+}
 
-/* 
+/*
 
 
-/* 
+/*
 .video-main {
   position: relative;
   display: inline-block;
@@ -2245,13 +2245,13 @@ opacity: .5;
   }
 }
 /* [ 4.###  End creative services ] // servicepage
---------------------------------------------*/ 
+--------------------------------------------*/
 
 /*-------------------------------------------------
 5. uldevelopment-Process block // servicepage
 ---------------------------------------------------*/
 /* process-section{
-  
+
 } */
 
 .process-item {
@@ -2489,7 +2489,7 @@ form h4 {
   border-radius: 50%;
 }
 /*--------------------------------------------------------------
- 3.casestudy_descrb slider 
+ 3.casestudy_descrb slider
 ---------------------*/
 /*--------------------------------------------------------------
  4.casestudy_descrb_content//project describe start
@@ -2541,7 +2541,7 @@ form h4 {
   color: #ffffff;
   text-transform: uppercase;
    font-weight: 600;
-   
+
 }
 .csd_project_descrb-sidebar-widget-list::before {
   position: absolute;
@@ -2555,7 +2555,7 @@ form h4 {
 
 
 .csd_project_descrb-sidebar-widget-list .sub-title {
-  
+
   font-size: 14px;
   color: #ffffff;
   margin-bottom: 20px;
@@ -2961,10 +2961,10 @@ form h4 {
 */
 
 .contact-list li {
-  
+
   font-size: 15px;
   padding-bottom: 15px;
- 
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -3008,14 +3008,14 @@ form h4 {
 
 /*----------------------
  5.Map Section
----------------------*/ 
+---------------------*/
 .map iframe {
   height: 100%;
   border: 1px solid #007174;
 }
 /*-------------------------------
  5.map Section
----------------------*/ 
+---------------------*/
 
 /*--------------------------------------------------------------
  ////////////////// G. Contactpage end //////////////////
@@ -3045,7 +3045,7 @@ form h4 {
   background-size: cover;
 }
 .breadcrumbs h2 {
- 
+
   color: #fbfbfb;
   margin-bottom: 0;
 
@@ -3062,7 +3062,7 @@ form h4 {
   position: relative;
   z-index: 9;
   margin-top: 10px;
-} 
+}
 
 .breadcrumb li {
   display: inline-block;
@@ -3117,7 +3117,7 @@ form h4 {
 
 
 /*--------------------------------------------------------------
-Contact Page ///// 
+Contact Page /////
 --------------------------------------------------------------*/
 
 
