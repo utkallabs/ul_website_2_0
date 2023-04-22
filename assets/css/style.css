@@ -229,7 +229,7 @@
 
 @media only screen and (max-width: 1366px) {
   .banner-widget-wrapper .banner-widget-btn a {
-      padding: 10px 20px;
+    padding: 12px 30px;
   }
 }
 
@@ -259,6 +259,23 @@ opacity: .5;
 }
 .modal-footer .btn:hover{
   background-color: #003030;
+}
+@media (max-width: 575px)
+{
+.modal {
+       margin-top: 4.75rem;
+}
+}
+
+/* / Fading animation / */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 /*--------------------------------------
@@ -333,6 +350,27 @@ opacity: .5;
     display: none;
   }
 }
+
+
+/* / Fading animation / */
+.fade_slider {
+
+  animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+/* 
+/ On smaller screens, decrease text size / */
+/* @media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+} */
+
+
+
 
 /* 
 <!-- Carousel wrapper --> */
@@ -3095,7 +3133,7 @@ Contact Page /////
 #topbar {
   background:  #003939;
   color: #fff;
-  height: 40px;
+  height: 45px;
   font-size: 16px;
   font-weight: 600;
   transition: all 0.5s;
@@ -3299,7 +3337,7 @@ Contact Page /////
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  padding:10px 0;
+  padding:12px 0;
   top: 40px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   justify-content: center;

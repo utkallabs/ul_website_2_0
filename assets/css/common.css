@@ -752,9 +752,10 @@ h4 a:hover {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
-    color: #f8d458;
+    color: #ffb500;
     margin-bottom: 20px;
 }
+
 
 @media only screen and (max-width: 575px) {
     .sub-title {
@@ -881,6 +882,27 @@ input::-moz-focus-inner {
 /*-------------------------------------------------
     [ ## custom btn all]
 */
+.letstalk{
+    background: #ffb500;
+    border: 1px solid #ffb500;
+    color: #fff;
+    position: relative;
+    padding: 14px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    z-index: 2;
+    overflow: hidden;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+.letstalk:hover{
+    color: #fff;
+    background: #009798;
+    border: 1px solid #009798;
+}
+
 
 
 .btn--base {
@@ -970,7 +992,7 @@ input::-moz-focus-inner {
 }
 
 .custom-btn.two {
-    color: #f8d558;
+    color: #ffb500;
 }
 
 .custom-btn.two:hover {

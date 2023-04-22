@@ -82,6 +82,22 @@ if ($('.nav-menu').length) {
 } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
     $(".mobile-nav, .mobile-nav-toggle").hide();
 }
+// Top Navigation
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#header').addClass('header-scrolled');
+      $('#topbar').addClass('topbar-scrolled');
+    } else {
+      $('#header').removeClass('header-scrolled');
+      $('#topbar').removeClass('topbar-scrolled');
+    }
+  });
+
+  if ($(window).scrollTop() > 100) {
+    $('#header').addClass('header-scrolled');
+    $('#topbar').addClass('topbar-scrolled');
+  }
+
 
 // // Navigation active state on scroll
 // var nav_sections = $('section');
@@ -112,6 +128,7 @@ $(".nav-list").click(function () {
     $(".nav-list li.active").removeClass("active");
     $(this).addClass("active");
   });
+
 
 ///meet our team slider
 var swiper = new Swiper('.team-slider', {
@@ -344,6 +361,8 @@ for (i = 0; i < acc.length; i++) {
 
 })(jQuery);
 
+
+
 //// sliderhome
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -373,8 +392,10 @@ function showSlides(n) {
 }
 //// sliderhome////
 
+function myFunction() {
+    document.getElementById("myDIV").style.animation = "mynewmove 4s 2";
+  }
 
-// //// sliderportfolio-describe
 
 
 // //// sliderportfolio-describe
