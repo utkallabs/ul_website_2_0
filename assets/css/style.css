@@ -2833,6 +2833,7 @@
     margin-top: 75px;
     margin-bottom: 55px;
   }
+
   
   @media only screen and (max-width: 1300px) {
     .contact-area {
@@ -2928,7 +2929,7 @@
   }
   
   .contact-list li a {
-    display: inline-block;
+    display: flex;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
