@@ -396,8 +396,6 @@ function myFunction() {
     document.getElementById("myDIV").style.animation = "mynewmove 4s 2";
   }
 
-
-
 // //// sliderportfolio-describe
 document.getElementById('next').onclick = function(){
     const widthItem = document.querySelector('.item').offsetWidth;
@@ -407,4 +405,4 @@ document.getElementById('prev').onclick = function(){
     const widthItem = document.querySelector('.item').offsetWidth;
     document.getElementById('formList').scrollLeft -= widthItem;
 }
-  
+  /////////////////

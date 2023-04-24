@@ -25,7 +25,7 @@
             });
         },
 
-        /**
+        /*****
          * Starts the plugin
          *
          * @param	{object}	options

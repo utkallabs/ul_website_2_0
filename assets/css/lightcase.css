@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-/* line 12, ../scss/components/fonts/_font-lightcase.scss */
+/* line 12, ../scss/components/fonts/_font-lightcase.scss ****/
 
 [class*='lightcase-icon-']:before {
     font-family: 'lightcase', sans-serif;
