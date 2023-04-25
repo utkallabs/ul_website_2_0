@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Utkallabs - Ideas To Reality</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+
+    <!-- GoogleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- All Assets Css File -->
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- line-awesom css link //for icon use-->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/
+landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+
+    <!-- lightcase css links -->
+    <link rel="stylesheet" href="assets/css/lightcase.css">
+
+    <!-- animate.css // form part-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!-- nice select css// client slider-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
+    <!-- aos.css -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <!-- main style css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+
+
+</head>
+
+<body>
+
+
+    <!--@@@ Modal Start @@@-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+                    <button type="button" class="close close-css" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter message"></textarea>
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--//// Modal end ////-->
+
+    <!-- /*--------------------------------------------------------------
+# Start topnavbar
+--------------------------------------------------------------*/ -->
+
+    <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+        <div class="container2 d-flex align-items-center justify-content-between">
+            <div class="upper-section">
+                <div class="letside-topnavbar">
+                    <div class="topnavbar-email">
+
+                        <img src="assets/images/icon/email-icon.svg">
+                        <span>sales@UtkalLabs.com</span>
+                    </div>
+                    <!-- <div class="topnavbar-call">
+                        <img src="assets/images/icon/call-icon.svg">
+                        <span>+91 9856 4747 58</span>
+                    </div> -->
+                </div>
+                <div class="right-side">
+                    <div class="search-bar">
+                        <form class="header-search-form">
+                            <input type="search" name="keyword" placeholder="Search" autocomplete="off">
+                            <button class="header-search-btn"><i class="las la-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="schedule-meeting">
+                        <img src="assets/images/icon/calendar.png">
+                        <h1>Schedule a meeting
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /*--------------------------------------------------------------
+# end topnavbar
+--------------------------------------------------------------*/ -->
+
+    <!--/*--------------------------------------------------------------
+# Navbar Header
+--------------------------------------------------------------*/ -->
+    <header id="header" class="fixed-top">
+        <div class="container2 d-flex ">
+            <!--  logo -->
+            <a href="index.html" class="logo mr-auto">
+                <img src="assets/images/logo.png" alt=""></a>
+            <!--  nav start-->
+            <nav class="nav-menu d-none d-lg-block">
+                <ul class="nav-list">
+                    <!-- added a class for active -->
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="#"><a href="aboutus.html">About us</a></li>
+                    <li class="drop-down"><a href="service.html">Services <i class="las la-angle-down"></i></a>
+                        <ul>
+                            <li><a href="Web&MobileApplication.html">Web & Mobile Application</a></li>
+                            <li><a href="Web3Blockchain&NFT.html">Web3, Blockchain & NFT</a></li>
+                            <li><a href="WebBasedApplication.html">Web Based Application Dev</a></li>
+                            <li><a href="DigitalTransformation.html">Digital Transformation</a></li>
+                            <li><a href="DevopsConsulting.html">Devops Consulting</a></li>
+                            <li><a href="EnterpriseSolution.html">Enterprise Solution</a></li>
+                            <li><a href="AlMLSolution.html">Al/ML solution</a></li>
+                            <li><a href="QAServices.html">QA Services</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drop-down">
+                        <a href="portfolio.html">Portfolio<i class="las la-angle-down"></i></a>
+                        <ul>
+                            <li><a href="portfolio.html">Case Studies</a></li>
+                            <li><a href="testimonial.html">Client Testimonials</a></li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="drop-down"><a href="activities.html">Activities <i class="las la-angle-down"></i></a>
+                        <ul>
+                            <li><a href="newsletter.html">Newsletter</a></li>
+                            <li><a href="Gallery.html">Gallery</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+            <!-- .nav-menu end-->
+
+
+        </div>
+    </header>
+
+
+    <!-- /*--------------------------------------------------------------
+# Navbar Header end
+--------------------------------------------------------------*/ -->
+
+    <!--====================
+  6.H ear From Happy Customers// Start Client
+====================-->
+    <section class="client-section ptb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8 text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">Hear from happy customers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="client-area">
+                <div class="row justify-content-center mb-10-none">
+                    <div class="col-xl-12">
+                        <div class="client-slider-area">
+                            <div class="client-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <div class="client-header">
+
+                                                <!-- <div class="client-quote">
+                                                    <img src="assets/images/client/quote.png" alt="quote">
+                                                </div> -->
+                                            </div>
+                                            <div class="client-content">
+                                                <p>"My experience working with the Utkal Labs team has been exceptional.
+                                                    Even with the time difference, my Utkal Labs team is responsive and
+                                                    has delivered an excellent product based on my specifications. They
+                                                    go beyond simply building to requirements, they offer advice and
+                                                    options along the way, lending their professional experience. This
+                                                    has led to a great working relationship."</p>
+                                            </div>
+                                            <div class="client-footer" style="margin-top: 90px;">
+                                                <div class="client-footer-user-thumb">
+                                                    <img src="assets/images/client/client-1.png" alt="client">
+                                                </div>
+                                                <div class="client-footer-user-content">
+                                                    <h6 class="title">RIck (USA)</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <div class="client-header">
+
+                                            </div>
+                                            <div class="client-content">
+                                                <p>Utkal Labs delivered the features incrementally in ready to release
+                                                    builds, instead of delivering the full product at the end, which
+                                                    gave us an edge over our competitors. The team is very cooperative,
+                                                    supportive and highly skilled in mobile and backend development.
+                                                    They are very responsive and always available to support and respond throughout the day. We are extremely happy and satisfied with Utkal Labs services and highly recommend Utkal Labs to any business having issues in mobile app development.
+                                                </p>
+                                            </div>
+                                            <div class="client-footer">
+                                                <div class="client-footer-user-thumb">
+                                                    <img src="assets/images/client/client-2.png" alt="client">
+                                                </div>
+                                                <div class="client-footer-user-content">
+                                                    <h6 class="title">Azam (Australia)</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <div class="client-header">
+
+                                            </div>
+                                            <div class="client-content">
+                                                <p>"Working with Uktal Labs was an extraordinary experience. Every
+                                                    member
+                                                    of their team is engaged, actively listening and reporting back with
+                                                    incredible results. They understand technology and are ahead of the
+                                                    trends. If you are looking for a development company look no further
+                                                    than the team at Uktal Labs. They are the best of the best!"
+                                                </p>
+                                            </div>
+                                            <div class="client-footer" style="margin-top: 120px;">
+                                                <div class="client-footer-user-thumb">
+                                                    <img src="assets/images/client/client-3.png" alt="client">
+                                                </div>
+                                                <div class="client-footer-user-content">
+                                                    <h6 class="title">Grant S (USA)</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="client-pagination"></div>
+                                <div class="slider-prev">
+                                    <i class="las la-long-arrow-alt-left"></i>
+                                </div>
+                                <div class="slider-next">
+                                    <i class="las la-long-arrow-alt-right"></i>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <!--====================
+ 6.H ear From Happy Customers  End Client
+====================-->
+
+
+
+
+
+    <!--==================== Start Footer ====================-->
+    <footer class="footer-section pt-120">
+        <div class="container">
+            <div class="row mb-30-none">
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo-two-white.png" alt="site-logo">
+                            </a>
+                        </div>
+                        <p>We are constantly evolving and committed to serve the best to our customers.
+                            Delivering
+                            quality solutions has been a top priority
+                            for us.</p>
+                        <ul class="footer-social">
+                            <li class="facebook"><a href="https://www.facebook.com/utkallabsindia/"><i
+                                        class='lab la-facebook-f'></i></a></li>
+                            <li class="twitter"><a href="https://twitter.com/UtkalLabs"><i
+                                        class="lab la-twitter"></i></a></li>
+                            <li class="linkedin"><a href="https://www.linkedin.com/company/utkal-labs"><i
+                                        class="lab la-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <h5 class="title">About us </h5>
+                        <ul class="footer-list">
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Our Core value</a></li>
+                            <li><a href="#">Meet Our Team</a></li>
+                            <li><a href="#">Meet Our Management</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <h4 class="title">Explore Utkallabs</h4>
+                        <ul class="footer-list">
+                            <li><a href="Gallery.html">Gallery</a></li>
+                            <li><a href="newsletter.html">Newsletter</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <h4 class="title">Quick Links </h4>
+                        <ul class="footer-list">
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="newsletter.html">Activities</a></li>
+                            <li><a href="career.html">Career</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrapper">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-12 text-center">
+                        <div class="copyright-area">
+                            <p>Copyright © 2023 Utkal Labs Pvt. Ltd. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====================
+End Footer
+====================-->
+    <!--==================== Start Footer ====================-->
+
+    <!--====================
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrapper">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-12 text-center">
+                        <div class="copyright-area">
+                            <p>Copyright © 2022 <a href="#"><span>UtkalLabs</span></a>. All Rights Reserved. Designed by
+                                UtkalLabs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <====================
+End Footer
+====================-->
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- aos js file -->
+    <script src="assets/js/aos.js"></script>
+
+    <!-- isotope js //hero slider -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!-- nice select js// client slider//meet our mangement -->
+    <script src="assets/js/jquery.nice-select.js"></script>
+
+    <!-- lightcase js//  client slider-->
+    <script src="assets/js/lightcase.js"></script>
+
+    <!-- swipper js// client slide -->
+    <script src="assets/js/swiper.min.js"></script>
+
+    <!-- main -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
