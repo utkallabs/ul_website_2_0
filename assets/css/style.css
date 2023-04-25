@@ -250,6 +250,10 @@ color: #000;
 opacity: .5;
 }
 
+.mangement-content{
+  margin-top: 10px;
+}
+
 .modal-footer .btn{
   border-radius: 5px;
   background-color: #009798;
@@ -890,7 +894,7 @@ opacity: .5;
   height: 40px;
   line-height: 44px;
   font-size: 22px;
-  background: linear-gradient(90deg, rgba(0,134,135,1) 0%, rgba(125,233,248,1) 96%);
+  background: #009798;
   border-radius: 6px;
   color: #fff;
   display: inline-block;
@@ -1359,6 +1363,11 @@ opacity: .5;
   font-size: 18px;
   border: none;
   height: 80px;
+  color: #002525;
+}
+
+:-subscribe-area .subscribe-form placeholder{
+  color: grey
 }
 
 @media only screen and (max-width: 991px) {
@@ -2406,9 +2415,8 @@ form h4 {
 .project-slider-area_casestudy .slider-next, .slider-prev {
   width: 40px;
   height: 40px;
-  line-height: 40px;
   font-size: 22px;
-  background: linear-gradient(90deg, rgba(0,134,135,1) 0%, rgba(125,233,248,1) 96%);
+  background:#009798 ;
   border-radius: 6px;
   color: #fff;
   display: inline-block;
@@ -3435,7 +3443,7 @@ Contact Page /////
   color: #007174;
   text-decoration: underline;
 
-  background: linear-gradient(30deg, #009495, #7DE9F8);
+  /* background: linear-gradient(30deg, #009495, #7DE9F8); */
   padding-bottom: 3px;
   position: relative;
   text-decoration: none;
