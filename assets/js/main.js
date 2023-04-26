@@ -394,9 +394,9 @@ function showSlides(n) {
 }
 //// sliderhome////
 
-function myFunction() {
-    document.getElementById("myDIV").style.animation = "mynewmove 4s 2";
-  }
+// function myFunction() {
+//     document.getElementById("myDIV").style.animation = "mynewmove 4s 2";
+//   }
 
 // //// sliderportfolio-describe
 document.getElementById('next').onclick = function(){
