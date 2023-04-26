@@ -1910,6 +1910,10 @@ opacity: .5;
   font-weight: 400;
   color: #4B4B4B;
 }
+ .mangement-content h5 {
+    padding-top: 20px;
+}
+
 
 @media only screen and (max-width: 991px) {
   .mangement-item.five .mangement-content p {
@@ -3730,12 +3734,30 @@ Contact Page /////
   transition: all 0.3s;
 }
 
-.footer-social li a:hover {
-  background-color: #00d7d9;
+
+/* .footer-social li a:hover {
+  background-color: #1b74e4;
   border: 1px solid#00d7d9;
   color:  #343434;
+} */
+
+.facebook a:hover {
+  background-color: #3b5998;
+  border: 1px solid#3b5998;
+  color:  #ffffff;
 }
 
+.twitter a:hover {
+  background-color:  #00acee;
+  border: 1px solid #00acee;
+  color:  #ffffff;
+}
+
+.linkedin a:hover {
+  background-color: #0A66C2;
+  border: 1px solid#0A66C2;
+  color:  #ffffff;
+}
 /* .footer-social li+li {
   margin-left: 5px;
 } */
