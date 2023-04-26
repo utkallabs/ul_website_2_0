@@ -1449,6 +1449,10 @@ opacity: .5;
   width: 100%;
 }
 
+input::placeholder{
+  color: #b3bbe0 !important;
+}
+
 /*-------------------------------------------------
 ///// 8.Get Newsletter From Utkallabs [ ### subscribe block ]
 ........................................................*/
@@ -2980,7 +2984,7 @@ form h4 {
 }
 
 .contact-list li a {
-  display: inline-block;
+  display: flex;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
