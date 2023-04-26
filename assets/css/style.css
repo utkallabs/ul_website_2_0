@@ -256,6 +256,10 @@ color: #000;
 opacity: .5;
 }
 
+.mangement-content{
+  margin-top: 10px;
+}
+
 .modal-footer .btn{
   border-radius: 5px;
   background-color: #009798;
@@ -896,7 +900,7 @@ opacity: .5;
   height: 40px;
   line-height: 44px;
   font-size: 22px;
-  background: linear-gradient(90deg, rgba(0,134,135,1) 0%, rgba(125,233,248,1) 96%);
+  background: #009798;
   border-radius: 6px;
   color: #fff;
   display: inline-block;
@@ -1096,7 +1100,7 @@ opacity: .5;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border-bottom: 1px dashed #BEBEBE;
+  /* border-bottom: 1px dashed #BEBEBE; */
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
@@ -1120,6 +1124,7 @@ opacity: .5;
   z-index: 2;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  height: 550px;
 }
 
 @media only screen and (max-width: 575px) {
@@ -1365,6 +1370,11 @@ opacity: .5;
   font-size: 18px;
   border: none;
   height: 80px;
+  color: #002525;
+}
+
+:-subscribe-area .subscribe-form placeholder{
+  color: grey
 }
 
 @media only screen and (max-width: 991px) {
@@ -2415,9 +2425,8 @@ form h4 {
 .project-slider-area_casestudy .slider-next, .slider-prev {
   width: 40px;
   height: 40px;
-  line-height: 40px;
   font-size: 22px;
-  background: linear-gradient(90deg, rgba(0,134,135,1) 0%, rgba(125,233,248,1) 96%);
+  background:#009798 ;
   border-radius: 6px;
   color: #fff;
   display: inline-block;
@@ -2765,6 +2774,11 @@ form h4 {
 /*--------------------------------------------------------------
 @@@@@@@@@@@ F. careerpage start @@@@@@@@@@
 --------------------------------------------------------------*/
+
+.career-area {
+    margin-top: 75px;
+  
+}
 .career{
   background-color: #FBFCFF;
   padding-top: 80px;
@@ -3024,7 +3038,21 @@ form h4 {
  ////////////////// G. Contactpage end //////////////////
 --------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+   /////////////////  0. Testimonial Start /////////////////
+--------------------------------------------------------------*/
 
+.client-area{
+  margin-top: -50px;
+}
+
+.row{
+  margin-top: 50px;
+}
+
+/*--------------------------------------------------------------
+   /////////////////  0. Testimonial end /////////////////
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 @@@@@@@@@@@@@ breadcrum  start @@@@@@@@@@@@
 --------------------------------------------------------------*/
@@ -3439,7 +3467,7 @@ Contact Page /////
   color: #007174;
   text-decoration: underline;
 
-  background: linear-gradient(30deg, #009495, #7DE9F8);
+  /* background: linear-gradient(30deg, #009495, #7DE9F8); */
   padding-bottom: 3px;
   position: relative;
   text-decoration: none;
@@ -3734,17 +3762,21 @@ Contact Page /////
   transition: all 0.3s;
 }
 
-
-
-/* .footer-social li a:hover {
-  background-color: #1b74e4;
-  border: 1px solid#00d7d9;
-  color:  #343434;
-} */
-
 .facebook a:hover {
   background-color: #3b5998;
   border: 1px solid#3b5998;
+  color:  #ffffff;
+}
+
+.twitter a:hover {
+  background-color:  #00acee;
+  border: 1px solid #00acee;
+  color:  #ffffff;
+}
+
+.linkedin a:hover {
+  background-color: #0A66C2;
+  border: 1px solid#0A66C2;
   color:  #ffffff;
 }
 
