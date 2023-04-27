@@ -229,6 +229,12 @@
     padding: 12px 26px;
   }
 }
+@media only screen and (max-width: 1140px) {
+  .banner-widget-wrapper .banner-widget-btn a {
+    padding: 12px 26px;
+  }
+}
+
 
 /*--------------------------------------------------------------
   [ ## modelpopoup] //indexpage
@@ -1918,6 +1924,9 @@ input::placeholder{
 }
 .mangement-quote img{
   width: 250px;
+}
+.mangement-content h5 {
+  padding-top: 20px;
 }
 .mangement-item.five .mangement-content p {
   font-size: 16px;
@@ -3776,9 +3785,21 @@ Contact Page /////
   color:  #ffffff;
 }
 
+.twitter a:hover {
+  background-color:  #00acee;
+  border: 1px solid #00acee;
+  color:  #ffffff;
+}
+
+.linkedin a:hover {
+  background-color: #0A66C2;
+  border: 1px solid#0A66C2;
+  color:  #ffffff;
+}
 /* .footer-social li+li {
   margin-left: 5px;
 } */
+
 
 
 .copyright-wrapper {
