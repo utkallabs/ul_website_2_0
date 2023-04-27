@@ -1037,7 +1037,7 @@ opacity: .5;
 
 .about-content .title {
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
   margin-top: -5px;
   text-transform: capitalize;
 }
@@ -1057,7 +1057,7 @@ opacity: .5;
   color: #2a2727;
 }
 .about-btn {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 @media only screen and (max-width: 575px) {
@@ -3051,9 +3051,9 @@ form h4 {
   margin-top: -50px;
 }
 
-.row{
+/* .row{
   margin-top: 50px;
-}
+} */
 
 /*--------------------------------------------------------------
    /////////////////  0. Testimonial end /////////////////
@@ -3829,6 +3829,9 @@ Contact Page /////
 .copyright-area span{
   font-weight: 600;
   color:#dbdbdb;
+}
+.copyright-area p {
+  margin-bottom: 0px;
 }
 /*--------------------------------------------------------------
   /////////////  00. Footersection Start  ///////////////
