@@ -609,6 +609,10 @@ opacity: .5;
   font-weight: 600;
   padding: 14px 20px;
 }
+
+textarea::placeholder{
+  color: #c8cde8 !important;
+}
 /*--------------------------------------------------------------
  3.End Why Choose Utkalabs?  End[ ### choose block ]//indexpage
 --------------------------------------------------------------*/
@@ -2429,6 +2433,7 @@ form h4 {
 .project-slider-area_casestudy .slider-next, .slider-prev {
   width: 40px;
   height: 40px;
+  line-height: 44px;
   font-size: 22px;
   background:#009798 ;
   border-radius: 6px;
