@@ -2509,6 +2509,19 @@ form h4 {
   transition: opacity .6s ease;
   border-radius: 50%;
 }
+
+.csd_project_descrb-content br{
+  content: "";
+  margin: 2em;
+  display: block;
+  font-size: 24%;}
+
+  .csd_project_descrb-content ul li{
+    list-style: disc;
+    list-style-position: inside;
+  }
+
+
 /*--------------------------------------------------------------
  3.casestudy_descrb slider
 ---------------------*/
@@ -3053,7 +3066,7 @@ form h4 {
 --------------------------------------------------------------*/
 
 .client-area{
-  margin-top: -50px;
+  margin-top: 50px;
 }
 
 /* .row{
