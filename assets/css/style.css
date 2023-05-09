@@ -2973,7 +2973,7 @@ form h4 {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: #003939;
   cursor: pointer;
   padding: 18px;
@@ -3023,11 +3023,14 @@ form h4 {
 .panel-header_list li {
   padding: 5px 0;
 }
+
 .panel {
   padding: 20px 80px;
   display: none;
   background-color: #ECF2FF;
   overflow: hidden;
+  border-radius: 6px;
+  margin-top: -10px;
 }
 
 /* .panel ul li{
@@ -3260,14 +3263,14 @@ form h4 {
 @@@@@@@@@@@@@ breadcrum  start @@@@@@@@@@@@
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding-top: 110px;
+  padding-top: 90px;
   background-color: #000000;
 
 }
 
 @media (max-width: 992px) {
   .breadcrumbs {
-      padding-top: 80px;
+      padding-top: 55px;
   }
 }
 
