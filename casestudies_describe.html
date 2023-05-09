@@ -24,6 +24,7 @@
     <!-- line-awesom css link //for icon use-->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/
 landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- swipper css link -->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
@@ -50,6 +51,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
 <body>
+
     <!-- /*--------------------------------------------------------------
 # Start topnavbar
 --------------------------------------------------------------*/ -->
@@ -57,17 +59,21 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
         <div class="container2 d-flex align-items-center justify-content-between">
             <div class="upper-section">
+
                 <div class="letside-topnavbar">
                     <div class="topnavbar-email">
-
-                        <img src="assets/images/icon/email-icon.svg">
-                        <span>sales@utkallabs.com</span>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:sales@utkallabs.com">
+                            <span>sales@utkallabs.com</span></a>
                     </div>
-                    <!-- <div class="topnavbar-call">
-                <img src="assets/images/icon/call-icon.svg">
-                <span>+91 9856 4747 58</span>
-            </div> -->
+
+                    <div class="topnavbar-call">
+                        <i class="fa fa-phone"></i>
+                        <span>+91 93383 08255</span>
+                    </div>
+
                 </div>
+
                 <div class="right-side">
                     <div class="search-bar">
                         <form class="header-search-form">
@@ -78,13 +84,15 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
                     <div class="schedule-meeting">
                         <img src="assets/images/icon/calendar.png">
-                        <h1><a href="https://calendly.com/">Schedule a meeting</a>
-                        </h1>
+                        <!-- <i class="fa-regular fa-calendar"></i> -->
+                        <h1><a href="https://calendly.com/">Schedule a meeting</a></h1>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
+
     <!-- /*--------------------------------------------------------------
 # end topnavbar
 --------------------------------------------------------------*/ -->
@@ -102,16 +110,16 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                 <ul class="nav-list">
                     <!-- added a class for active -->
                     <li class="#"><a href="index.html">Home</a></li>
-                    <li class="#"><a href="aboutus.html">About us</a></li>
+                    <li class="#"><a href="aboutus.html">About Us</a></li>
                     <li class="drop-down"><a href="service.html">Services <i class="las la-angle-down"></i></a>
                         <ul>
                             <li><a href="Web&MobileApplication.html">Web & Mobile Application</a></li>
-                            <li><a href="Web3Blockchain&NFT.html">Web3, Blockchain & NFT</a></li>
                             <li><a href="WebBasedApplication.html">Web Based Application Dev</a></li>
+                            <li><a href="Web3Blockchain&NFT.html">Web3, Blockchain & NFT</a></li>
                             <li><a href="DigitalTransformation.html">Digital Transformation</a></li>
                             <li><a href="DevopsConsulting.html">Devops Consulting</a></li>
                             <li><a href="EnterpriseSolution.html">Enterprise Solution</a></li>
-                            <li><a href="AlMLSolution.html">Al/ML solution</a></li>
+                            <li><a href="AlMLSolution.html">Al/ML Solution</a></li>
                             <li><a href="QAServices.html">QA Services</a></li>
                         </ul>
                     </li>
@@ -264,25 +272,35 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         <div class="col-xl-8 col-lg-8 mb-30">
                             <div class="csd_project_descrb-content">
                                 <h3 class="title">Project Over View</h3>
-                                <p>The client wants to build an application, which will serve as a digital guard to the
-                                    real estate that people usually leave back home. People staying far from the native
-                                    area or people having properties far from their location of stay will get the real
-                                    eye on their properties.
+                                <p>The client wants to build an application,
+                                    which will serve as a digital guard to the
+                                    real estate that people usually leave
+                                    back home. People staying far from the
+                                    native area or people having properties
+                                    far from their location of stay will get the
+                                    real eye on their properties.
                                 </p>
                                 <h3 class="title">Project feature view</h3></br>
                                 <p>The project is accessible mainly with 3 roles, Customer, Enabler, and Super
                                     Enabler.</br>
-                                    Customers will subscribe to the service monthly/annually/weekly reporting basis.
-                                    After a successful subscription and KYC verification, they will get a geofencing
-                                    link to let the application identify the property boundary. Scheduled images and
-                                    videos come to the customer feed and they can make a comparison to know the
-                                    difference within a time frame.
+                                    Customers will subscribe to the service monthly/annually/weekly
+                                    reporting basis. After a successful subscription and KYC
+                                    verification, they will get a geofencing link to let the application
+                                    identify the property boundary. Scheduled images and videos
+                                    come to the customer feed and they can make a comparison to
+                                    know the difference within a time frame.
                                     </br>
-                                    Enablers will be the role that will be managing the onfield reporting. In some subscription cases, they can also do the geofencing. On every login, their IMEI gets checked to ensure this is the same enabler using the app from their registered device. They can connect to the customer over a video call as well.
-                                </br>Super enablers manage the enabler. They assign the route, property, etc. to the enablers. They can also perform the same functions as enablers do. 
-                            </p>
-</br></br>
-                                   
+                                    Enablers will be the role that will be managing the onfield
+                                    reporting. In some subscription cases, they can also do the
+                                    geofencing. On every login, their IMEI gets checked to ensure this
+                                    is the same enabler using the app from their registered device.
+                                    They can connect to the customer over a video call as well.
+                                    </br>Super enablers manage the enabler. They assign the route,
+                                    property, etc. to the enablers. They can also perform the same
+                                    functions as enablers do.
+                                </p>
+                                </br></br>
+
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 mb-30">
@@ -290,8 +308,8 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                                 <div class="csd_project_descrb-sidebar-widget">
                                     <ul class="csd_project_descrb-sidebar-widget-list">
                                         <li>
-                                            <h5 class="title">Client</h5>
-                                            <span class="sub-title">Client details
+                                            <h5 class="title">Client details</h5>
+                                            <span class="sub-title">Confidential
                                             </span>
                                         </li>
                                         <li>
@@ -320,9 +338,11 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                             <div class="widget-box mb-30">
                                 <h4 class="widget-title">Download</h4>
                                 <div class="download-widget-btn">
-                                    <a href="assets/images/pdf/UL-@Annual E-magazin 2022.pdf" target="_blank"
-                                        download="assets/images/pdf/UL-@Annual E-magazin 2022.pdf" class="btn--base">
-                                        <span>Download Our Case Study</span> <i class="las la-download"></i></a>
+                                    <a target="_blank"
+                                        href="assets/images/casestudy/ul_case_study_real_estate_surveillance_application.pdf"
+                                        class="btn--base">
+                                        <span>Download Our Case Study</span> <i class="las la-download"></i>
+                                    </a>
                                 </div>
                             </div>
 
@@ -374,7 +394,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
                     <div class="footer-widget">
-                        <h5 class="title">About us </h5>
+                        <h5 class="title">About Us </h5>
                         <ul class="footer-list">
                             <li><a href="aboutus.html">About Us</a></li>
                             <li><a href="aboutus.html#history">History</a></li>

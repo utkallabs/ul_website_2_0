@@ -21,8 +21,10 @@
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
 <!-- line-awesom css link //for icon use-->
-<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/
+   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/
 landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
 <!-- swipper css link -->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
@@ -49,40 +51,48 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
 <body>
+    
  <!-- /*--------------------------------------------------------------
 # Start topnavbar
 --------------------------------------------------------------*/ -->
 
-<div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
-    <div class="container2 d-flex align-items-center justify-content-between">
-        <div class="upper-section">
-            <div class="letside-topnavbar">
-                <div class="topnavbar-email">
-                    
-                <img src="assets/images/icon/email-icon.svg">
-                    <span>sales@UtkalLabs.com</span>
+    <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+        <div class="container2 d-flex align-items-center justify-content-between">
+            <div class="upper-section">
+
+                <div class="letside-topnavbar">
+                    <div class="topnavbar-email">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:sales@utkallabs.com">
+                            <span>sales@utkallabs.com</span></a>
+                    </div>
+
+                       <div class="topnavbar-call">
+                        <i class="fa fa-phone"></i>
+                        <span>+91 93383 08255</span>
+                      </div> 
+
                 </div>
-                <!-- <div class="topnavbar-call">
-                    <img src="assets/images/icon/call-icon.svg">
-                    <span>+91 9856 4747 58</span>
-                </div> -->
-        </div>
+
                 <div class="right-side">
-                <div class="search-bar">
-            <form class="header-search-form">
-                    <input type="search" name="keyword" placeholder="Search" autocomplete="off">
-                <button class="header-search-btn"><i class="las la-search"></i></button>
-            </form>
-                </div>
-                <div class="schedule-meeting">
-                    <img src="assets/images/icon/calendar.png">
-                    <h1><a href="https://calendly.com/">Schedule a meeting</a>
-                    </h1>
+                    <div class="search-bar">
+                        <form class="header-search-form">
+                            <input type="search" name="keyword" placeholder="Search" autocomplete="off">
+                            <button class="header-search-btn"><i class="las la-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="schedule-meeting">
+                        <img src="assets/images/icon/calendar.png">
+                        <!-- <i class="fa-regular fa-calendar"></i> -->
+                        <h1><a href="https://calendly.com/">Schedule a meeting</a></h1>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-</div>
+
 <!-- /*--------------------------------------------------------------
 # end topnavbar
 --------------------------------------------------------------*/ -->
@@ -97,33 +107,33 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
             <img src="assets/images/logo.png" alt=""></a>
         <!--  nav start-->
         <nav class="nav-menu d-none d-lg-block">
-          <ul class="nav-list">   
-             <!-- added a class for active -->
-                <li class="#"><a href="index.html">Home</a></li>
-                <li class="active"><a href="aboutus.html">About us</a></li>
+            <ul class="nav-list">
+                <!-- added a class for active -->
+                <li class="#0"><a href="index.html">Home</a></li>
+                <li class="active"><a href="aboutus.html">About Us</a></li>
                 <li class="drop-down"><a href="service.html">Services <i class="las la-angle-down"></i></a>
                     <ul>
-                        <li><a href="Web&MobileApplication.html">Web & Mobile Application</a></li>
-                        <li><a href="Web3Blockchain&NFT.html">Web3, Blockchain & NFT</a></li>
+                      <li><a href="Web&MobileApplication.html">Web & Mobile Application</a></li>
                         <li><a href="WebBasedApplication.html">Web Based Application Dev</a></li>
+                        <li><a href="Web3Blockchain&NFT.html">Web3, Blockchain & NFT</a></li>       
                         <li><a href="DigitalTransformation.html">Digital Transformation</a></li>
                         <li><a href="DevopsConsulting.html">Devops Consulting</a></li>
                         <li><a href="EnterpriseSolution.html">Enterprise Solution</a></li>
-                        <li><a href="AlMLSolution.html">Al/ML solution</a></li>
+                        <li><a href="AlMLSolution.html">Al/ML Solution</a></li>
                         <li><a href="QAServices.html">QA Services</a></li>
                     </ul>
                 </li>
 
                 <li class="drop-down">
-                    <a href="#">Portfolio<i class="las la-angle-down"></i></a>
+                    <a href="#0">Portfolio<i class="las la-angle-down"></i></a>
                     <ul>
-                    <li><a href="casestudies.html">Case Studies</a></li>
-                    <li><a href="testimonial.html">Client Testimonials</a></li>
-                
+                        <li><a href="casestudies.html">Case Studies</a></li>
+                        <li><a href="testimonial.html">Client Testimonials</a></li>
+
                     </ul>
                 </li>
-              
-              
+
+
                 <li class="drop-down"><a href="#">Activities <i class="las la-angle-down"></i></a>
                     <ul>
                         <li><a href="Gallery.html">Gallery</a></li>
@@ -142,7 +152,6 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     </div>
 </header>
-
 
 <!-- /*--------------------------------------------------------------
 # Navbar Header end
@@ -244,47 +253,55 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <!-- /* [features@@] */ -->
 
-    <section class="features-section ptb-40">
+    <section class="features-section pb-40">
+        <div class="container">
+           
         <div class="features">
-            <h5>The values that we preach, imbibe, inculcate and reflect through our course of actions would be -</h5>
+           <h5>The values that we preach, imbibe, inculcate and reflect through our course of actions would be -</h5>
 
+           <div class="row">
             <div class="first-line">
-                <div class="col-lg-4 col-md-6 box">
+                <div class="col-lg-4  box">
                     <h5> <img src="assets/images/About us/COMMITMENT.png">COMMITMENT</h5>
                     <P>The promise of the sheer determination of being devoted to a cause, an activity, or a vision is what we call commitment.
                     
                         </P>
                 </div>
 
-                <div class="col-lg-4 col-md-6 box">
+                <div class="col-lg-4 box">
                     <h5> <img src="assets/images/About us/Quality.png">QUALITY</h5>
                     <P class="quality">Quality sets us apart and assures users their requirements are fulfilled, providing confidence and a great experience.</P>
                 </div>
 
-                <div class="col-lg-4 col-md-6 box">
+                <div class="col-lg-4 box">
                     <h5><img src="assets/images/About us/Accountablety.png">ACCOUNTABILITY</h5>
                     <P>Accountability in work ethics means being answerable, responsible, and owning up to mistakes with an expectation to fix them.</P>
                 </div>
             </div>
+</div>
+<div class="row">
             <div class="first-line">
-                <div class="col-lg-4 col-md-6 box">
+                <div class="col-lg-4  box">
                     <h5> <img src="assets/images/About us/INGENUITY.png">INGENUITY</h5>
                     <P>Ingenuity is the quality of being inventive, creative, original, and innovative in one's thinking or actions.</P>
                 </div>
 
-                <div class="col-lg-4 col-md-6 box">
+                <div class="col-lg-4  box">
                     <h5> <img src="assets/images/About us/CONTRIVANCE.png">CONTRIVANCE</h5>
                     <P class="quality">Ingenuity is a continuous process, while contrivance is the result, often associated with artificiality, of inventive efforts.</P>
                 </div>
 
-                <div class="col-lg-4 col-md-6 box">
+                <div class="col-lg-4 box">
                     <h5><img src="assets/images/About us/CONCLUSION.png">CONCLUSION</h5>
                     <P>Utkal Labs values continuous improvement, and individual growth, empowering its team and gaining a competitive advantage.</P>
                 </div>
             </div>
+
+            </div>
         </div>
 
-
+    </div>
+    </div>
     </section>
 
 
@@ -313,9 +330,10 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         <div class="mangement-content">
                             <h5 class="title">MR. NIRMAL CHANDRA HOTA</h5>
                            
-                            <p>Our CEO, Mr. Nirmal Hota, A tech acumen and an exemplary leader, his diasRpora of technical knowledge has earned him many accolades</p>
+                            <p>Our CEO, Mr. Nirmal Hota, A tech acumen and an exemplary leader, his diaspora of technical knowledge has earned him many accolades</p>
                             <div class="mangement-btn">
-                                <a href="NirmalChandraHota.html" class="custom-btn">Read More <i class="las la-long-arrow-alt-right ml-2"></i></a>
+                                <a href="NirmalChandraHota.html" class="custom-btn">Read More 
+                                    <i class="las la-long-arrow-alt-right ml-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -330,12 +348,14 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         </div>
                         
                         <div class="mangement-content">
-                            <h5 class="title">MR.SUVENDU GIRI</h5>
+                            <h5 class="title">MR. SUVENDU GIRI</h5>
                            
-                            <p>Our COO, Mr. Suvendu Giri, is our go to in case of all the dire, despair and dread.Apart from being a renowned figure in the tech community 
+                            <p>Our COO, Mr. Suvendu Giri, is our go to in case of all the dire, despair and dread. Apart from being a renowned figure in the tech community 
                             </p>
                             <div class="mangement-btn">
-                                <a href="SUVENDUGIRI.html" class="custom-btn">Read More <i class="las la-long-arrow-alt-right ml-2"></i></a>
+                                <a href="SUVENDUGIRI.html" class="custom-btn">Read More 
+                                    <i class="las la-long-arrow-alt-right ml-2"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -352,11 +372,13 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         </div>
                         
                         <div class="mangement-content">
-                            <h5 class="title">MR.TADIT DASH</h5>
+                            <h5 class="title">MR. TADIT DASH</h5>
                            
                             <p>A former Code Project MVP and Microsoft MVP and a Tedx speaker, Mr. Tadit Das is the chief of our advisory board.He is a tech acumen with a </p>
                             <div class="mangement-btn">
-                                <a href="TADITDASH.html" class="custom-btn">Read More<i class="las la-long-arrow-alt-right ml-2"></i></a>
+                                <a href="TADITDASH.html" class="custom-btn">Read More
+                                    <i class="las la-long-arrow-alt-right ml-2"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -394,7 +416,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
                 <div class="footer-widget">
-                    <h5 class="title">About us </h5>
+                    <h5 class="title">About Us </h5>
                     <ul class="footer-list">
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="aboutus.html#history">History</a></li>

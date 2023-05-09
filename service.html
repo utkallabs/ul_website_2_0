@@ -20,8 +20,9 @@
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
 <!-- line-awesom css link //for icon use-->
-<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/
 landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- swipper css link -->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
@@ -48,43 +49,95 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
 <body>
-<!-- /*--------------------------------------------------------------
-# Start topnavbar
---------------------------------------------------------------*/ -->
 
-<div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
-    <div class="container2 d-flex align-items-center justify-content-between">
-        <div class="upper-section">
-            <div class="letside-topnavbar">
-                <div class="topnavbar-email">
-                    
-                <img src="assets/images/icon/email-icon.svg">
-                    <span>sales@UtkalLabs.com</span>
+
+    <!--@@@ Modal Start @@@-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+                    <button type="button" class="close close-css" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                 </div>
-                <!-- <div class="topnavbar-call">
-                    <img src="assets/images/icon/call-icon.svg">
-                    <span>+91 9856 4747 58</span>
-                </div> -->
-        </div>
-                <div class="right-side">
-                <div class="search-bar">
-            <form class="header-search-form">
-                    <input type="search" name="keyword" placeholder="Search" autocomplete="off">
-                <button class="header-search-btn"><i class="las la-search"></i></button>
-            </form>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter message"></textarea>
+                        </div>
+                    </form>
+
+
                 </div>
-                <div class="schedule-meeting">
-                    <img src="assets/images/icon/calendar.png">
-                    <h1><a href="https://calendly.com/">Schedule a meeting</a>
-                    </h1>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary">Send message</button>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+    <!--//// Modal end ////-->
+
+
+ <!-- /*--------------------------------------------------------------
+# Start topnavbar
+--------------------------------------------------------------*/ -->
+
+    <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+        <div class="container2 d-flex align-items-center justify-content-between">
+            <div class="upper-section">
+
+                <div class="letside-topnavbar">
+                    <div class="topnavbar-email">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:sales@utkallabs.com">
+                            <span>sales@utkallabs.com</span></a>
+                    </div>
+
+                       <div class="topnavbar-call">
+                        <i class="fa fa-phone"></i>
+                        <span>+91 93383 08255</span>
+                      </div> 
+
+                </div>
+
+                <div class="right-side">
+                    <div class="search-bar">
+                        <form class="header-search-form">
+                            <input type="search" name="keyword" placeholder="Search" autocomplete="off">
+                            <button class="header-search-btn"><i class="las la-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="schedule-meeting">
+                        <img src="assets/images/icon/calendar.png">
+                        <!-- <i class="fa-regular fa-calendar"></i> -->
+                        <h1><a href="https://calendly.com/">Schedule a meeting</a></h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 <!-- /*--------------------------------------------------------------
 # end topnavbar
 --------------------------------------------------------------*/ -->
+
  <!--/*--------------------------------------------------------------
 # Navbar Header
 --------------------------------------------------------------*/ -->
@@ -98,17 +151,17 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
           <ul class="nav-list">   
              <!-- added a class for active -->
                 <li class="#"><a href="index.html">Home</a></li>
-                <li class="#"><a href="aboutus.html">About us</a></li>
+                <li class="#"><a href="aboutus.html">About Us</a></li>
                 <li class="drop-down active"><a href="service.html">Services 
                     <i class="las la-angle-down"></i></a>
                     <ul>
                         <li><a href="Web&MobileApplication.html">Web & Mobile Application</a></li>
-                        <li><a href="Web3Blockchain&NFT.html">Web3, Blockchain & NFT</a></li>
                         <li><a href="WebBasedApplication.html">Web Based Application Dev</a></li>
+                        <li><a href="Web3Blockchain&NFT.html">Web3, Blockchain & NFT</a></li>       
                         <li><a href="DigitalTransformation.html">Digital Transformation</a></li>
                         <li><a href="DevopsConsulting.html">Devops Consulting</a></li>
                         <li><a href="EnterpriseSolution.html">Enterprise Solution</a></li>
-                        <li><a href="AlMLSolution.html">Al/ML solution</a></li>
+                        <li><a href="AlMLSolution.html">Al/ML Solution</a></li>
                         <li><a href="QAServices.html">QA Services</a></li>
                     </ul>
                 </li>
@@ -173,11 +226,11 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start Service All~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~Start Service All~~~~~~~~~~~~~~~~~~~-->
 <section class="service-section two ptb-120">
     <div class="container">
         <div class="row justify-content-center mb-30-none">
+
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
                 <div class="service-item three">
                     <div class="service-icon">
@@ -185,57 +238,32 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                     </div>
                     <div class="service-content">
                         <h3 class="title"><a href="Web&MobileApplication.html">Web & Mobile Application</a></h3>
-                        <p>We expertise in customized Web and Mobile application</p>
+                        <p>We have expertise in customized web & mobile </p>
                         <div class="service-btn">
                             <a href="Web&MobileApplication.html" class="custom-btn">Learn More 
-                               <i class="las la-long-arrow-alt-right ml-2"></i></i></a>
+                                <i class="las la-long-arrow-alt-right ml-2"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+             
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
                 <div class="service-item three">
                     <div class="service-icon">
-                        <img src="assets/images/icon/2.Enterprise Solution.png" alt="icon">
+                        <img src="assets/images/icon/7.Web Based Application dev.png" alt="icon">
                     </div>
                     <div class="service-content">
-                        <h3 class="title"><a href="EnterpriseSolution.html">Enterprise Solution</a></h3>
-                        <p>We expertise in customized Web and Mobile application</p>
+                        <h3 class="title"><a href="WebBasedApplication.html">Web-Based Application Dev</a></h3>
+                        <p>We offer a web browser that enables users to perform </p>
                         <div class="service-btn">
-                            <a href="EnterpriseSolution.html" class="custom-btn">Learn More<i class="las la-long-arrow-alt-right ml-2"></i></i></a>
+                            <a href="WebBasedApplication.html" class="custom-btn">Learn More
+                                <i class="las la-long-arrow-alt-right ml-2"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
-                <div class="service-item three">
-                    <div class="service-icon">
-                        <img src="assets/images/icon/3.Devops Consulting.png" alt="icon">
-                    </div>
-                    <div class="service-content">
-                        <h3 class="title"><a href="DevopsConsulting.html">Devops Consulting</a></h3>
-                        <p>We expertise in customized Web and Mobile application</p>
-                        <div class="service-btn">
-                            <a href="DevopsConsulting.html" class="custom-btn">Learn More<i class="las la-long-arrow-alt-right ml-2"></i></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
-                <div class="service-item three">
-                    <div class="service-icon">
-                        <img src="assets/images/icon/4.Digital Transformation.png" alt="icon">
-                    </div>
-                    <div class="service-content">
-                        <h3 class="title"><a href="DigitalTransformation.html">Digital Transformation</a></h3>
-                        <p>We expertise in customized Web and Mobile application</p>
-                        <div class="service-btn">
-                            <a href="DigitalTransformation.html" class="custom-btn">Learn More 
-                               <i class="las la-long-arrow-alt-right ml-2"></i></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+                        
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
                 <div class="service-item three">
                     <div class="service-icon">
@@ -243,7 +271,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                     </div>
                     <div class="service-content">
                         <h3 class="title"><a href="Web3Blockchain&NFT.html">Web3, Blockchain & NFT</a></h3>
-                        <p>We expertise in customized Web and Mobile application</p>
+                        <p>Web3 is a decentralized internet built on blockchain </p>
                         <div class="service-btn">
                             <a href="Web3Blockchain&NFT.html" class="custom-btn">Learn More 
                                 <i class="las la-long-arrow-alt-right ml-2"></i></a>
@@ -255,17 +283,57 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
                 <div class="service-item three">
                     <div class="service-icon">
-                        <img src="assets/images/icon/7.Web Based Application dev.png" alt="icon">
+                        <img src="assets/images/icon/4.Digital Transformation.png" alt="icon">
                     </div>
                     <div class="service-content">
-                        <h3 class="title"><a href="WebBasedApplication.html">Web Based Application </a></h3>
-                        <p>We expertise in customized Web and Mobile application</p>
+                        <h3 class="title"><a href="DigitalTransformation.html">Digital Transformation</a></h3>
+                        <p>We help you make the ultimate impact by keeping you</p>
                         <div class="service-btn">
-                            <a href="WebBasedApplication.html" class="custom-btn">Learn More<i class="las la-long-arrow-alt-right ml-2"></i></i></a>
+                            <a href="DigitalTransformation.html" class="custom-btn">Learn More 
+                                <i class="las la-long-arrow-alt-right ml-2"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+  
+            
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+                <div class="service-item three">
+                    <div class="service-icon">
+                        <img src="assets/images/icon/3.Devops Consulting.png" alt="icon">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title"><a href="DevopsConsulting.html">DevOps Consulting</a></h3>
+                        <p>DevOps helps create a high-performance IT capability</p>
+                        <div class="service-btn">
+                            <a href="DevopsConsulting.html" class="custom-btn">Learn More
+                                <i class="las la-long-arrow-alt-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+                <div class="service-item three">
+                    <div class="service-icon">
+                        <img src="assets/images/icon/2.Enterprise Solution.png" alt="icon">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title"><a href="EnterpriseSolution.html">Enterprise Solution</a></h3>
+                        <p>We offer end to end solutions for enterprise processes</p>
+                        <div class="service-btn">
+                            <a href="EnterpriseSolution.html" class="custom-btn">Learn More
+                                <i class="las la-long-arrow-alt-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
 
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
                 <div class="service-item three">
@@ -273,11 +341,11 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         <img src="assets/images/4.DigitalTransformation.png" alt="icon">
                     </div>
                     <div class="service-content">
-                        <h3 class="title"><a href="AlMLSolution.html">Al/ML solution</a></h3>
-                        <p>We expertise in customized Web and Mobile application</p>
+                        <h3 class="title"><a href="AlMLSolution.html">Al/ML Solution</a></h3>
+                        <p>The future problem needs a futuristic approach</p>
                         <div class="service-btn">
                             <a href="AlMLSolution.html" class="custom-btn">Learn More 
-                               <i class="las la-long-arrow-alt-right ml-2"></i></i></a>
+                                <i class="las la-long-arrow-alt-right ml-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -290,9 +358,11 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                     </div>
                     <div class="service-content">
                         <h3 class="title"><a href="QAServices.html">QA Services</a></h3>
-                        <p>We expertise in customized Web and Mobile application</p>
+                        <p>We have expertise in QA Services to ensure software</p>
                         <div class="service-btn">
-                            <a href="QAServices.html" class="custom-btn">Learn More<i class="las la-long-arrow-alt-right ml-2"></i></i></a>
+                            <a href="QAServices.html" class="custom-btn">Learn More
+                                <i class="las la-long-arrow-alt-right ml-2"></i></a>
+                                
                         </div>
                     </div>
                 </div>
@@ -461,8 +531,10 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                             <p>Welcome to Utkal Labs, a software development organization, that will help to digitize your business
                                 by offering all the prime services such as web and mobile applications, enterprise solutions, DevOps Consulting, Digital Transformation, and AI/ML solutions.
                             </p>
+                           
                             <div class="about-btn">
-                                <a href="#" class="btn--base" data-toggle="modal" data-target="#myModal">Send Message</a>
+                                <a href="#" class="btn--base" data-toggle="modal" data-target="#myModal">Send
+                                    Message</a>
 
                             </div>
                         </div>
@@ -500,7 +572,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
                 <div class="footer-widget">
-                    <h5 class="title">About us </h5>
+                    <h5 class="title">About Us </h5>
                     <ul class="footer-list">
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="aboutus.html#history">History</a></li>
