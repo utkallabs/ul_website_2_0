@@ -254,7 +254,6 @@ for (i = 0; i < acc.length; i++) {
         $('.plan-area').toggleClass('change-subs-duration');
     });
 
-
     // slider
     var swiper = new Swiper('.banner-slider', {
         slidesPerView: 2,
@@ -362,6 +361,7 @@ for (i = 0; i < acc.length; i++) {
 })(jQuery);
 
 
+
 //// sliderhome
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -400,13 +400,3 @@ function showSlides() {
 //     document.getElementById("myDIV").style.animation = "mynewmove 4s 2";
 //   }
 
-// //// sliderportfolio-describe
-document.getElementById('next').onclick = function () {
-    const widthItem = document.querySelector('.item').offsetWidth;
-    document.getElementById('formList').scrollLeft += widthItem;
-}
-document.getElementById('prev').onclick = function () {
-    const widthItem = document.querySelector('.item').offsetWidth;
-    document.getElementById('formList').scrollLeft -= widthItem;
-}
-  /////////////////
