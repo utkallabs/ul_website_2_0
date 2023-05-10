@@ -36,13 +36,13 @@
 
 @media screen and (max-width: 991px) {
   .banner-content .title h1{
-    font-size: 59px;
+    font-size: 40px;
   }
 }
 
 @media screen and (max-width: 991px) {
   .banner-content .sub-title{
-    font-size: 29px;
+    font-size: 20px;
   }
 }
 
@@ -81,18 +81,15 @@
 
 @media only screen and (max-width: 1200px){
   .banner-section .banner-text span {
-    font-size: 130px;
+    font-size: 120px;
   }
 }
 @media only screen and (max-width: 991px){
   .banner-section .banner-text span {
-    font-size: 187px;
+    font-size: 150px;
     line-height: 199px;
 }
-
 }
-
-
 @media only screen and (max-width: 726px){
   .banner-section .banner-text span {
     font-size: 85px;
@@ -102,15 +99,7 @@
 
 @media only screen and (max-width: 575px) {
   .banner-section .banner-text span {
-      font-size: 65px;
-      line-height: 180px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .banner-section .banner-text span {
-      font-size: 65px;
-      line-height: 170px;
+      display: none;
   }
 }
 
@@ -243,7 +232,7 @@
 }
 
 .banner-widget-wrapper .banner-widget-content p {
-  font-size: 18px;
+  font-size: 15px;
   width: 100%;
   color: #1C1C1C;
   font-weight: 600;
@@ -266,13 +255,34 @@
   }
 }
 
-@media only screen and (max-width: 1366px) {
-  .banner-widget-wrapper .banner-widget-btn a {
+.letstalk{
+  background: #ffb500;
+  border: 1px solid #ffb500;
+  color: #fff;
+  position: relative;
+  /* padding: 14px 30px; */
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  z-index: 2;
+  overflow: hidden;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+ width: 135px;
+}
+.letstalk:hover{
+  color: #fff;
+  background: #009798;
+  border: 1px solid #009798;
+}
+@media only screen and (max-width: 2000px) {
+  .letstalk {
     padding: 12px 26px;
   }
 }
 @media only screen and (max-width: 1140px) {
-  .banner-widget-wrapper .banner-widget-btn a {
+  .letstalk {
     padding: 12px 26px;
   }
 }
@@ -2819,7 +2829,7 @@ form h4 {
   justify-content: space-around;
   /* display: flex; */
   align-items: center;
-  padding: 19px 57px;
+  padding: 10px 45px;
 }
 
 .download_news_icon {
@@ -2898,16 +2908,10 @@ form h4 {
   .item{
       width: calc(33.3vw - 20px);
   }
-  .direction{
-      display: none;
-  }
 }
 @media screen and (max-width: 768px){
   .item{
       width: calc(50vw - 20px);
-  }
-  .direction{
-      display: none;
   }
 }
 
@@ -3438,10 +3442,10 @@ Contact Page /////
   margin-left: 20px;
   justify-content:space-around;
   display: flex;
-  width: 160px;
-  height: 30px;
+  /* width: 160px;
+  height: 30px; */
   align-items: center;
-  padding: 0;
+  padding: 0 10px;
   border: 0.5px solid #FFFFFF;
 }
 
@@ -3450,8 +3454,7 @@ Contact Page /////
 
 }
 .schedule-meeting img{
-  width: 14.37px;
-  height: 15.97px;
+ padding-right: 5px;
 }
 .schedule-meeting h1{
   margin-top: 9px;
@@ -3465,8 +3468,8 @@ Contact Page /////
 .right-side{
   display: flex;
   justify-content: end ;
-  font-family: jost;
   font-weight: 400;
+  align-items: center;
 }
 
 .search-bar {
