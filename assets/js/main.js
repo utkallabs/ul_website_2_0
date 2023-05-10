@@ -1,5 +1,5 @@
 
-!(function($) {
+!(function ($) {
     "use strict";
 
     // Init AOS
@@ -9,7 +9,7 @@
             once: true
         });
     }
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         aos_init();
     });
 
@@ -17,7 +17,7 @@
 
 // Smooth scroll for the navigation menu and links with .scrollto classes
 var scrolltoOffset = $('#header').outerHeight() - 1;
-$(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
+$(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function (e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
         if (target.length) {
@@ -57,19 +57,19 @@ if ($('.nav-menu').length) {
     $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="las la-bars"></i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
-    $(document).on('click', '.mobile-nav-toggle', function(e) {
+    $(document).on('click', '.mobile-nav-toggle', function (e) {
         $('body').toggleClass('mobile-nav-active');
         $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
         $('.mobile-nav-overly').toggle();
     });
 
-    $(document).on('click', '.mobile-nav .drop-down > a', function(e) {
+    $(document).on('click', '.mobile-nav .drop-down > a', function (e) {
         e.preventDefault();
         $(this).next().slideToggle(300);
         $(this).parent().toggleClass('active');
     });
 
-    $(document).click(function(e) {
+    $(document).click(function (e) {
         var container = $(".mobile-nav, .mobile-nav-toggle");
         if (!container.is(e.target) && container.has(e.target).length === 0) {
             if ($('body').hasClass('mobile-nav-active')) {
@@ -83,20 +83,20 @@ if ($('.nav-menu').length) {
     $(".mobile-nav, .mobile-nav-toggle").hide();
 }
 // Top Navigation
-$(window).scroll(function() {
+$(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
-      $('#topbar').addClass('topbar-scrolled');
+        $('#header').addClass('header-scrolled');
+        $('#topbar').addClass('topbar-scrolled');
     } else {
-      $('#header').removeClass('header-scrolled');
-      $('#topbar').removeClass('topbar-scrolled');
+        $('#header').removeClass('header-scrolled');
+        $('#topbar').removeClass('topbar-scrolled');
     }
-  });
+});
 
-  if ($(window).scrollTop() > 100) {
+if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
     $('#topbar').addClass('topbar-scrolled');
-  }
+}
 
 
 // // Navigation active state on scroll
@@ -127,7 +127,7 @@ $(".nav-list").click(function () {
     //console.log("Clicked");
     $(".nav-list li.active").removeClass("active");
     $(this).addClass("active");
-  });
+});
 
 
 ///meet our team slider
@@ -165,7 +165,7 @@ var swiper = new Swiper('.mangement-slider', {
     pagination: {
         el: '.mangement-pagination',
         clickable: true,
-        renderBullet: function(index, className) {
+        renderBullet: function (index, className) {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         },
     },
@@ -199,7 +199,7 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
+    acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
@@ -211,18 +211,18 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-(function($) {
+(function ($) {
     "user strict";
 
     // Preloader
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         if ($('#preloader').length) {
-          $('#preloader').delay(100).fadeOut('slow', function() {
-            $(this).remove();
-          });
+            $('#preloader').delay(100).fadeOut('slow', function () {
+                $(this).remove();
+            });
         }
-      });
-       // Preloader End
+    });
+    // Preloader End
 
     $("select").niceSelect(),
 
@@ -236,7 +236,7 @@ for (i = 0; i < acc.length; i++) {
 
     // scroll-to-top
     var ScrollTop = $(".scrollToTop");
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         if ($(this).scrollTop() < 100) {
             ScrollTop.removeClass("active");
         } else {
@@ -246,14 +246,13 @@ for (i = 0; i < acc.length; i++) {
 
     // scroll-to-top //
 
-   
+
     //plan-tab-switcher
-    $('.plan-tab-switcher').on('click', function() {
+    $('.plan-tab-switcher').on('click', function () {
         $(this).toggleClass('active');
 
         $('.plan-area').toggleClass('change-subs-duration');
     });
-
 
     // slider
     var swiper = new Swiper('.banner-slider', {
@@ -329,7 +328,7 @@ for (i = 0; i < acc.length; i++) {
         pagination: {
             el: '.client-pagination',
             clickable: true,
-            renderBullet: function(index, className) {
+            renderBullet: function (index, className) {
                 return '<span class="' + className + '">' + (index + 1) + '</span>';
             },
         },
@@ -362,53 +361,42 @@ for (i = 0; i < acc.length; i++) {
 })(jQuery);
 
 
-//// sliderhome
-let slideIndex = 0;
-showSlides(slideIndex);
 
+//// sliderhome
+let slideIndex = 1;
+showSlides(slideIndex);
+var currentIndex = 1;
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    clearTimeout(showSlides);
+    showSlides(currentIndex += n);
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
-showSlides();
+// showSlides();
 
 function showSlides() {
-    if ($('.mySlides').length) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 3000); // Change image every 2 seconds
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-  }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    currentIndex = slideIndex;
+    setTimeout(showSlides, 2000);
+}
 //// sliderhome////
 
 // function myFunction() {
 //     document.getElementById("myDIV").style.animation = "mynewmove 4s 2";
 //   }
 
-// //// sliderportfolio-describe
-document.getElementById('next').onclick = function(){
-    const widthItem = document.querySelector('.item').offsetWidth;
-    document.getElementById('formList').scrollLeft += widthItem;
-}
-document.getElementById('prev').onclick = function(){
-    const widthItem = document.querySelector('.item').offsetWidth;
-    document.getElementById('formList').scrollLeft -= widthItem;
-}
-  /////////////////
