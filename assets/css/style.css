@@ -937,7 +937,7 @@ textarea::placeholder{
 
 .project-slider-area {
   position: relative;
-  right: -5%;
+  
 }
 @media only screen and (max-width: 991px) {
   .project-slider-area {
@@ -946,7 +946,7 @@ textarea::placeholder{
 }
 /* gallery page slider  */
 .indicater-gallery{
-  right: 5%;
+  right: 0%;
 }
 
 .project-slider-area .slider-next, .slider-prev {
@@ -2865,7 +2865,7 @@ form h4 {
   height:40px;
   border-radius: 50%;
   transition: 0.5s;
-  margin:0 10px;
+      margin: 2% 0.5%;
   color: #ffffff;
 }
 .direction button:hover{
@@ -2906,14 +2906,13 @@ form h4 {
 }
 @media screen and (max-width: 1024px){
   .item{
-      width: calc(33.3vw - 20px);
+      width: calc(133.3vw - 10px);
   }
 }
-@media screen and (max-width: 768px){
-  .item{
-      width: calc(50vw - 20px);
-  }
-}
+@media screen and (max-width:768px){
+  .item {
+    width: calc(88vw - 59px);
+  }  }
 
 /*--------------------------------------------------------------
 /////////////// E.1. newsletterpage end ///////////////////////
@@ -2953,12 +2952,17 @@ form h4 {
 .career{
   background-color: #FBFCFF;
   padding-top: 80px;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
 }
 
 .list-career{
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.list-career_head h2{
+  text-align: center;
+  padding-bottom: 4%;
 }
 .benefits-list{
   list-style:inside ' - ';
@@ -2967,10 +2971,6 @@ form h4 {
 .careers-container{
   display: flex;
   background-color: #FBFCFF;
-}
-
-.Employee-Benefits{
-  padding-left: 100px;
 }
 
 .accordion {
