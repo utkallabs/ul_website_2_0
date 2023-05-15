@@ -69,7 +69,7 @@ a:hover {
 ----------------*/
 
 
-.pt-10 {
+/* .pt-10 {
     padding-top: 10px;
 }
 
@@ -99,7 +99,7 @@ a:hover {
 
 .pt-100 {
     padding-top: 100px;
-}
+} */
 
 @media only screen and (max-width: 991px) {
     .pt-100 {
@@ -126,7 +126,7 @@ a:hover {
         padding-top: 100px;
     }
 }
-
+ 
 .pb-10 {
     padding-bottom: 10px;
 }
@@ -157,16 +157,17 @@ a:hover {
 
 .pb-100 {
     padding-bottom: 100px;
+} 
+.pb-120 {
+    padding-bottom: 120px;
 }
+
+
 
 @media only screen and (max-width: 991px) {
     .pb-100 {
         padding-bottom: 80px;
     }
-}
-
-.pb-120 {
-    padding-bottom: 120px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -446,7 +447,7 @@ a:hover {
 /*-------------------------------------------------
     [ ## color code]
 */
-
+/* 
 .bg--primary {
     background-color: #01475c !important;
 }
@@ -483,7 +484,7 @@ a:hover {
 
 .border--rounded {
     border-radius: 3px !important;
-}
+} */
 
 
 
@@ -847,11 +848,11 @@ input::-moz-focus-inner {
     transition: all 0.3s ease 0.02s;
 }
 
-.btn:active,
+/* .btn:active,
 .btn:focus {
     -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.125) inset;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.125) inset;
-}
+} */
 
 .btn {
     border: 0px solid;
@@ -879,28 +880,6 @@ input::-moz-focus-inner {
 /*-------------------------------------------------
     [ ## custom btn all]
 */
-.letstalk{
-    background: #ffb500;
-    border: 1px solid #ffb500;
-    color: #fff;
-    position: relative;
-    padding: 14px 30px;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-    z-index: 2;
-    overflow: hidden;
-    -webkit-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-}
-.letstalk:hover{
-    color: #fff;
-    background: #009798;
-    border: 1px solid #009798;
-}
-
-
 
 .btn--base {
     position: relative;
@@ -1013,7 +992,7 @@ input::-moz-focus-inner {
 /*-------------------------------------------------
     [ ## Fields ]
 */
-
+/* 
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus {
@@ -1048,7 +1027,7 @@ textarea::-ms-input-placeholder {
 input::placeholder,
 textarea::placeholder {
     color: #1C1C1C;
-}
+} */
 
 textarea {
     display: block;
@@ -1057,14 +1036,14 @@ textarea {
     min-height: 120px;
 }
 
-input,
+/* input,
 select,
 textarea {
     border: 1px solid #E2E2E2;
     vertical-align: baseline;
     font-size: 100%;
     color: #1C1C1C;
-}
+} */
 
 label {
     font-size: 15px;
