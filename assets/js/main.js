@@ -321,12 +321,12 @@ for (i = 0; i < acc.length; i++) {
     });
 
 
-    var swiper = new Swiper('.client-slider', {
-        slidesPerView: 3,
-        spaceBetween: 30,
+    var swiper = new Swiper('.testimonials-slider', {
+        slidesPerView: 1,
+        spaceBetween: 10,
         loop: true,
         pagination: {
-            el: '.client-pagination',
+            el: '.testimonials-pagination',
             clickable: true,
             renderBullet: function (index, className) {
                 return '<span class="' + className + '">' + (index + 1) + '</span>';
