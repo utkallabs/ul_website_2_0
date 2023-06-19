@@ -133,7 +133,8 @@
   background-color: #fff;
   border-radius: 10px;
   padding: 15px;
-  width: 60%;
+  width: 70%;
+
   margin-top: 30px;
   position: relative;
   z-index: 9;
@@ -169,16 +170,16 @@
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media (min-width: 660px) and (max-width: 750px) {
   .banner-widget-wrapper {
-      width: 80%;
+      width: 100%;
   }
 }
 
 @media only screen and (max-width: 660px) {
   .banner-widget-wrapper {
       width: 100%;
-      padding: 10px;
+      /* padding: 10px; */
   }
 }
 
@@ -186,6 +187,7 @@
   .banner-widget-wrapper {
       display: block;
       text-align: center;
+      width: 100%;
   }
 }
 
@@ -706,48 +708,7 @@ textarea::placeholder{
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* .service-section .service-shape:nth-of-type(odd)::before {
-  animation: 13s linear nama_utha infinite;
-  -webkit-animation: 13s linear nama_utha infinite;
-  -moz-animation: 13s linear nama_utha infinite;
-}
 
-.service-section .service-shape:nth-of-type(even)::before {
-  animation: 13s linear utha_nama infinite;
-  -webkit-animation: 13s linear utha_nama infinite;
-  -moz-animation: 13s linear utha_nama infinite;
-}
-
-.service-section .service-shape::before {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 30px;
-} */
-
-/* .service-section .service-shape::before {
-  background-color: #fff;
-}
-
-.service-section .service-shape.shape-2 {
-  left: 30%;
-}
-
-.service-section .service-shape.shape-3 {
-  left: 42%;
-}
-
-.service-section .service-shape.shape-4 {
-  left: 56%;
-}
-
-.service-section .service-shape.shape-5 {
-  left: 70%;
-}
-
-.service-section .service-shape.shape-6 {
-  left: 85%;
-} */
 .service-item {
   background-color: #fff;
   -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.18);
@@ -761,7 +722,7 @@ textarea::placeholder{
 /*-------------------------------------------------
   [ ## Overlay Element service section]
 */
-
+/* 
 @-webkit-keyframes nama_utha {
   0% {
       bottom: 0;
@@ -812,7 +773,7 @@ textarea::placeholder{
       -webkit-transform: translateY(100%);
       transform: translateY(100%);
   }
-}
+} */
 
 /*-------------------------------------------------
   [ ## Overlay Element service section]
@@ -1082,12 +1043,12 @@ textarea::placeholder{
 @media only screen and (max-width: 991px) {
   .about-content {
       margin-left: 0;
-      padding-top: 60px;
+      padding: 60px 0 60px 0; 
   }
 }
 @media only screen and (max-width: 375px) {
   .about-content {
-    padding-top: 40px;
+        padding: 40px 0 40px 0;
   }
 }
 
@@ -1120,6 +1081,9 @@ textarea::placeholder{
   .about-btn {
       margin-top: 40px;
   }
+}
+.about-thumb img{
+  height: 546px;
 }
 
 @media only screen and (max-width: 769px) {
@@ -1625,9 +1589,6 @@ margin-bottom: 20px;
   .management-details{
     display: block;
   
-  }
-  .management-reverse{
-    flex-direction: row-reverse!important;
   }
 
   .mangement-img {
@@ -2534,7 +2495,7 @@ padding-top: 1.75rem;
   padding: 10px;
 }
 .pd img {
-  height: 180px;
+  /* height: 180px; */
   transition: all 0.5s;
 }
 .portfolio-overlay {
