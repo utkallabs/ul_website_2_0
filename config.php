@@ -2,8 +2,8 @@
 //----------- smtp data start----------
 $mailHost='smtp.googlemail.com';
 $mailPort=465;
-$mailUsername='vaibhavbanerjee@gmail.com';
-$mailPassword='rpvrrmvizzedljmw';
+$mailUsername='utkallabs2020@gmail.com';
+$mailPassword='UtkalLabs@2020';
 $mailEncryption='ssl';
 //---------- smtp data end-------
 
