@@ -214,7 +214,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
                     <div class="col-xl-6 col-lg-6 mb-30">
                         <div class="contact-content">
-                            <form>
+                            <form action="sendmail.php" method="post" id="contactForm">
                                 <div class="form-group">
                                     <label for="name">Name:</label>
                                     <input type="text" class="form-control" id="name" placeholder="Enter name">
@@ -234,7 +234,10 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                                 </div>
                             </form>
                             <div class="contact-btn">
-                                <a href="#" class="btn--base">Send Message</a>
+                                <button type="submit" name="submit"
+                                        id="contactSubmit" class="btn--base" class="btn--base">
+                                    Send Message
+                                </button>
                             </div>
                         </div>
                     </div>
