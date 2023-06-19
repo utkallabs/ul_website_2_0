@@ -719,6 +719,7 @@ textarea::placeholder{
   transition: all 0.5s ease-in-out;
 }
 
+
 /*-------------------------------------------------
   [ ## Overlay Element service section]
 */
@@ -1938,6 +1939,7 @@ display: flex;
   padding: 5%;
   display: flex;
   justify-content: space-around;
+  flex-direction: row-reverse;
 }
 
 .Services ul li {
@@ -1973,6 +1975,27 @@ display: flex;
   color: #1C1C1C;
 }
 
+@media (max-width: 992px) {
+  .service {
+      display: block;
+      padding: 5%; 
+      
+  }
+  .Services ul {
+
+    margin-top: 10%;
+   
+  }
+
+  .service-details {
+      width: 90%;
+  }
+
+  .service-details img {
+      width: 400px;
+      margin-top: 50px;
+  }
+}
 .get-in-touch {
   background: #000000;
   box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.07);
@@ -2037,21 +2060,6 @@ form h4 {
   color: white;
 }
 
-@media (max-width: 992px) {
-  .service {
-      display: block;
-      padding: 5%;
-  }
-
-  .service-details {
-      width: 90%;
-  }
-
-  .service-details img {
-      width: 400px;
-      margin-top: 50px;
-  }
-}
 
 /*--------------------------------------------------------------
  /////////// C.1. Web3, Blockchain & NFTpage end /////////////////
