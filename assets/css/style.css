@@ -2112,9 +2112,12 @@ form h4 {
   top: 32px;
 } */
 .service-content_casestudy .title{
-padding-top: 1.75rem;
+  padding-top: 1.75rem;
   text-transform: uppercase;
   position: relative;
+  font-size: 13px;
+  font-weight: 800;
+  
 }
 
 
@@ -2416,6 +2419,30 @@ padding-top: 1.75rem;
   .item {
     width: calc(88vw - 59px);
   }  }
+
+  .flipbookkk{
+    /* margin-top: 15vh !important; */
+    margin-bottom: 5vh !important;
+
+}
+
+.flipbookkk-title{
+    color: #ffa200;
+    text-align: center;
+    font-size: 5vw !important;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 900;
+    line-height: 75px;
+   text-shadow: 1px 3px 0px #373737;
+}
+
+@media(min-width: 768px){
+    .flipbookkk-title{
+    font-size: 2.5vw !important;
+}
+
+}
+
 
 /*--------------------------------------------------------------
 /////////////// E.1. newsletterpage end ///////////////////////
