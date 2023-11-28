@@ -3240,11 +3240,11 @@ Contact Page /////
 }
 
 .letside-topnavbar{
-  width: 50%;
+  width: auto;
   display: flex;
   
 }
-.topnavbar-email i{
+/* .topnavbar-email i{
   width: 27px;
   height: 27px;
   line-height: 24px;
@@ -3254,12 +3254,12 @@ Contact Page /////
   border-radius: 50%;
   color: #ffffff;
 
-}
+} */
 
 .letside-topnavbar span{
   font-weight: 500;
 }
-.topnavbar-call i{
+/* .topnavbar-call i{
   width: 27px;
   height: 27px;
   line-height: 24px;
@@ -3269,7 +3269,25 @@ Contact Page /////
   border-radius: 50%;
   color: #ffffff;
   margin-left: 20px;
+} */
+
+.topnavbar-call2 img{
+  width: 27px;
+  height: 27px;
+  line-height: 24px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  margin-left: 20px;
+ 
 }
+
+
+
+
+
 
 .topnavbar-call span{
   font-weight: 500;
