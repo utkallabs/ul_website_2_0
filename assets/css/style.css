@@ -3272,12 +3272,12 @@ Contact Page /////
 } */
 
 .topnavbar-call2 img{
-  width: 27px;
-  height: 27px;
+  width: 30px;
+  height: 30px;
   line-height: 24px;
   display: inline-block;
   text-align: center;
-  border: 1px solid #ffffff;
+  border: 2.4px solid #ffffff;
   border-radius: 50%;
   color: #ffffff;
   margin-left: 20px;
