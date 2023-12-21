@@ -235,34 +235,36 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         </div>
                     </div>
 
-
                     <div class="col-xl-6 col-lg-6 mb-30">
                         <div class="contact-content">
                             <form action="sendmail.php" method="post" id="contactForm">
                                 <div class="form-group">
                                     <label for="name">Name:</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter name">
+                                    <input type="text" class="form-control" id="name" name="name"
+                                           placeholder="Enter Name" maxlength="255" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email:</label>
-                                    <input type="text" class="form-control" id="email" placeholder="Enter email">
+                                    <input type="text" class="form-control" id="email" name="email"
+                                           placeholder="Enter Email" maxlength="255" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">Phone:</label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+                                    <input type="tel" class="form-control" id="phone" name="phone"
+                                           placeholder="Enter Phone Number" maxlength="15" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="message">Message:</label>
-                                    <textarea class="form-control" id="message" rows="3"
-                                        placeholder="Enter message"></textarea>
+                                    <textarea class="form-control" id="message" name="message" rows="3"
+                                              placeholder="Enter message" maxlength="100" required></textarea>
+                                </div>
+                                <input type="hidden" name="redirectpage" id="" value="2">
+                                <div class="contact-btn">
+                                    <button type="submit" name="submit" id="contactSubmit" class="btn--base">
+                                        Send Message
+                                    </button>
                                 </div>
                             </form>
-                            <div class="contact-btn">
-                                <button type="submit" name="submit" id="contactSubmit" class="btn--base"
-                                    class="btn--base">
-                                    Send Message
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
