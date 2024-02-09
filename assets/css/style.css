@@ -4185,7 +4185,28 @@ div.marquee>a>img {
 .copyright-area p {
   margin-bottom: 0px;
 }
+<<<<<<< HEAD
 
 /*--------------------------------------------------------------
   /////////////  00. Footersection Start  ///////////////
 --------------------------------------------------------------*/
+=======
+.copyright-area a {
+  text-decoration: underline;
+ 
+}
+.copyright-area a:hover {
+  text-decoration: underline;
+  color: #008283;
+}
+
+
+/*--------------------------------------------------------------
+  /////////////  00. Footersection Start  ///////////////
+--------------------------------------------------------------*/
+
+.privacypolicy{
+  padding: 120px 0;
+}
+
+>>>>>>> 1c1c7ea27d49fa9ffbcd8e50f94f052fcb88415e
