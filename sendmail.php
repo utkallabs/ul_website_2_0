@@ -26,8 +26,8 @@ if(isset($_POST['submit'])){
         $mail->SMTPSecure = $mailEncryption;
         $mail->Port = $mailPort;
 
-        $mail->setFrom('vaibhavbanerjee@gmail.com');
-        $mail->addAddress($_POST['email']);
+        $mail->setFrom($mailUsername);
+        $mail->addAddress($mailUsername);
 
         $mail->isHTML(true);
         $mail->Subject = 'Message Received (Contact Page)';
