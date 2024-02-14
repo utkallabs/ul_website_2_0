@@ -246,6 +246,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                                         placeholder="Enter message" maxlength="1000" required></textarea>
                                 </div>
                                 <input type="hidden" name="redirectpage" id="" value="2">
+                                <div class="g-recaptcha mt-3" data-sitekey="6LekdHEpAAAAAN5FrOIsTeUG3G-0SQpYZJqCkB6J"></div>
                                 <div class="contact-btn">
                                     <button type="submit" name="submit" id="contactSubmit" class="btn--base">
                                         Send Message
@@ -548,6 +549,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <!-- main -->
     <script src="assets/js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
     $(document).ready(function(){
         $('#contactForm').on('submit', function(e){
@@ -559,6 +561,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                 success: function (res) {
                     let data = JSON.parse(res);
                     $('#contactForm')[0].reset();
+                    grecaptcha.reset();
                     if(data.responseCode == 200){
                         $('#responseMsg').html('<div class="alert alert-success" role="alert">' + data.message + '</div>');
                     }else{
