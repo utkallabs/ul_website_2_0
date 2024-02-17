@@ -1,4 +1,26 @@
 
+$(document).ready(function(){
+    $('#contactForm').on('submit', function(e){
+        var formData = $(this).serialize();
+        $.ajax({
+            type: 'post',
+            url: 'sendmail.php',
+            data: formData,
+            success: function (res) {
+                let data = JSON.parse(res);
+                grecaptcha.reset();
+                if(data.responseCode == 200){
+                    $('#responseMsg').html('<div class="alert alert-success" role="alert">' + data.message + '</div>');
+                    $('#contactForm')[0].reset();
+                }else{
+                    $('#responseMsg').html('<div class="alert alert-danger" role="alert">' + data.message + '</div>');
+                }
+            }
+        });
+        e.preventDefault();
+    });
+});
+
 !(function ($) {
     "use strict";
 
@@ -399,4 +421,3 @@ function showSlides() {
 // function myFunction() {
 //     document.getElementById("myDIV").style.animation = "mynewmove 4s 2";
 //   }
-
