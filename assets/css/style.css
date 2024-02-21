@@ -2003,7 +2003,7 @@ display: flex;
   color: white;
 }
 
-input[type=textt] {
+/* input[type=textt] {
   padding: 12px 20px;
   width: 300px;
   height: 50px;
@@ -2036,7 +2036,7 @@ input[type=number] {
   border-radius: 4px;
   box-sizing: border-box;
 
-}
+} */
 
 .Request-a-quotes{
   width: 300px;
