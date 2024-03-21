@@ -4034,7 +4034,7 @@ div.marquee>a>img {
 }
 
 .UlAlpha{
-  background: #003939;
+  background: #f5f8ff;
 }
 
 .ULAlpha-img{
@@ -4051,7 +4051,14 @@ div.marquee>a>img {
   font-size: 12px;
 }
 
-
+.conferly-img{
+  background-color:#008283;
+  background: url(../images/projects/conferly-background.png) no-repeat center fixed;
+    -webkit-background-size: cover;
+    color: #dbdbdb;
+    overflow: hidden;
+    position: relative;
+}
 
 /*--------------------------------------------------------------
   /////////////  Product  end  ///////////////
