@@ -4039,7 +4039,7 @@ div.marquee>a>img {
 
 .ULAlpha-img{
   background-color:#008283;
-  background: url(../images/projects/UlAlpha-background-img.png) no-repeat center fixed;
+  background: url(../images/product/UlAlpha-background-img.png) no-repeat center fixed;
     -webkit-background-size: cover;
     color: #dbdbdb;
     overflow: hidden;
@@ -4053,7 +4053,7 @@ div.marquee>a>img {
 
 .conferly-img{
   background-color:#008283;
-  background: url(../images/projects/conferly-background.png) no-repeat center fixed;
+  background: url(../images/product/conferly-background.png) no-repeat center fixed;
     -webkit-background-size: cover;
     color: #dbdbdb;
     overflow: hidden;
