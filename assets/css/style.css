@@ -4033,13 +4033,13 @@ div.marquee>a>img {
   background-color: #f6f9ff;
 }
 
-.UlAlpha{
+.SalesSpring{
   background: #f5f8ff;
 }
 
-.ULAlpha-img{
+.SalesSpring-img{
   background-color:#008283;
-  background: url(../images/product/UlAlpha-background-img.png) no-repeat center fixed;
+  background: url(../images/product/salesspring-background-img.png) no-repeat center fixed;
     -webkit-background-size: cover;
     color: #dbdbdb;
     overflow: hidden;
