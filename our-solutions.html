@@ -22,24 +22,129 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <!-- line-awesom css link //for icon use-->
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/
+landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <!-- main style css  -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/common.css">
+    <style>
+        a,
+        a:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-size: 16px;
+            font-family: "Palanquin", sans-serif;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            background: #141a31;
+            color: #fff;
+            border: 0;
+            border-radius: 5px;
+            transition: all 0.1s ease-in;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            text-align: center;
+        }
+
+        button:hover {
+            background: #05c5b8;
+        }
+
+        /* Card Styling */
+
+        #solutions-list {
+            max-width: 1150px;
+            width: 100%;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .eachCard {
+            background: #f9f9f9;
+            border-radius: 10px;
+            min-height: 300px;
+            max-width: 350px;
+            position: relative;
+            margin: 10px;
+            border-color: #201818;
+        }
+
+        .eachCard:hover {
+            box-shadow: 0 4px 10px #00000030;
+        }
+
+        .cardContent {
+            display: flex;
+            padding: 30px;
+        }
+
+        .cardTitle {
+            line-height: 1.2;
+        }
+
+        .cardSubTitle {
+            font-size: 14px;
+            color: #151926;
+        }
+
+        .cardText {
+            line-height: 1.6;
+            font-weight: normal;
+            opacity: 1;
+            transition: all 0.5s cubic-bezier(0.83, 0, 0.18, 0.78);
+        }
+
+        .cardFooter {
+            font-weight: 500;
+        }
+
+        .userActions {
+            width: 100%;
+            text-align: right;
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.83, 0, 0.18, 0.78);
+            position: absolute;
+            bottom: 0;
+        }
+
+        .eachCard:hover .userActions {
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+            text-align: right;
+            opacity: 1;
+            transition: all 0.5s cubic-bezier(0.83, 0, 0.18, 0.78);
+        }
+
+        .spacer {
+            height: 100px;
+        }
 
 
+        @media all and (max-width: 1024px) {
+
+            #solutions-list {
+                justify-content: center;
+            }
+        }
+    </style>
 
 
 </head>
 
 <body>
-
 
     <!-- /*--------------------------------------------------------------
 # Start topnavbar
@@ -82,7 +187,7 @@
 
                     <div class="schedule-meeting">
                         <img src="assets/images/icon/calendar.png">
-
+                        <!-- <i class="fa-regular fa-calendar"></i> -->
                         <h1><a href="https://calendly.com/" target=”_blank”>Schedule a meeting</a></h1>
                     </div>
 
@@ -129,32 +234,24 @@
                             <li><a href="product.html">Products</a></li>
                             <li><a href="case-studies.html">Case Studies</a></li>
                             <li><a href="our-solutions.html">Our Solutions</a></li>
-
-
                         </ul>
                     </li>
-
 
                     <li class="drop-down"><a href="#">Activities<i class="las la-angle-down"></i></a>
 
                         <ul>
-                            <li><a href="newsletter.html">Newsletter</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="newsletter.html">Newsletter</a></li>
 
                         </ul>
                     </li>
-
                     <li><a href="career.html">Career</a></li>
                     <li><a href="contact.html">Contact</a></li>
-
                 </ul>
             </nav>
-            <!-- .nav-menu end-->
-
-
+            <!-- -----.nav-menu end------>
         </div>
     </header>
-
 
     <!-- /*--------------------------------------------------------------
 # Navbar Header end
@@ -164,7 +261,6 @@
     <!-- <a href="#" class="scrollToTop">
         <i class="las la-angle-double-up"></i>
     </a> -->
-
     <!--====================
     End Scroll-To-Top====================-->
 
@@ -172,168 +268,34 @@
     <section id="breadcrumbs" class="breadcrumbs">
         <div class="breadcrumb-hero">
             <div class="container">
-
-                <h2>Super Discount</h2>
+                <h2>Our Solutions</h2>
                 <div class="breadcrumb-area">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Super Discount
-                            </li>
-
+                            <li class="breadcrumb-item active" aria-current="page">Our Solutions</li>
                         </ol>
                     </nav>
                 </div>
-
             </div>
         </div>
-
-
     </section>
     <!-- ======= Breadcrumbs ======= -->
-
     <!-- /*--------------------------------------------------------------
-   3.casestudy_descrb slider 
+   3.Case study slider 
 ---------------------*/ -->
-
-    <section class="casestudy_descrb-section ptb-120">
+    <section class="casestudy-section ptb-120">
         <div class="container">
 
-            <div class="section-header">
-                <h2 class="section-title">Super Discount</h2>
+            <div class="row justify-content-center mb-30-none">
+                <div id="solutions-list"></div>
             </div>
-            <div class="row justify-content-center align-items-center mb-30-none">
-                <div class="col-xl-12 mb-30">
-
-                    <!-- Carousel wrapper -->
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
-                        <div class="carousel-inner ">
-                            <div class="carousel-item active">
-                                <img class="d-block" src="assets/images/casestudy/super_discount_casestudy_banner.png"
-                                    alt="First slide">
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-            </div>
-
         </div>
     </section>
-
     <!-- /*--------------------------------------------------------------
-   3.casestudy_descrb slider 
+   3.Case study slider 
 ---------------------*/ -->
 
-
-
-    <!-- /*--------------------------------------------------------------
-   4.casestudy_descrb_content//project describe
----------------------*/ -->
-    <section class="csd_project_descrb-section">
-        <div class="container">
-            <div class="row">
-
-                <div class="csd_project_descrb-content-area">
-                    <div class="row justify-content-center mb-30-none">
-                        <div class="col-xl-8 col-lg-8 mb-30">
-                            <div class="csd_project_descrb-content">
-                                <h3 class="title">Project Overview</h3>
-                                <p>The project is about creating a platform for finding and sharing different offers
-                                    from shops and malls. The platform can be used on web and mobile devices. Users can
-                                    post and see discounts, promotions, and special deals in various places. The app
-                                    also sends personalized notifications and has a complete database of current deals.
-                                    The app makes shopping easy and enjoyable, connecting users with the latest offers
-                                    at their fingertips.
-
-                                </p>
-                                <h3 class="title">Project feature view</h3></br>
-                                <p>The website and app contain Homepage, Top banner, Trendy post, and Video banner.
-
-                                    </br>
-
-                                    Homepage: The Homepage is the main page where users can explore Mall Offers and get
-                                    more information about each shop. The homepage has different sections for different
-                                    categories of products, such as appliances, medical, toys, and books. This makes it
-                                    easy for users to find and interact with the offers and shop details they want.
-                                    </br>
-                                    Top Banner: The Top Banner is a moving slider that shows the best offers,
-                                    promotions, and exclusive deals on the homepage. It is designed to catch the eye of
-                                    the users as soon as they enter the site.
-                                    </br>
-                                    Trendy Post: The Trendy Post section gives users more details about the shops, such
-                                    as their addresses and shop numbers. This helps users to know where to find the
-                                    shops they are interested in.
-
-
-
-
-
-
-                                </p>
-
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 mb-30">
-                            <div class="csd_project_descrb-sidebar">
-                                <div class="csd_project_descrb-sidebar-widget">
-                                    <ul class="csd_project_descrb-sidebar-widget-list">
-                                        <li>
-                                            <h5 class="title">Client</h5>
-                                            <span class="sub-title"> Confidential
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <h5 class="title">Location</h5>
-                                            <span class="sub-title">USA</span>
-                                        </li>
-                                        <li>
-                                            <h5 class="title">Industry
-
-                                            </h5>
-                                            <span class="sub-title">Classified Application
-
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <h5 class="title">Technology </h5>
-                                            <span class="sub-title">
-                                                PHP, MySQL, Laravel, Java, Ionic, Angular
-
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="widget-box mb-30">
-                                <h4 class="widget-title">Download</h4>
-                                <div class="download-widget-btn">
-                                    <a target="_blank" href="assets/images/casestudy/super_discount_casestudy_ul.pdf"
-                                        class="btn--base">
-                                        <span>Download Our Case Study</span> <i class="las la-download"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        </div>
-    </section>
-
-    <!-- /*--------------------------------------------------------------
-   4.casestudy_descrb_content//project describe end
----------------------*/ -->
     <!--====================@@ Start Footer @@====================-->
     <footer class="footer-section pt-120">
         <div class="container">
@@ -428,12 +390,16 @@
 
     </footer>
     <!--====================// End Footer //====================-->
+
     <!-- chatbot -->
     <script src="assets/js/chatbot.js"></script>
 
     <!-- jquery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZQD6FQ477"></script>
@@ -441,7 +407,7 @@
 
     <!-- main -->
     <script src="assets/js/main.js"></script>
-
+    <script src="assets/js/our-solutions-data.js"></script>
 </body>
 
 </html>
