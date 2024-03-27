@@ -51,4 +51,4 @@ class About extends HTMLElement {
   }
 }
 
-customElements.define("about-component", About);
+// customElements.define("about-component", About);

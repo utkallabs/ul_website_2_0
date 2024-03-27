@@ -108,4 +108,4 @@ class Choose extends HTMLElement {
   }
 }
 
-customElements.define("choose-component", Choose);
+// customElements.define("choose-component", Choose);
