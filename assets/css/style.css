@@ -4046,7 +4046,7 @@ div.marquee>a>img {
     position: relative;
 }
 
-.fa-arrow-right{
+.product-point-arrow{
   background-color: #003939;
   font-size: 12px;
 }
@@ -4062,4 +4062,23 @@ div.marquee>a>img {
 
 /*--------------------------------------------------------------
   /////////////  Product  end  ///////////////
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+  /////////////  Solution-details  start  ///////////////
+--------------------------------------------------------------*/
+@media(max-width:1200px){
+.solution-details img{
+display: none;
+}
+.client-info{
+  padding: 0 !important;
+}
+}
+
+.solution-details .project_descrb-content-area{
+  background-color: #003939;
+}
+
+/*--------------------------------------------------------------
+  /////////////  Solution-details  end  ///////////////
 --------------------------------------------------------------*/
