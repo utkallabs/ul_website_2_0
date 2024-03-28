@@ -30,9 +30,6 @@ class Breadcrumbs extends HTMLElement {
 
             </div>
     </div>
-
-
-    </section> 
       `;
   }
 }
