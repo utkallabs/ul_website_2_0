@@ -5,6 +5,7 @@ class Breadcrumbs extends HTMLElement {
   }
 
   connectedCallback() {
+    const heading = this.getAttribute("data-heading");
     const title = this.getAttribute("data-title");
     const address = this.getAttribute("data-address");
     const file = this.getAttribute("data-file");
@@ -17,7 +18,7 @@ class Breadcrumbs extends HTMLElement {
         <div class="breadcrumb-hero">
             <div class="container">
 
-                <h2>About Us</h2>
+                <h2>${heading}</h2>
                 <div class="breadcrumb-area">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
