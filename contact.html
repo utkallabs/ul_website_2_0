@@ -32,7 +32,8 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="assets/css/common.css">
 
 
-
+<script src="components/contact/address-content-contact-component.js" defer></script>
+<script src="components/contact/map-contact-component.js" defer></script>
 
 </head>
 
@@ -43,65 +44,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 # Start topnavbar
 --------------------------------------------------------------*/ -->
 
-    <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
-        <div class="container2 d-flex align-items-center justify-content-between">
-            <div class="upper-section">
-
-                <div class="letside-topnavbar">
-
-                    <!-- <div class="topnavbar-email">
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:sales@utkallabs.com">
-                        <span>sales@utkallabs.com</span></a>
-                </div> -->
-
-                    <!-- <div class="topnavbar-call">
-                    <i class="fa fa-phone"></i>
-                    <a href="tel:+91 93383 08255">
-                        <span>+91 93383 08255</span></a>
-
-                </div> -->
-
-                    <div class="topnavbar-call2">
-                        <a href="mailto:sales@utkallabs.com">
-                            <img src="assets/images/gmail.png" alt="Email" width="18" height="18">
-
-                            <span>sales@utkallabs.com</span></a>
-                    </div>
-
-                    <div class="topnavbar-call2">
-                        <a href="tel:+91 93383 08255">
-                            <img src="assets/images/india.png" alt="INDIA Flag" width="18" height="18">
-                            <span>+91 93383 08255</span></a>
-                    </div>
-
-                    <div class="topnavbar-call2">
-                        <a href="tel:+1 32390 05072">
-                            <img src="assets/images/usa.png" alt="USA Flag" width="18" height="18">
-                            <span>+1 32390 05072</span></a>
-                    </div>
-
-
-                </div>
-
-                <div class="right-side">
-                    <div class="search-bar">
-                        <form class="header-search-form">
-                            <input type="search" name="keyword" placeholder="Search" autocomplete="off">
-                            <button class="header-search-btn"><i class="las la-search"></i></button>
-                        </form>
-                    </div>
-
-                    <div class="schedule-meeting">
-                        <img src="assets/images/icon/calendar.png">
-                        <!-- <i class="fa-regular fa-calendar"></i> -->
-                        <h1><a href="https://calendly.com/" target=”_blank”>Schedule a meeting</a></h1>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+<topbar-component></topbar-component>
 
     <!-- /*--------------------------------------------------------------
 # end topnavbar
@@ -110,60 +53,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!--/*--------------------------------------------------------------
 # Navbar Header
 --------------------------------------------------------------*/ -->
-    <header id="header" class="fixed-top">
-        <div class="container2 d-flex ">
-            <!--  logo -->
-            <a href="index.html" class="logo mr-auto">
-                <img src="assets/images/logo.png" alt=""></a>
-            <!--  nav start-->
-            <nav class="nav-menu d-none d-lg-block">
-                <ul class="nav-list">
-                    <!-- added a class for active -->
-                    <li class="#"><a href="index.html">Home</a></li>
-                    <li class="#"><a href="aboutus.html">About Us</a></li>
-                    <li class="drop-down"><a href="service.html">Services<i class="las la-angle-down"></i></a>
-                        <ul>
-                            <li><a href="service-web-mobile-application.html">Web & Mobile Application</a></li>
-                            <li><a href="service-robotic-process-automation.html">Robotic Process Automation</a>
-                            </li>
-                            <li><a href="service-blockchain-nft.html">Blockchain & NFT</a></li>
-                            <li><a href="service-digital-transformation.html">Digital Transformation</a></li>
-                            <li><a href="service-devops-consulting.html">DevOps Consulting</a></li>
-                            <li><a href="service-enterprise-solution.html">Enterprise Solution</a></li>
-                            <li><a href="service-alml-solution.html">Al/ML Solution</a></li>
-                            <li><a href="service-qa-services.html">QA Services</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="drop-down">
-                        <a href="portfolio.html">Portfolio<i class="las la-angle-down"></i></a>
-                        <ul>
-                            <li><a href="product.html">Products</a></li>
-                            <li><a href="case-studies.html">Case Studies</a></li>
-                            <li><a href="our-solutions.html">Our Solutions</a></li>
-
-
-                        </ul>
-                    </li>
-
-
-                    <li class="drop-down"><a href="#">Activities<i class="las la-angle-down"></i></a>
-                        <ul>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="newsletter.html">Newsletter</a></li>
-
-                        </ul>
-                    </li>
-
-                    <li><a href="career.html">Career</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
-
-                </ul>
-            </nav>
-            <!----- .nav-menu end------>
-
-        </div>
-    </header>
+<header-component></header-component>
 
 
     <!-- /*--------------------------------------------------------------
@@ -181,26 +71,13 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 
     <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-        <div class="breadcrumb-hero">
-            <div class="container">
-
-                <h2>Contact</h2>
-                <div class="breadcrumb-area">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Contact</li>
-
-                        </ol>
-                    </nav>
-                </div>
-
-            </div>
-        </div>
-
-
-    </section>
+    
+    <breadcrumbs-component
+      data-heading="Contact"
+      data-title="Home"
+      data-file="index.html"
+      data-address="Contact"
+    ></breadcrumbs-component>
     <!-- ======= Breadcrumbs ======= -->
 
     <!-- /*--------------------------------------------------------------
@@ -285,81 +162,8 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <section class="add_cont-contact ptb-60">
         <div class="container">
 
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-6 ">
-                    <div class="contact-widget">
-                        <h5 class="title">India </h5>
-                        <ul class="contact-list">
-
-                            <li> <a href="#0">
-                                    <ul>
-                                        <li><i class="fa fa-home contact-social"></i></li>
-                                        <li>D110, Raghunathpur<br>
-                                            Bhubaneswar, Odisha
-                                            India - 751024</li>
-                                </a>
-                        </ul>
-
-                        </a></li>
-                        <li><a href="#0"><i class="fa fa-phone contact-social"></i>+91 674 3157623</a></li>
-
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 ">
-                    <div class="contact-widget">
-                        <h5 class="title">USA </h5>
-                        <ul class="contact-list">
-                            <li> <a href="#0">
-                                    <ul>
-                                        <li><i class="fa fa-home contact-social"></i></li>
-                                        <li>PO Box 56903<br>
-                                            Sherman Oaks
-                                            CA - 91413, <br>USA</li>
-                                </a>
-                        </ul>
-                        <li><a href="#0"><i class="fa fa-phone contact-social"></i>+1 32390 05072</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-6 ">
-                    <div class="contact-widget">
-                        <h5 class="title">UAE</h5>
-                        <ul class="contact-list ">
-                            <li> <a href="#0">
-                                    <ul>
-                                        <li><i class="fa fa-home contact-social"></i></li>
-                                        <li>Flat-805<br>
-                                            Al Burda Building, Al Qasimiya
-                                            Sharjah, UAE</li>
-                                </a>
-                        </ul>
-                        <li><a href="#0"><i class="fa fa-phone contact-social"></i> +97 165377965, +97 1559917573
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-6 ">
-                    <div class="contact-widget">
-                        <h5 class="title">United Kingdom </h5>
-                        <ul class="contact-list">
-                            <li> <a href="#0">
-                                    <ul>
-                                        <li><i class="fa fa-home contact-social"></i></li>
-                                        <li>13 Lastingham court.
-                                            213 laleham road, Staines
-                                            TW18 2Nw, United Kingdom</li>
-                                </a>
-                        </ul>
-                        <li><a href="#0"><i class="fa fa-phone contact-social"></i>+44 20 3239 5039</a></li>
-
-                        </ul>
-                    </div>
-                </div>
+            <div class="row" id="add-cont-contact-id">
+              
 
 
             </div>
@@ -399,44 +203,8 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <section class="map-contact ptb-40">
         <div class="container">
 
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-6">
-
-                    <div class="map ">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d555.9790203697055!2d85.82373800668279!3d20.37603938354237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190946c70fd32b%3A0x1b5d2634b43cda89!2sUtkal%20Labs%20Private%20Limited!5e0!3m2!1sen!2sin!4v1679881048280!5m2!1sen!2sin"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-
-                        </iframe>
-
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="map ">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.2956965550634!2d-118.46021818544114!3d34.164356819262245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c297bc74238a83%3A0x51b5ee1cf7581a68!2sUnited%20States%20Postal%20Service!5e0!3m2!1sen!2sin!4v1679881270078!5m2!1sen!2sin"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="map ">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28846.05037320919!2d55.375672140185266!3d25.345957549652923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5bd1eaaaaaab%3A0xa22cfbbb206a448b!2sUtkal%20Labs%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1679881521010!5m2!1sen!2sin"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="map ">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.8214600007477!2d-0.5083698767520928!3d51.4247062689392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487676cde1ccee35%3A0x60918d6e2561ed2f!2sLastingham%20Court%2C%20213%20Laleham%20Rd%2C%20Staines%20TW18%202NW%2C%20UK!5e0!3m2!1sen!2sin!4v1679881564596!5m2!1sen!2sin"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-
+            <div class="row" id="map-contact-id">
+                
             </div>
 
     </section>
@@ -446,98 +214,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 ---------------------*/ -->
 
     <!--====================@@ Start Footer @@====================-->
-    <footer class="footer-section pt-120">
-        <div class="container">
-            <div class="row mb-30-none">
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <div class="footer-logo">
-                            <a href="index.html">
-                                <img src="assets/images/logo-two-white.png" alt="site-logo">
-
-                            </a>
-                        </div>
-                        <p>We are constantly evolving and committed to serve the best to our customers.
-                            Delivering
-                            quality solutions has been a top priority
-                            for us.</p>
-                        <!-- <ul class="footer-social">
-                        <img src="assets/images/iso2015.png" alt="ISO-logo">
-                </ul> -->
-                        <ul class="footer-social">Follow us:
-                            <li class="linkedin"><a href="https://www.linkedin.com/company/utkal-labs"
-                                    target=”_blank”><i class="lab la-linkedin-in"></i></a>
-
-                            </li>
-                            <li class="facebook"><a href="https://www.facebook.com/utkallabsindia/" target=”_blank”>
-                                    <i class='lab la-facebook-f'></i></a>
-                            </li>
-
-                            <li class="twitter">
-                                <a href="https://twitter.com/UtkalLabs" target=”_blank”>
-                                    <i class="fa-brands fa-x-twitter"></i></a>
-                            </li>
-                            <li class="instagram">
-                                <a href="https://www.instagram.com/utkallabs/" target=”_blank”>
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <h5 class="title">About Us </h5>
-                        <ul class="footer-list">
-                            <li><a href="aboutus.html">About Us</a></li>
-                            <li><a href="aboutus.html#history">History</a></li>
-                            <li><a href="aboutus.html#value">Our Core value</a></li>
-                            <li><a href="aboutus.html#management">Meet Our Management</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <h4 class="title">Explore Utkal Labs</h4>
-                        <ul class="footer-list">
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="newsletter.html">Newsletter</a></li>
-                            <li><a href="case-studies.html">Case Studies</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <h4 class="title">Quick Links </h4>
-                        <ul class="footer-list">
-                            <li><a href="http://blog.utkallabs.com" target="_blank">Blogs</a></li>
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="career.html">Career</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="copyright-wrapper">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-12 text-center">
-                        <div class="copyright-area">
-                            <p>Copyright © 2024 Utkal Labs Pvt. Ltd. All Rights Reserved<br>
-                                <a href="privacypolicy.html">Privacy Policy</a> and
-                                <a href="termsandconditions.html"> Terms and Conditions</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </footer>
+    <footer-component></footer-component>
     <!--====================// End Footer //====================-->
     <!-- chatbot -->
     <script src="assets/js/chatbot.js"></script>
@@ -556,6 +233,43 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- main -->
     <script src="assets/js/main.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Component Start -->
+
+    <!-- topbar-component Start -->
+    <script
+      src="components/./common/topbar-component.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <!-- topbar-component End-->
+
+    <!-- header-component Start -->
+    <script
+      src="components/./common/header-component.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <!-- header-component End-->
+
+    <!-- breadcrumbs-component Start -->
+    <script
+      src="components/./common/breadcrumbs-components.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <!-- breadcrumbs-component End-->
+
+    <!-- footer-component Start -->
+    <script
+      src="components/./common/footer-component.js"
+      type="text/javascript"
+      defer
+    ></script>
+
+    <!-- footer-component End-->
+
+    <!-- Component End -->
 </body>
 
 </html>

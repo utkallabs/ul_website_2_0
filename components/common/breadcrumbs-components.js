@@ -9,16 +9,10 @@ class Breadcrumbs extends HTMLElement {
     const title = this.getAttribute("data-title");
     const address = this.getAttribute("data-address");
     const file = this.getAttribute("data-file");
-    this.innerHTML = `
-        <div>
-            <h3></h3>
-            <p></p>
-        </div>
-        <<section id="breadcrumbs" class="breadcrumbs">
+    this.innerHTML = `<section id="breadcrumbs" class="breadcrumbs">
         <div class="breadcrumb-hero">
             <div class="container">
-
-                <h2>${heading}</h2>
+                    <h2>${heading}</h2>
                 <div class="breadcrumb-area">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -31,6 +25,7 @@ class Breadcrumbs extends HTMLElement {
 
             </div>
     </div>
+    </section>
       `;
   }
 }
