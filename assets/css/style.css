@@ -4046,7 +4046,7 @@ div.marquee>a>img {
     position: relative;
 }
 
-.product-point-arrow{
+.product .fa-arrow-right{
   background-color: #003939;
   font-size: 12px;
 }
@@ -4063,6 +4063,40 @@ div.marquee>a>img {
 /*--------------------------------------------------------------
   /////////////  Product  end  ///////////////
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+  /////////////  Solution start  ///////////////
+--------------------------------------------------------------*/
+
+.solution-card .know-more-btn{
+  border-radius: 5px;
+  background-color: transparent;
+  gap: 7px;
+  color: #003939 !important;
+  border-color: #003939 !important;
+}
+.solution-card .know-more-btn:hover{
+  background-color: #003030;
+  color: #ffffff !important;
+}
+
+.text-green{
+  color: #003939;
+}
+
+.solution-card .domain{
+  color: #666666;
+}
+@media(max-width:1200px){
+  .solutions img{
+display: none;
+  }
+}
+
+/*--------------------------------------------------------------
+  /////////////  solution  end  ///////////////
+--------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
   /////////////  Solution-details  start  ///////////////
 --------------------------------------------------------------*/

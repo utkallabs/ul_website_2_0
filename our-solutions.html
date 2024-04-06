@@ -24,127 +24,36 @@
     <!-- line-awesom css link //for icon use-->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/
 landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+
+    <!-- lightcase css links -->
+    <link rel="stylesheet" href="assets/css/lightcase.css">
+
+    <!-- animate.css // form part-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!-- nice select css// client slider-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
+    <!-- aos.css -->
+    <link rel="stylesheet" href="assets/css/aos.css">
 
     <!-- main style css  -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/common.css">
-    <style>
-        a,
-        a:hover {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        button {
-            font-size: 16px;
-            font-family: "Palanquin", sans-serif;
-            padding: 10px;
-            margin: 10px;
-            cursor: pointer;
-            background: #141a31;
-            color: #fff;
-            border: 0;
-            border-radius: 5px;
-            transition: all 0.1s ease-in;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 40%;
-            text-align: center;
-        }
-
-        button:hover {
-            background: #05c5b8;
-        }
-
-        /* Card Styling */
-
-        #solutions-list {
-            max-width: 1150px;
-            width: 100%;
-            flex-wrap: wrap;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        .eachCard {
-            background: #f9f9f9;
-            border-radius: 10px;
-            min-height: 300px;
-            max-width: 350px;
-            position: relative;
-            margin: 10px;
-            border-color: #201818;
-        }
-
-        .eachCard:hover {
-            box-shadow: 0 4px 10px #00000030;
-        }
-
-        .cardContent {
-            display: flex;
-            padding: 30px;
-        }
-
-        .cardTitle {
-            line-height: 1.2;
-        }
-
-        .cardSubTitle {
-            font-size: 14px;
-            color: #151926;
-        }
-
-        .cardText {
-            line-height: 1.6;
-            font-weight: normal;
-            opacity: 1;
-            transition: all 0.5s cubic-bezier(0.83, 0, 0.18, 0.78);
-        }
-
-        .cardFooter {
-            font-weight: 500;
-        }
-
-        .userActions {
-            width: 100%;
-            text-align: right;
-            opacity: 0;
-            transition: all 0.5s cubic-bezier(0.83, 0, 0.18, 0.78);
-            position: absolute;
-            bottom: 0;
-        }
-
-        .eachCard:hover .userActions {
-            background: #f1f1f1;
-            padding: 10px;
-            border-radius: 0 0 5px 5px;
-            text-align: right;
-            opacity: 1;
-            transition: all 0.5s cubic-bezier(0.83, 0, 0.18, 0.78);
-        }
-
-        .spacer {
-            height: 100px;
-        }
 
 
-        @media all and (max-width: 1024px) {
-
-            #solutions-list {
-                justify-content: center;
-            }
-        }
-    </style>
 
 
 </head>
 
 <body>
+
 
     <!-- /*--------------------------------------------------------------
 # Start topnavbar
@@ -155,6 +64,8 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
             <div class="upper-section">
 
                 <div class="letside-topnavbar">
+
+
                     <div class="topnavbar-call2">
                         <a href="mailto:sales@utkallabs.com">
                             <img src="assets/images/gmail.png" alt="Email" width="18" height="18">
@@ -212,8 +123,8 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
             <nav class="nav-menu d-none d-lg-block">
                 <ul class="nav-list">
                     <!-- added a class for active -->
-                    <li class="#"><a href="index.html">Home</a></li>
-                    <li class="#"><a href="aboutus.html">About Us</a></li>
+                    <li class="#0"><a href="index.html">Home</a></li>
+                    <li class="#0"><a href="aboutus.html">About Us</a></li>
                     <li class="drop-down"><a href="service.html">Services<i class="las la-angle-down"></i></a>
                         <ul>
                             <li><a href="service-web-mobile-application.html">Web & Mobile Application</a></li>
@@ -237,19 +148,23 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         </ul>
                     </li>
 
-                    <li class="drop-down"><a href="#">Activities<i class="las la-angle-down"></i></a>
 
+                    <li class="drop-down"><a href="#">Activities<i class="las la-angle-down"></i></a>
                         <ul>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="newsletter.html">Newsletter</a></li>
 
                         </ul>
                     </li>
+
                     <li><a href="career.html">Career</a></li>
                     <li><a href="contact.html">Contact</a></li>
+
                 </ul>
             </nav>
-            <!-- -----.nav-menu end------>
+            <!-- .nav-menu end-->
+
+
         </div>
     </header>
 
@@ -261,40 +176,108 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- <a href="#" class="scrollToTop">
         <i class="las la-angle-double-up"></i>
     </a> -->
+
     <!--====================
     End Scroll-To-Top====================-->
+
+
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
         <div class="breadcrumb-hero">
             <div class="container">
+
                 <h2>Our Solutions</h2>
                 <div class="breadcrumb-area">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Our Solutions</li>
+                            <li class="breadcrumb-item active" aria-current="page">Solution</li>
+
                         </ol>
                     </nav>
                 </div>
+
             </div>
         </div>
+
+
     </section>
     <!-- ======= Breadcrumbs ======= -->
-    <!-- /*--------------------------------------------------------------
-   3.Case study slider 
----------------------*/ -->
-    <section class="casestudy-section ptb-120">
-        <div class="container">
-
-            <div class="row justify-content-center mb-30-none">
-                <div id="solutions-list"></div>
+    <section class="container solutions ptb-120">
+        <div class="row d-flex">
+            <div class="col-xl-6 align-items-center d-flex">
+                <div>
+                    <h1 class="text-green">Navigate through various industry domains.</h1>
+                    <p>Take a quick look at our accomplished project executions to see the success we've achieved across
+                        various projects and industries.</p>
+                    <div class="modal-footer justify-content-start d-flex">
+                        <button type="submit" name="submit" class="btn btn-primary p-3 align-items-center d-flex"><a
+                                href="contact.html" class=" me-2">Explore Now</a><i
+                                class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6  justify-content-center d-flex">
+                <img src="assets/images/solution/solution.png" class="w-75">
             </div>
         </div>
     </section>
-    <!-- /*--------------------------------------------------------------
-   3.Case study slider 
----------------------*/ -->
+
+    <section class="solution-card pb-5">
+        <div class="container">
+            <div class="row justify-content-between card-deck">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30">
+                    <div class="card py-3 shadow border rounded align-items-center d-flex">
+                        <img src="assets/images/solution/project-1-dummy.png" class="card-img-top px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="domain">Experts Marketplace</h5>
+                            <h4 class="card-title text-green d-flex justify-content-start">UNITING TALENT WITH
+                                OPPORTUNITY</h4>
+                            <p class="card-text">Angular, Typescript, Node.js, GraphQL, MySQL
+                                Middleware: RabbitMQ, Redis, Amazon S3 for file storage, JWT Authentication, RBAC, New
+                                Relic
+                            </p>
+                            <button type="submit" name="submit"
+                                class="btn btn-primary rounded border px-3 py-2 know-more-btn d-flex align-items-center">Know
+                                More <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30 ">
+                    <div class="card py-3 shadow  border rounded align-items-center d-flex">
+                        <img src="assets/images/solution/project-1-dummy.png" class="card-img-top px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="domain">Entertainment Industry</h5>
+                            <h4 class="card-title text-green">SOCIAL NETWORKING MEDIA
+                                SHARING APPLICATION</h4>
+                            <p class="card-text">Java script, LAMP, IT, PHP, GraphQL, MySQL
+                                Middleware: RabbitMQ, Redis</p>
+                            <button type="submit" name="submit"
+                                class="btn btn-primary rounded border px-3 py-2 know-more-btn d-flex align-items-center">Know
+                                More <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30">
+                    <div class="card py-3 shadow  border rounded align-items-center d-flex">
+                        <img src="assets/images/solution/project-1-dummy.png" class="card-img-top px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="domain">Entertainment Industry</h5>
+                            <h4 class="card-title text-green">SOCIAL NETWORKING MEDIA
+                                SHARING APPLICATION</h4>
+                            <p class="card-text">Java script, LAMP, IT, PHP</p>
+                            <button type="submit" name="submit"
+                                class="btn btn-primary rounded border px-3 py-2 know-more-btn d-flex align-items-center">Know
+                                More <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                </div> -->
+            </div>
+        </div>
+    </section>
 
     <!--====================@@ Start Footer @@====================-->
     <footer class="footer-section pt-120">
@@ -390,7 +373,6 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     </footer>
     <!--====================// End Footer //====================-->
-
     <!-- chatbot -->
     <script src="assets/js/chatbot.js"></script>
 
@@ -405,9 +387,24 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZQD6FQ477"></script>
     <script src="assets/js/google-tag.js"></script>
 
+    <!-- aos js file -->
+    <script src="assets/js/aos.js"></script>
+
+    <!-- isotope js //hero slider -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!-- nice select js// client slider//meet our mangement -->
+    <script src="assets/js/jquery.nice-select.js"></script>
+
+    <!-- lightcase js//  client slider-->
+    <script src="assets/js/lightcase.js"></script>
+
+    <!-- swipper js// client slide -->
+    <script src="assets/js/swiper.min.js"></script>
+
     <!-- main -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/our-solutions-data.js"></script>
+
 </body>
 
 </html>
