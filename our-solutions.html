@@ -226,8 +226,18 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <section class="solution-card pb-5">
         <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="solutionFilter" placeholder="Filter by Industry or Technology...">
+                </div>
+            </div>
+            <div id="noResults" style="display: none;">
+                <h6 class="title text-center">No result found</h6>
+            </div>
             <div class="row justify-content-between card-deck">
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30" data-technology="Angular, Typescript, Node.js, GraphQL, MySQL
+                Middleware: RabbitMQ, Redis, Amazon S3 for file storage, JWT Authentication, RBAC, New
+                Relic, Experts Marketplace">
                     <div class="card py-3 shadow border rounded align-items-center d-flex">
                         <img src="assets/images/solution/project-1-dummy.png" class="card-img-top px-3" alt="...">
                         <div class="card-body">
@@ -404,7 +414,34 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <!-- main -->
     <script src="assets/js/main.js"></script>
-
+    <script>
+            $(document).ready(function () {
+                $('#solutionFilter').on('input', function(){
+                    var searchText = $(this).val().toLowerCase();
+                    var noResults = true;
+                    $('.col-xl-4').each(function(){
+                        var technologies = $(this).data('technology')?.toLowerCase().split(', ');
+                        var show = false;
+                        technologies?.forEach(function(tech){
+                            if(tech.includes(searchText)){
+                                show = true;
+                                noResults = false;
+                            }
+                        });
+                        if(show){
+                            $(this).show();
+                        } else {
+                            $(this).hide();
+                        }
+                    });
+                    if(noResults){
+                        $('#noResults').show();
+                    } else {
+                        $('#noResults').hide();
+                    }
+                });
+            });
+    </script>
 </body>
 
 </html>

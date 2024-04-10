@@ -405,18 +405,23 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                     <li><a href="service-qa-services.html"> QA Services</a></li>
                 </ul>
                 <div class="get-in-touch">
-                    <form>
+                    <form id="contactForm" method="post">
                         <h4>GET IN TOUCH</h4>
                         <p>For More Information Feel Free Please Contact With Us.</p>
                         <label for="fname"></label>
 
-                        <input type="text" class="service-form-group" id="fname" name="firstname" placeholder="Name">
+                        <input type="text" class="service-form-group" id="fname" name="name" maxlength="100" placeholder="Name" required>
 
                         <label for="Email"></label>
-                        <input type="text" class="service-form-group" id="email" name="firstname" placeholder="Email">
+                        <input type="email" class="service-form-group" id="email" name="email" maxlength="100" placeholder="Email" required>
                         <label for="number"></label>
-                        <input type="text" class="service-form-group" id="text" name="firstname" placeholder="Phone">
-                        <button class="Request-a-quotes">Request a quotes</button>
+                        <input type="text" class="service-form-group" id="text" name="phone" maxlength="14" onkeypress="return /^[0-9+-]+$/i.test(event.key)" placeholder="Phone" required>
+                        <div class="g-recaptcha mt-3" data-sitekey="6LekdHEpAAAAAN5FrOIsTeUG3G-0SQpYZJqCkB6J">
+                        </div>
+                        <button type="submit" name="submit" class="Request-a-quotes">Request a quotes</button>
+                        <div id="responseMsg" class="mt-2">
+
+                        </div>
                     </form>
                 </div>
             </div>
@@ -555,7 +560,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <!-- main -->
     <script src="assets/js/main.js"></script>
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>
