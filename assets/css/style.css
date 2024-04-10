@@ -3389,8 +3389,7 @@ Contact Page /////
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-
-.d-flex{
+ .container2{
   display: flex;
   justify-content: space-between;
 }
@@ -4111,6 +4110,14 @@ display: none;
 
 .solution-details .project_descrb-content-area{
   background-color: #003939;
+}
+
+.bold-font{
+  font-weight: bolder;
+}
+
+.green-left-line{
+  border-left: 3px solid #008283;
 }
 
 /*--------------------------------------------------------------
