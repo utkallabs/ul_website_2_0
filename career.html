@@ -250,26 +250,27 @@
                 </div>
             </div>
             <!-- End Section Title -->
-
+            <div class="loader-container">
+                <div class="formLoader" ></div>
+            </div>
             <div class="applyjob-form">
-                <form>
+                <form id="contactForm" method="post" enctype="multipart/form-data">
 
                     <div class="row applyjob-form-area justify-content-center">
 
                         <div class="form-group col-md-6">
                             <label for="position">Apply Now:</label>
-                            <select class="form-control" id="position">
-                                <option> Full Stack Developer</option>
-                                <option>Wordpress Developer</option>
-                                <option>Content Writer</option>
-                                <option>Technical Sales Executive</option>
-
+                            <select class="form-control" id="position" name="position" required>
+                                <option value="Full Stack Developer">Full Stack Developer</option>
+                                <option value="Wordpress Developer">Wordpress Developer</option>
+                                <option value="Content Writer">Content Writer</option>
+                                <option value="Technical Sales Executive">Technical Sales Executive</option>
                             </select>
                         </div>
 
                         <div class="form-group col-md-6">
                             <label for="name">Name:</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            <input type="text" class="form-control" id="name" name="name" maxlength="100" placeholder="Enter your name" required>
                         </div>
 
                     </div>
@@ -279,12 +280,12 @@
 
                         <div class="form-group col-md-6">
                             <label for="email">Email:</label>
-                            <input type="text" class="form-control mr-2" id="email" placeholder="Enter your email">
+                            <input type="email" class="form-control mr-2" id="email" name="email" maxlength="100" placeholder="Enter your email" required>
                         </div>
 
                         <div class="form-group col-md-6">
                             <label for="mobile">Mobile Number:</label>
-                            <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number">
+                            <input type="text" class="form-control" id="mobile" name="phone" maxlength="14" onkeypress="return /^[0-9+-]+$/i.test(event.key)" placeholder="Enter your mobile number" required>
                         </div>
 
                     </div>
@@ -294,7 +295,7 @@
                     <div class="form-group mt-4">
                         <label for="description">Description: </label>
                         <textarea class="form-control" id="description" rows="3"
-                            placeholder="Enter a description"></textarea>
+                            placeholder="Enter a description" maxlength="1000" name="message" required></textarea>
                     </div>
 
 
@@ -304,16 +305,22 @@
                             <div class="file-select">
                                 <div class="file-select-button" id="fileName">Choose File</div>
                                 <div class="file-select-name" id="noFile">No file chosen...</div>
-                                <input type="file" name="chooseFile" id="chooseFile">
+                                <input type="file" name="fileInput" id="chooseFile" required>
                             </div>
                         </div>
                     </div>
-
-
+                    <input type="hidden" name="pagename" value="5">
+                    <div class="g-recaptcha mt-3" data-sitekey="6LekdHEpAAAAAN5FrOIsTeUG3G-0SQpYZJqCkB6J">
+                    </div>
                     <div class="applyjob-btn">
-                        <a href="#0" class="btn--base">Apply Now</a>
+                        <button type="submit" name="submit" class="btn--base">
+                            Apply Now
+                        </button>
                     </div>
                 </form>
+                <div id="responseMsg" style="margin-top: 8rem !important">
+
+                </div>
             </div>
 
         </div>
@@ -433,6 +440,7 @@
 
     <!-- main -->
     <script src="assets/js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
         $('#chooseFile').bind('change', function () {
             var filename = $("#chooseFile").val();

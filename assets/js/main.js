@@ -1,10 +1,13 @@
 $(document).ready(function () {
   $("#contactForm").on("submit", function (e) {
-    var formData = $(this).serialize();
+    $(".loader-container").show();
+    var formData = new FormData($(this)[0]);
     $.ajax({
       type: "post",
       url: "sendmail.php",
       data: formData,
+      processData: false,
+      contentType: false,
       success: function (res) {
         let data = JSON.parse(res);
         grecaptcha.reset();
@@ -15,6 +18,7 @@ $(document).ready(function () {
               "</div>"
           );
           $("#contactForm")[0].reset();
+          $('#chooseFile').val('');
         } else {
           $("#responseMsg").html(
             '<div class="alert alert-danger" role="alert">' +
@@ -23,6 +27,10 @@ $(document).ready(function () {
           );
         }
       },
+      complete: function() {
+        // Hide loader
+        $(".loader-container").hide();
+      }
     });
     e.preventDefault();
   });
