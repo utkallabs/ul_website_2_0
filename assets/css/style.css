@@ -4062,6 +4062,55 @@ div.marquee>a>img {
 /*--------------------------------------------------------------
   /////////////  Product  end  ///////////////
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+  /////////////  AI Expo start  ///////////////
+--------------------------------------------------------------*/
+
+.aiexpo-sec {
+  background-color: #FBFCFF;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.aiexpo-container{
+  display: flex;
+  background-color: #FBFCFF;
+}
+.card-deck-ai {
+  padding: 0 160px 0 160px;
+}
+.aiexpo-card .know-more-btn{
+  border-radius: 5px;
+  background-color: transparent;
+  gap: 7px;
+  color: #003939 !important;
+  border-color: #003939 !important;
+}
+.aiexpo-card .know-more-btn:hover{
+  background-color: #003030;
+  color: #ffffff !important;
+ 
+}
+
+.text-green{
+  color: #003939;
+}
+
+.aiexpo-card .domain{
+  color: #666666;
+}
+@media(max-width:1200px){
+  .solutions img{
+display: none;
+  }
+}
+.aiexpo-thumb img{
+ max-height:300px;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+  /////////////  AI Expo end  ///////////////
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
   /////////////  Solution start  ///////////////
