@@ -188,12 +188,12 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <div class="breadcrumb-hero">
             <div class="container">
 
-                <h2>Form</h2>
+                <h2>AI EXPO</h2>
                 <div class="breadcrumb-area">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Form</li>
+                            <li class="breadcrumb-item active" aria-current="page">AI EXPO</li>
 
                         </ol>
                     </nav>
@@ -214,43 +214,48 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                     <img src="assets/images/expo.png">
                 </div>
                 <div class="col-lg-6">
-                    <form class="Waitlist form">
+                    <form class="Waitlist form launchlist-form" action="https://getlaunchlist.com/s/WSZRVh"
+                        method="POST">
                         <div class="bg-gray shadow p-5">
                             <h3 class="text-green mb-4 ">Fill out the form to check out our products.</h3>
                             <div class="mb-3">
                                 <label for="validationTextarea" class="form-label">Name*</label>
-                                <input type="name" class="form-control" id="validationTextarea" required>
+                                <input type="name" name="name" class="form-control" id="validationTextarea" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address*</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" required
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1" required
                                     aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Company Name</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <input type="text" name="company-name" class="form-control" id="exampleInputPassword1">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Position</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <input type="text" name="position" class="form-control" id="exampleInputPassword1">
                             </div>
-                             <div class="mb-3 d-flex"><p class="mb-0 me-2">Follow us:</p>
-                            <script src="https://platform.linkedin.com/in.js" type="text/javascript">   lang: en_US </script>
-                            <script type="IN/FollowCompany" data-id="76352136" data-counter="right"></script></div>
+                            <div class="mb-3 d-flex">
+                                <p class="mb-0 me-2">Follow us:</p>
+                                <script src="https://platform.linkedin.com/in.js"
+                                    type="text/javascript">   lang: en_US </script>
+                                <script type="IN/FollowCompany" data-id="76352136" data-counter="right"></script>
+                            </div>
 
                             <div class=" mb-3 align-items-center justify-content-between">
                                 <div class="form-check d-flex align-items-center">
-                                    <input type="checkbox" class="form-check-input me-2 border-3 mt-0"
+                                    <input type="checkbox" name="newsletter" class="form-check-input me-2 border-3 mt-0"
                                         id="exampleCheck1">
                                     <label class="form-check-label m-0" for="exampleCheck1">Subscribe to our
                                         newsletter</label>
                                 </div>
-                               
+
                             </div>
                             <div class="form-check mb-4 d-flex align-items-center">
-                                <input type="checkbox" class="form-check-input me-2 border-3 mt-0"
-                                    id="exampleCheck1" required>
-                                <label class="form-check-label m-0" for="exampleCheck1">I agree to the <a href="" class="text-primary text-decoration-underline">terms and conditions</a>*</label>
+                                <input type="checkbox" name="terms-conditions"
+                                    class="form-check-input me-2 border-3 mt-0" id="exampleCheck1" required>
+                                <label class="form-check-label m-0" for="exampleCheck1">I agree to the <a href=""
+                                        class="text-primary text-decoration-underline">terms and conditions</a>*</label>
                             </div>
                             <button type="submit" name="submit" class="btn--base px-5 w-100">
                                 Submit</button>
