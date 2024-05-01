@@ -50,6 +50,9 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- bing search engine  -->
     <meta name="msvalidate.01" content="66F1FC2FBD2F6026A58876CBED73A077" />
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </head>
 
 <body>
@@ -194,7 +197,6 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">AI EXPO</li>
-
                         </ol>
                     </nav>
                 </div>
@@ -255,7 +257,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                                 <input type="checkbox" name="terms-conditions"
                                     class="form-check-input me-2 border-3 mt-0" id="exampleCheck1" required>
                                 <label class="form-check-label m-0" for="exampleCheck1">I agree to the <a href=""
-                                        class="text-primary text-decoration-underline">terms and conditions</a>*</label>
+                                        class="text-primary text-decoration-underline" data-bs-toggle="modal" data-bs-target="#Expo-terms-conditions">terms and conditions</a>*</label>
                             </div>
                             <button type="submit" name="submit" class="btn--base px-5 w-100">
                                 Submit</button>
@@ -265,7 +267,32 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
             </div>
         </div>
     </solution>
-
+  
+  <!-- Modal -->
+  <div class="modal fade" id="Expo-terms-conditions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+<ul>
+    <li class="d-flex mb-2"><i
+        class="fa-solid border-0 fa-arrow-right  border mt-1 me-2"></i><span>The captured information in this form is not going to be shared with anyone except UtkalLabs and it's associates.</span></li>
+    <li class="d-flex mb-2"><i
+        class="fa-solid border-0 fa-arrow-right  border mt-1 me-2"></i><span>You will receive monthly newsletter in your email from Utkal Labs.</span></li>
+    <li class="d-flex mb-2"><i
+        class="fa-solid border-0 fa-arrow-right  border mt-1 me-2"></i><span>You may then unsubscribe to the newsletter by sending a request to the sender email.</span></li>
+    <li class="d-flex mb-2"><i
+        class="fa-solid border-0 fa-arrow-right  border mt-1 me-2"></i><span>By default, you'll be added in the queue for early launch of PredictX - a AI based project cost calculator app. This is one of a kind app which uses complex algorithms and AI models to predict a very closely accurate timeline for your project idea. It also shares you the details of the cost you may incur.</span></li>
+    <li class="d-flex"><i
+        class="fa-solid border-0 fa-arrow-right  border mt-1 me-2"></i><span>Our team may contact you for feedback, announcement of PredictX or any future products and for other reasons.</span></li>
+</ul>       
+ </div>
+      </div>
+    </div>
+  </div>
 
     <!--====================@@ Start Footer @@====================-->
     <footer class="footer-section pt-120">
