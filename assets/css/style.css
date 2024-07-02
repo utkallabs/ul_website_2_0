@@ -4059,6 +4059,26 @@ div.marquee>a>img {
     position: relative;
 }
 
+/* .product .icon {
+background: #dbdbdb;
+width: 4em;
+height: 4em;
+border-radius: 50%;
+} */
+
+.product .icon i{
+  font-size: 2em;
+  color: #003939;
+}
+
+.product .icon-bg{
+  width: 4em;
+  height: 4em;
+  background-color: #e0e7f9;
+}
+
+
+
 /*--------------------------------------------------------------
   /////////////  Product  end  ///////////////
 --------------------------------------------------------------*/
@@ -4209,3 +4229,5 @@ overflow: auto;
     display: none !important;
   }
 }
+
+
