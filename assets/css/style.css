@@ -3744,9 +3744,9 @@ Contact Page /////
 --------------------------------------------------------------*/
 
 .footer-section {
-  background: url(../images/map.png) no-repeat center fixed;
-  -webkit-background-size: cover;
-  background-color: #343434;
+  background: url(/assets/images/footer/bg_top.png) no-repeat top left fixed, url(/assets/images/footer/bg-bottom.png) no-repeat bottom right fixed ;
+  /* -webkit-background-size: cover; */
+  background-color: #121212;
   color: #dbdbdb;
   overflow: hidden;
   position: relative;
@@ -3845,7 +3845,7 @@ Contact Page /////
   line-height: 28px;
   display: inline-block;
   text-align: center;
-  border: 1px solid #dbdbdb;
+  border: 1px solid #03827A;
   border-radius: 50%;
   color: #dbdbdb;
   -webkit-transition: all 0.3s;
@@ -3891,10 +3891,10 @@ Contact Page /////
   justify-content: end ;
 }
 .copyright-wrapper {
-  background-color: #040404;
+  border-top: 1px solid #363636;
   font-size: 14px;
   padding: 40px 0;
-  margin-top: 120px;
+  /* margin-top: 120px; */
 }
 
 @media only screen and (max-width: 991px) {
@@ -3931,8 +3931,52 @@ Contact Page /////
 }
 
 
+
+
+
+
+.line-container {
+  position: absolute;
+  width: 125px; /* Adjust based on your design */
+  height: 130px; /* Adjust based on your design */
+ 
+  bottom: 200px;
+  right: 300px;
+  z-index: 1000;
+}
+
+.line-vertical {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 60px; /* Adjust the vertical line height */
+  background-color: #03827A;
+}
+
+.line-diagonal {
+  position: absolute;
+  bottom: 60px; /* Position at the top of the vertical line */
+  left: 0;
+  width: 1px;
+  height: 80px; /* Adjust the diagonal line length */
+  background-color: #03827A;
+  transform: rotate(45deg); /* Rotate to create the bend */
+  transform-origin: bottom left;
+}
+
+.circle{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-style: solid;
+  border-color:#03827A;
+  border-radius: 50%;
+}
+
+
 /*--------------------------------------------------------------
-  /////////////  00. Footersection Start  ///////////////
+  /////////////  00. Footersection end  ///////////////
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
   /////////////  privacypolicy Start  ///////////////
@@ -4229,5 +4273,3 @@ overflow: auto;
     display: none !important;
   }
 }
-
-
