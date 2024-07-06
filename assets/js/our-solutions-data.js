@@ -2,75 +2,67 @@ const data = [
     {
         title: "Experts Marketplace",
         domain: "#Marketplace #Freelance",
-        descprition:
-            "A dynamic platform designed to bridge the gap between professional expertise and project needs.",
-        detailLink: "",
-        techStack: "Angular, NodeJS, MySQL"
+        // descprition:
+        //     "A dynamic platform designed to bridge the gap between professional expertise and project needs.",
+        imageLink: "assets/images/solution/experts-marketplace.png",
+        detailLink: "solution-experts-marketplace.html",
+        techStack: "Angular, Node.js, GraphQL, MySQL"
     },
     {
-        title: "Employee Management System",
-        domain: "#HR #HRMS",
-        descprition:
-            "Employee Management System (EMS) is designed to streamline your HR processes and empower your workforce management.",
-        detailLink: "",
-        techStack: "DotNetCore, SQL Server"
+        title: "Ads Management System",
+        domain: "#AdTech #DigitalMarketing #DataAnalytics",
+        // descprition:
+        //     "Employee Management System (EMS) is designed to streamline your HR processes and empower your workforce management.",
+        detailLink: "solution-ads-management-system.html",
+        imageLink: "assets/images/solution/ads-management-system.png",
+        techStack: "Node.js, Ruby on Rails, MySQL, Redis, React.js, Google Ad Manager API, GraphQL"
     },
     {
-        title: "Project Management",
-        domain: "#PM #Project",
-        descprition:
-            "Effective project management via Planning, Execution, Monitoring & Collaboration and options for ROI Optimization & Risk Mitigation.",
-        detailLink: "",
-        techStack: "NodeJS, React, MySQL, Mongo"
+        title: "Music Industry Analytics App",
+        domain: "#MusicAnalytics #MusicIndustryInsights",
+        // descprition:
+        //     "Effective project management via Planning, Execution, Monitoring & Collaboration and options for ROI Optimization & Risk Mitigation.",
+        detailLink: "solution-music-industry-analytics.html",
+        imageLink: "assets/images/solution/music-industry-analytics.png",
+        techStack: "Python, Django, Node.js, PostgreSQL, MongoDB, Angular, D3.js"
     },
     {
-        title: "eLearning",
-        domain: "#Education",
-        descprition:
-            "An interactive and personalized learning experiences, with a vast library of courses across diverse subjects for learners of all ages.",
-        detailLink: "",
-        techStack: "NodeJS, React, BlueButton"
+        title: "Real-Estate App",
+        domain: "#RealEstateTech #PropTech #RealEstateInvestment",
+        // descprition:
+        //     "An interactive and personalized learning experiences, with a vast library of courses across diverse subjects for learners of all ages.",
+        detailLink: "solution-real-estate.html",
+        imageLink: "assets/images/solution/real-estate.png",
+        techStack: "Ruby on Rails, Node.js, PostgreSQL, Elasticsearch, React.js, Redux, Google Maps API, Mapbox, Flutter"
     },
     {
-        title: "Recommendation Engine",
-        domain: "#AI #MachineLearning",
-        descprition:
-            "A vital tool for enhancing user engagement and satisfaction across digital platforms. Leveraging OpenAI’s powerful language models, such as GPT-3 and its successors",
-        detailLink: "",
-        techStack: "OpenAI, ChatGPT, NodeJS, React"
+        title: "Crypto Exchange App",
+        domain: "#FinTech #Blockchain #CryptoTrading #DeFi",
+        // descprition:
+        //     "A vital tool for enhancing user engagement and satisfaction across digital platforms. Leveraging OpenAI’s powerful language models, such as GPT-3 and its successors",
+        detailLink: "solution-crypto-exchange.html",
+        imageLink: "assets/images/solution/crypto exchange.png",
+        techStack: "Node.js, MongoDB, React.js, Redux, WebSocket, RabbitMQ"
     },
     {
-        title: "Virtual Interior Designing",
-        domain: "#InteriorDesign #Architecture",
-        descprition:
-            "Loaded with 1000s of customizations and personalizations, create futuristic interior designs at your finger-tips",
-        detailLink: "",
-        techStack: "PHP, Wordpress, VueJS"
+        title: "Healthcare App",
+        domain: "#MedTech #HealthTech #DigitalHealth",
+        // descprition:
+        //     "Loaded with 1000s of customizations and personalizations, create futuristic interior designs at your finger-tips",
+        detailLink: "solution-healthcare.html",
+        imageLink: "assets/images/solution/healthcare-app.png",
+        techStack: "Python (Django), Java (Spring Boot), PostgreSQL, MongoDB, React.js, Angular, WebRTC, Socket.IO, Swift (iOS), Kotlin (Android), HL7 FHIR, HIPAA Compliance Tools"
+    },
+    {
+        title: "Education App",
+        domain: "#EdTech #eLearning #LMS #VirtualLearning",
+        // descprition:
+        //     "Loaded with 1000s of customizations and personalizations, create futuristic interior designs at your finger-tips",
+        detailLink: "solution-education-aap.html",
+        imageLink: "assets/images/solution/education-app.png",
+        techStack: "Node.js, Python (Django), MySQL, MongoDB, React.js, Vue.js, Flutter, React Native, SCORM, xAPI, AI"
     },
 ];
 
-document.getElementById("solutions-list").innerHTML = data
-    .map(
-        (eachCard) =>
-            `<div class="eachCard">
-<div class="cardContent">
-<div class="cardInfo">
-    <h3 class="cardTitle">${eachCard.title}</h3>
-<span class="cardSubTitle">${eachCard.domain}</span>
-<p class="cardText">${eachCard.descprition}</p>
-<span class="cardFooter">${eachCard.techStack}</span>
-</div>
-</div>
-<div class="userActions">
-<button class="btn-primary">
-    <a href="${eachCard.detailLink}" target="_blank" rel="noopener noreferrer">DETAILS</a>
-    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
-        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd"
-            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-    </svg>
-</button>
-</div>
-</div>`
-    )
-    .join("");
+
+    export {data};
