@@ -1,7 +1,10 @@
 import { data } from "./our-solutions-data.js"
 
-if (data.filter(d => ((d.techStack.indexOf("Angular") != -1) || (d.techStack.indexOf("React" != -1)) || (d.techStack.indexOf("React Native" != -1))).length > 1)) {
-    document.getElementById("solutions-list").innerHTML = data.filter(d => ((d.techStack.indexOf("Angular") != -1) || (d.techStack.indexOf("React" != -1)) || (d.techStack.indexOf("React Native" != -1))))
+//console.log(data.filter(d => ((d.techStack.indexOf("RPA") != -1))));
+
+if (data.filter(d => ((d.techStack.indexOf("RPA") != -1))).length > 1) {
+
+    document.getElementById("solutions-list").innerHTML = data.filter(d => ((d.techStack.indexOf("RPA") != -1)))
         .map(
             (eachCard) =>
                 `<div class="card-wrapper col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30" data-technology="${eachCard.title, eachCard.techStack}">
@@ -29,3 +32,7 @@ else {
                     </div>
                 </div>`;
 }
+
+
+
+//.filter(d => d.techStack.split(',').filter(e => e == "Angular"))
