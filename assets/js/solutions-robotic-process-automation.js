@@ -2,9 +2,9 @@ import { data } from "./our-solutions-data.js"
 
 //console.log(data.filter(d => ((d.techStack.indexOf("RPA") != -1))));
 
-if (data.filter(d => ((d.techStack.indexOf("RPA") != -1))).length > 1) {
+if (data.filter(d => ((d.techStack.indexOf("MySQL") != -1))).length > 1) {
 
-    document.getElementById("solutions-list").innerHTML = data.filter(d => ((d.techStack.indexOf("RPA") != -1)))
+    document.getElementById("solutions-list").innerHTML = data.filter(d => ((d.techStack.indexOf("MySQL") != -1)))
         .map(
             (eachCard) =>
                 `<div class="card-wrapper col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30" data-technology="${eachCard.title, eachCard.techStack}">

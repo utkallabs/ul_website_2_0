@@ -1908,7 +1908,7 @@ input::placeholder {
 --------------------------------------------------------------*/
 
 .service {
-  padding: 5%;
+  padding:  5% 0;
   display: flex;
   justify-content: space-around;
   flex-direction: row-reverse;
