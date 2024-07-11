@@ -3845,9 +3845,9 @@ Contact Page /////
     )
     no-repeat;
   background-position: inherit;
-  -webkit-mask: url(#mask-firefox) center/contain no-repeat;
-  mask: url(#mask-firefox) center/contain no-repeat;
-  animation: shiningEffect 4s linear infinite;
+  -webkit-mask: url(#mask-image-container) center/contain no-repeat;
+  mask: url(#mask-image-container) center/contain no-repeat;
+  animation: shiningEffect 12s linear infinite;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.5px) {
@@ -3865,10 +3865,10 @@ Contact Page /////
 @keyframes shiningEffect {
   0%,
   100% {
-    background-position: calc(0px - var(--image-width));
+    background-position: calc(-1200px - var(--image-width));
   }
   50% {
-    background-position: calc(var(--image-width) - 200px);
+    background-position: calc(var(--image-width) + 800px);
   }
 }
 
