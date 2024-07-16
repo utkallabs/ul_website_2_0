@@ -481,9 +481,9 @@
                     </div>
                 </div>
                 <div
-                    class="col-xl-5 col-lg-6 col-md-12  order-xl-2 order-lg-3 order-md-3 order-sm-3 order-xs-3 mx-auto">
-                    <div class="img_container mx-auto">
-                        <img class="img_monuments mt-md-5 mt-sm-5 mt-20" src="assets/images/footer/footer_img.png">
+                    class="col-xl-5 col-lg-6 col-md-12  order-xl-2 order-lg-3 order-md-3 order-sm-3 order-xs-3 mx-auto d-md-flex d-lg-block mt-md-5 mt-lg-0 justify-content-center">
+                    <div class="img_container mx-auto top-5">
+                        <img class="img_monuments mt-md-5 mt-sm-5 mt-20" src="assets/images/footer/footer_img.png" id="img_monuments">
                         <img src="assets/images/footer/pointer.png" id="pointer_left" alt="">
                         <img src="assets/images/footer/pointer.png" id="pointer_right" alt="">
                         <div id="usa_address" class="address">
@@ -494,6 +494,18 @@
                             <h2>INDIA</h2>
                             <p>D110, Raghunathpur <br> Bhubaneswar, Odisha - 751024 </p>
                         </div>
+                        <svg height="0">
+                            <!-- THE mask -->
+                            <mask id="mask-image-container">
+                                <image id="mask-image" xlink:href="assets/images/footer/footer_img.png" filter="url(#filter)" /> 
+                            </mask>
+                            
+                            <!-- the filter to make the image white -->
+                            <filter id="filter">
+                                <feFlood flood-color="white" />
+                                <feComposite in2="SourceAlpha" operator="in" />
+                            </filter>
+                        </svg>
                     </div>
                 </div>
             </div>
