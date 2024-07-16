@@ -3817,8 +3817,24 @@ Contact Page /////
   background-color: #00d7d9;
 }
 
+.img_container_main {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.5px) {
+  .img_container_main {
+    display: flex;
+    justify-content: center;
+  }
+  .img_container {
+    left: 20px;
+  }
+}
+
 .img_container {
   position: relative;
+  top: 40px;
+  margin: 0 auto;
 }
 
 .img_container::after {
@@ -3850,15 +3866,9 @@ Contact Page /////
   animation: shiningEffect 12s linear infinite;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991.5px) {
-  .img_container::after {
-    top: 48px;
-  }
-}
-
 @media screen and (min-width: 991px) {
   .img_container {
-    top: 0;
+    top: 25px;
   }
 }
 
