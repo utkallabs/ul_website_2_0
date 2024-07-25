@@ -56,8 +56,8 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
             <!-- .nav-menu end-->
         </div>
     </header>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/bootstrap.min.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
     `;
 
 class Header extends HTMLElement {

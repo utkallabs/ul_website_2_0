@@ -52,18 +52,20 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     </div>
 </div>
 </div>
+<script src="../../../assets/js/bootstrap.min.js" defer></script>
+    <script src="../../../assets/js/main.js" defer></script>
 `;
-
+// import path from "../../../assets/js/bootstrap.min.js"
 class Topbar extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    const shadowRoot = this.attachShadow({ mode: "closed" });
+    connectedCallback() {
+        const shadowRoot = this.attachShadow({ mode: "closed" });
 
-    shadowRoot.appendChild(topbarTemplate.content);
-  }
+        shadowRoot.appendChild(topbarTemplate.content);
+    }
 }
 
 customElements.define("topbar-component", Topbar);
