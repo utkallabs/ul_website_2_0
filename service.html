@@ -1,171 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Utkal Labs</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/images/fav.png"
+      type="image/x-icon"
+    />
 
     <!-- GoogleFont -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- All Assets Css File -->
     <!-- bootstrap css link -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
     <!-- line-awesom css link //for icon use-->
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/
-landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/
+landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <!-- swipper css link -->
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
 
     <!-- lightcase css links -->
-    <link rel="stylesheet" href="assets/css/lightcase.css">
+    <link rel="stylesheet" href="assets/css/lightcase.css" />
 
     <!-- animate.css // form part-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/animate.css" />
 
     <!-- nice select css// client slider-->
-    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
 
     <!-- aos.css -->
-    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/aos.css" />
 
     <!-- main style css  -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
 
     <!-- bing search engine  -->
     <meta name="msvalidate.01" content="66F1FC2FBD2F6026A58876CBED73A077" />
+  </head>
 
-</head>
-
-<body>
-
-
+  <body>
     <!--@@@ Modal Start @@@-->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
-                    <button type="button" class="close close-css" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <form id="contactForm" method="post">
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name"
-                                maxlength="100" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email"
-                                maxlength="100" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone:</label>
-                            <input type="text" class="form-control" id="phone" name="phone"
-                                placeholder="Enter phone number" maxlength="14"
-                                onkeypress="return /^[0-9+-]+$/i.test(event.key)" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea class="form-control" id="message" name="message" rows="3"
-                                placeholder="Enter message" maxlength="1000" required></textarea>
-                        </div>
-                        <div class="g-recaptcha mt-3" data-sitekey="6LekdHEpAAAAAN5FrOIsTeUG3G-0SQpYZJqCkB6J"></div>
-                        <div class="modal-footer">
-                            <button type="submit" name="submit" class="btn btn-primary">Send message</button>
-                        </div>
-                        <div id="responseMsg" class="mt-2">
-
-                        </div>
-                    </form>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+            <button
+              type="button"
+              class="close close-css"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="contactForm" method="post">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Enter Name"
+                  maxlength="100"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Email"
+                  maxlength="100"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter phone number"
+                  maxlength="14"
+                  onkeypress="return /^[0-9+-]+$/i.test(event.key)"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="3"
+                  placeholder="Enter message"
+                  maxlength="1000"
+                  required
+                ></textarea>
+              </div>
+              <div
+                class="g-recaptcha mt-3"
+                data-sitekey="6LekdHEpAAAAAN5FrOIsTeUG3G-0SQpYZJqCkB6J"
+              ></div>
+              <div class="modal-footer">
+                <button type="submit" name="submit" class="btn btn-primary">
+                  Send message
+                </button>
+              </div>
+              <div id="responseMsg" class="mt-2"></div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
     <!--//// Modal end ////-->
-
-
 
     <!-- /*--------------------------------------------------------------
 # Start topnavbar
 --------------------------------------------------------------*/ -->
 
-    <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
-        <div class="container2 d-flex align-items-center justify-content-between">
-            <div class="upper-section">
-
-                <div class="letside-topnavbar">
-
-                    <!-- <div class="topnavbar-email">
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:sales@utkallabs.com">
-                        <span>sales@utkallabs.com</span></a>
-                </div> -->
-
-                    <!-- <div class="topnavbar-call">
-                    <i class="fa fa-phone"></i>
-                    <a href="tel:+91 93383 08255">
-                        <span>+91 93383 08255</span></a>
-
-                </div> -->
-
-                    <div class="topnavbar-call2">
-                        <a href="mailto:sales@utkallabs.com">
-                            <img src="assets/images/gmail.png" alt="Email" width="18" height="18">
-
-                            <span>sales@utkallabs.com</span></a>
-                    </div>
-
-                    <div class="topnavbar-call2">
-                        <a href="tel:+91 93383 08255">
-                            <img src="assets/images/india.png" alt="INDIA Flag" width="18" height="18">
-                            <span>+91 93383 08255</span></a>
-                    </div>
-
-                    <div class="topnavbar-call2">
-                        <a href="tel:+1 32390 05072">
-                            <img src="assets/images/usa.png" alt="USA Flag" width="18" height="18">
-                            <span>+1 32390 05072</span></a>
-                    </div>
-
-
-                </div>
-
-                <div class="right-side">
-                    <div class="search-bar">
-                        <form class="header-search-form">
-                            <input type="search" name="keyword" placeholder="Search" autocomplete="off">
-                            <button class="header-search-btn"><i class="las la-search"></i></button>
-                        </form>
-                    </div>
-
-                    <div class="schedule-meeting">
-                        <img src="assets/images/icon/calendar.png">
-                        <!-- <i class="fa-regular fa-calendar"></i> -->
-                        <h1><a href="https://calendly.com/udaya-das" target=”_blank”>Schedule a meeting</a></h1>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+    <special-top-header></special-top-header>
 
     <!-- /*--------------------------------------------------------------
 # end topnavbar
@@ -174,63 +167,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!--/*--------------------------------------------------------------
 # Navbar Header
 --------------------------------------------------------------*/ -->
-    <header id="header" class="fixed-top">
-        <div class="container2 d-flex ">
-            <!--  logo -->
-            <a href="index.html" class="logo mr-auto">
-                <img src="assets/images/logo.png" alt=""></a>
-            <!--  nav start-->
-            <nav class="nav-menu d-none d-lg-block">
-                <ul class="nav-list">
-                    <!-- added a class for active -->
-                    <li class="#"><a href="index.html">Home</a></li>
-                    <li class="#"><a href="aboutus.html">About Us</a></li>
-                     <li class="drop-down active"><a>Services<i class="las la-angle-down"></i></a>                        <ul>
-                            <li><a href="service.html">All Services</a></li>
-                            <li><a href="service-web-mobile-application.html">Web & Mobile Application</a></li>
-                            <li><a href="service-robotic-process-automation.html">Robotic Process Automation</a>
-                            </li>
-                            <li><a href="service-blockchain-nft.html">Blockchain & NFT</a></li>
-                            <li><a href="service-digital-transformation.html">Digital Transformation</a></li>
-                            <li><a href="service-devops-consulting.html">DevOps Consulting</a></li>
-                            <li><a href="service-enterprise-solution.html">Enterprise Solution</a></li>
-                            <li><a href="service-alml-solution.html">Al/ML Solution</a></li>
-                            <li><a href="service-qa-services.html">QA Services</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="drop-down">
-                        <a href="">Publications<i class="las la-angle-down"></i></a>
-                        <ul>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="product.html">Products</a></li>
-                            <li><a href="case-studies.html">Case Studies</a></li>
-                            <li><a href="our-solutions.html">Our Solutions</a></li>
-                            <li><a href="tech-byte.html">Tech Bytes</a></li>
-
-                        </ul>
-                    </li>
-
-
-                    <li class="drop-down"><a href="#">Activities<i class="las la-angle-down"></i></a>
-                        <ul>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="newsletter.html">Newsletter</a></li>
-
-                        </ul>
-                    </li>
-
-                    <li><a href="career.html">Career</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-            </nav>
-            <!-- .nav-menu end-->
-
-
-        </div>
-    </header>
-
+    <special-header></special-header>
 
     <!-- /*--------------------------------------------------------------
 # Navbar Header end
@@ -238,171 +175,236 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
-        <div class="breadcrumb-hero">
-            <div class="container">
-
-                <h2>All Service</h2>
-                <div class="breadcrumb-area">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">All Services</li>
-
-                        </ol>
-                    </nav>
-                </div>
-
-            </div>
+      <div class="breadcrumb-hero">
+        <div class="container">
+          <h2>All Service</h2>
+          <div class="breadcrumb-area">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  All Services
+                </li>
+              </ol>
+            </nav>
+          </div>
         </div>
-
-
+      </div>
     </section>
     <!-- ======= Breadcrumbs ======= -->
 
-
-
     <!--~~~~~~~~~~~~~~~~~Start Service All~~~~~~~~~~~~~~~~~~~-->
     <section class="service-section two ptb-120">
-        <div class="container">
-            <div class="row justify-content-center mb-30-none">
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
-                    <div class="service-item three">
-                        <div class="service-icon">
-                            <img src="assets/images/service-icon/1.Web & Mobile Application.png" alt="icon">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="title"><a href="service-web-mobile-application.html">Web & Mobile Application</a>
-                            </h3>
-                            <p>We have expertise in customized web & mobile </p>
-                            <div class="service-btn">
-                                <a href="service-web-mobile-application.html" class="custom-btn" target=”_blank”>Learn
-                                    More
-                                    <i class="las la-long-arrow-alt-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row justify-content-center mb-30-none">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+            <div class="service-item three">
+              <div class="service-icon">
+                <img
+                  src="assets/images/service-icon/1.Web & Mobile Application.png"
+                  alt="icon"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="title">
+                  <a href="service-web-mobile-application.html"
+                    >Web & Mobile Application</a
+                  >
+                </h3>
+                <p>We have expertise in customized web & mobile</p>
+                <div class="service-btn">
+                  <a
+                    href="service-web-mobile-application.html"
+                    class="custom-btn"
+                    target="”_blank”"
+                    >Learn More <i class="las la-long-arrow-alt-right ml-2"></i
+                  ></a>
                 </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
-                    <div class="service-item three">
-                        <div class="service-icon">
-                            <img src="assets/images/service-icon/2.RoboticProcessAutomation.png" alt="icon">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="title"><a href="service-robotic-process-automation.html">Robotic Process
-                                    Automation</a></h3>
-                            <p>Robotic Process Automation (RPA) is a technology that </p>
-                            <div class="service-btn">
-                                <a href="service-robotic-process-automation.html" class="custom-btn"
-                                    target=”_blank”>Learn More
-                                    <i class="las la-long-arrow-alt-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
-                    <div class="service-item three">
-                        <div class="service-icon">
-                            <img src="assets/images/service-icon/3.Blockchain & NFT.png" alt="icon">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="title"><a href="service-blockchain-nft.html">Blockchain & NFT</a></h3>
-                            <p>With an immaculate expertise on Web3, a next generation</p>
-                            <div class="service-btn">
-                                <a href="service-blockchain-nft.html" class="custom-btn" target=”_blank”>Learn More
-                                    <i class="las la-long-arrow-alt-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
-                    <div class="service-item three">
-                        <div class="service-icon">
-                            <img src="assets/images/service-icon/4.Digital Transformation.png" alt="icon">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="title"><a href="service-digital-transformation.html">Digital Transformation</a>
-                            </h3>
-                            <p>We help you make the ultimate impact by keeping you </p>
-                            <div class="service-btn">
-                                <a href="service-digital-transformation.html" class="custom-btn" target=”_blank”>Learn
-                                    More
-                                    <i class="las la-long-arrow-alt-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
-                    <div class="service-item three">
-                        <div class="service-icon">
-                            <img src="assets/images/service-icon/5.DevOps consulting.png" alt="icon">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="title"><a href="service-devops-consulting.html">DevOps Consulting</a></h3>
-                            <p>DevOps helps create a high-performance IT capability</p>
-                            <div class="service-btn">
-                                <a href="service-devops-consulting.html" class="custom-btn" target=”_blank”>Learn More
-                                    <i class="las la-long-arrow-alt-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
-                    <div class="service-item three">
-                        <div class="service-icon">
-                            <img src="assets/images/service-icon/6.Enterprise Solution.png" alt="icon">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="title"><a href="service-enterprise-solution.html">Enterprise Solution</a></h3>
-                            <p>We have expertise in developing comprehensive</p>
-                            <div class="service-btn">
-                                <a href="service-enterprise-solution.html" class="custom-btn" target=”_blank”>Learn More
-                                    <i class="las la-long-arrow-alt-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
-                    <div class="service-item three">
-                        <div class="service-icon">
-                            <img src="assets/images/service-icon/7.AlML Solution.png" alt="icon">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="title"><a href="service-alml-solution.html">Al/ML Solution</a></h3>
-                            <p>AI/ML Solution refers to the use of advanced algorithms </p>
-                            <div class="service-btn">
-                                <a href="service-alml-solution.html" class="custom-btn" target=”_blank”>Learn More
-                                    <i class="las la-long-arrow-alt-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
-                    <div class="service-item three">
-                        <div class="service-icon">
-                            <img src="assets/images/service-icon/8.QA Services.png" alt="icon">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="title"><a href="service-qa-services.html">QA Services</a></h3>
-                            <p>QA services, or Quality Assurance services, involve </p>
-                            <div class="service-btn">
-                                <a href="service-qa-services.html" class="custom-btn" target=”_blank”>Learn More
-                                    <i class="las la-long-arrow-alt-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+            <div class="service-item three">
+              <div class="service-icon">
+                <img
+                  src="assets/images/service-icon/2.RoboticProcessAutomation.png"
+                  alt="icon"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="title">
+                  <a href="service-robotic-process-automation.html"
+                    >Robotic Process Automation</a
+                  >
+                </h3>
+                <p>Robotic Process Automation (RPA) is a technology that</p>
+                <div class="service-btn">
+                  <a
+                    href="service-robotic-process-automation.html"
+                    class="custom-btn"
+                    target="”_blank”"
+                    >Learn More <i class="las la-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+            <div class="service-item three">
+              <div class="service-icon">
+                <img
+                  src="assets/images/service-icon/3.Blockchain & NFT.png"
+                  alt="icon"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="title">
+                  <a href="service-blockchain-nft.html">Blockchain & NFT</a>
+                </h3>
+                <p>With an immaculate expertise on Web3, a next generation</p>
+                <div class="service-btn">
+                  <a
+                    href="service-blockchain-nft.html"
+                    class="custom-btn"
+                    target="”_blank”"
+                    >Learn More <i class="las la-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+            <div class="service-item three">
+              <div class="service-icon">
+                <img
+                  src="assets/images/service-icon/4.Digital Transformation.png"
+                  alt="icon"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="title">
+                  <a href="service-digital-transformation.html"
+                    >Digital Transformation</a
+                  >
+                </h3>
+                <p>We help you make the ultimate impact by keeping you</p>
+                <div class="service-btn">
+                  <a
+                    href="service-digital-transformation.html"
+                    class="custom-btn"
+                    target="”_blank”"
+                    >Learn More <i class="las la-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+            <div class="service-item three">
+              <div class="service-icon">
+                <img
+                  src="assets/images/service-icon/5.DevOps consulting.png"
+                  alt="icon"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="title">
+                  <a href="service-devops-consulting.html">DevOps Consulting</a>
+                </h3>
+                <p>DevOps helps create a high-performance IT capability</p>
+                <div class="service-btn">
+                  <a
+                    href="service-devops-consulting.html"
+                    class="custom-btn"
+                    target="”_blank”"
+                    >Learn More <i class="las la-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+            <div class="service-item three">
+              <div class="service-icon">
+                <img
+                  src="assets/images/service-icon/6.Enterprise Solution.png"
+                  alt="icon"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="title">
+                  <a href="service-enterprise-solution.html"
+                    >Enterprise Solution</a
+                  >
+                </h3>
+                <p>We have expertise in developing comprehensive</p>
+                <div class="service-btn">
+                  <a
+                    href="service-enterprise-solution.html"
+                    class="custom-btn"
+                    target="”_blank”"
+                    >Learn More <i class="las la-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+            <div class="service-item three">
+              <div class="service-icon">
+                <img
+                  src="assets/images/service-icon/7.AlML Solution.png"
+                  alt="icon"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="title">
+                  <a href="service-alml-solution.html">Al/ML Solution</a>
+                </h3>
+                <p>AI/ML Solution refers to the use of advanced algorithms</p>
+                <div class="service-btn">
+                  <a
+                    href="service-alml-solution.html"
+                    class="custom-btn"
+                    target="”_blank”"
+                    >Learn More <i class="las la-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30">
+            <div class="service-item three">
+              <div class="service-icon">
+                <img
+                  src="assets/images/service-icon/8.QA Services.png"
+                  alt="icon"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="title">
+                  <a href="service-qa-services.html">QA Services</a>
+                </h3>
+                <p>QA services, or Quality Assurance services, involve</p>
+                <div class="service-btn">
+                  <a
+                    href="service-qa-services.html"
+                    class="custom-btn"
+                    target="”_blank”"
+                    >Learn More <i class="las la-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     End-Service
@@ -412,133 +414,129 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
  4.   Start ulcreative
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="ulcreative-section pt-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-12">
-                    <div class="ulcreative-content text-center">
-
-                        <h2 class="title">Utkal Labs offers a wide scale of creative services, including brand
-                            development online marketing and lots more.</h2>
-                    </div>
-                    <div class="ulcreative-middle-area">
-                        <div class="row justify-content-center mb-80-none">
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-80">
-                                <div class="middle-item">
-                                    <div class="middle-content">
-
-                                        <div class="ulcreative-mid-area">
-                                            <h3 class="title">3+</h3>
-                                        </div>
-                                        <p>Years Of Existence</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-80">
-                                <div class="middle-item">
-                                    <div class="middle-content">
-                                        <div class="ulcreative-mid-area">
-                                            <h3 class="title">40+</h3>
-                                        </div>
-                                        <p>Software Experts</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-80">
-                                <div class="middle-item">
-                                    <div class="middle-content">
-                                        <div class="ulcreative-mid-area">
-
-                                            <h3 class="title">50+</h3>
-                                        </div>
-                                        <p>Satisfied Clients</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-80">
-                                <div class="middle-item">
-                                    <div class="middle-content">
-                                        <div class="ulcreative-mid-area">
-
-                                            <h3 class="title">50+</h3>
-                                        </div>
-                                        <p>Projects Successfully Delivered</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-12">
+            <div class="ulcreative-content text-center">
+              <h2 class="title">
+                Utkal Labs offers a wide scale of creative services, including
+                brand development online marketing and lots more.
+              </h2>
             </div>
+            <div class="ulcreative-middle-area">
+              <div class="row justify-content-center mb-80-none">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-80">
+                  <div class="middle-item">
+                    <div class="middle-content">
+                      <div class="ulcreative-mid-area">
+                        <h3 class="title">3+</h3>
+                      </div>
+                      <p>Years Of Existence</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-80">
+                  <div class="middle-item">
+                    <div class="middle-content">
+                      <div class="ulcreative-mid-area">
+                        <h3 class="title">40+</h3>
+                      </div>
+                      <p>Software Experts</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-80">
+                  <div class="middle-item">
+                    <div class="middle-content">
+                      <div class="ulcreative-mid-area">
+                        <h3 class="title">50+</h3>
+                      </div>
+                      <p>Satisfied Clients</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-80">
+                  <div class="middle-item">
+                    <div class="middle-content">
+                      <div class="ulcreative-mid-area">
+                        <h3 class="title">50+</h3>
+                      </div>
+                      <p>Projects Successfully Delivered</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    4. End ulcreative
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   5.  Start Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="process-section ptb-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-7 col-lg-8 text-center">
-                    <div class="section-header">
-                        <h2 class="section-title mb-0">Our Development Process</h2>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 text-center">
+            <div class="section-header">
+              <h2 class="section-title mb-0">Our Development Process</h2>
             </div>
-            <div class="row justify-content-center mb-30-none">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
-                    <div class="process-item text-center">
-                        <div class="process-icon">
-                            <img src="assets/images/icon/1_Discover.png" alt="icon">
-                        </div>
-
-                        <div class="process-content">
-                            <h3 class="title">Discover</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
-                    <div class="process-item text-center">
-                        <div class="process-icon">
-                            <img src="assets/images/icon/3_Build.png" alt="icon">
-                        </div>
-
-                        <div class="process-content">
-                            <h3 class="title">Design</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
-                    <div class="process-item text-center">
-                        <div class="process-icon">
-                            <img src="assets/images/icon/2_Design.png" alt="icon">
-                        </div>
-
-                        <div class="process-content">
-                            <h3 class="title">Build</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
-                    <div class="process-item text-center">
-                        <div class="process-icon">
-                            <img src="assets/images/icon/4_Deliver.png" alt="icon">
-                        </div>
-
-                        <div class="process-content">
-                            <h3 class="title">Deliver</h3>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+          </div>
         </div>
+        <div class="row justify-content-center mb-30-none">
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
+            <div class="process-item text-center">
+              <div class="process-icon">
+                <img src="assets/images/icon/1_Discover.png" alt="icon" />
+              </div>
+
+              <div class="process-content">
+                <h3 class="title">Discover</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
+            <div class="process-item text-center">
+              <div class="process-icon">
+                <img src="assets/images/icon/3_Build.png" alt="icon" />
+              </div>
+
+              <div class="process-content">
+                <h3 class="title">Design</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
+            <div class="process-item text-center">
+              <div class="process-icon">
+                <img src="assets/images/icon/2_Design.png" alt="icon" />
+              </div>
+
+              <div class="process-content">
+                <h3 class="title">Build</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
+            <div class="process-item text-center">
+              <div class="process-icon">
+                <img src="assets/images/icon/4_Deliver.png" alt="icon" />
+              </div>
+
+              <div class="process-content">
+                <h3 class="title">Deliver</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    5. End Process
@@ -547,176 +545,58 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
    6. Start About
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="about-section ptb-60">
-        <div class="container">
-            <div class="row justify-content-center align-items-center mb-30-none">
-                <div class="col-xl-6 col-lg-6 mb-30">
-
-                    <div class="about-thumb">
-                        <img src="assets/images/element/element-3_servicepage.png" alt="element">
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 mb-30">
-                    <div class="about-content">
-                        <h2 class="title">Have a project in mind? <span class="text--base">Let's connect</span></h2>
-                        <!-- <p class="para">Welcome to Utkal Labs, a software development organisation, that will help
-                                to digitise your business </p> -->
-                        <p>Welcome to Utkal Labs, a software development organization, that will help to digitize your
-                            business
-                            by offering all the prime services such as Web & Mobile Applications, Enterprise
-                            Solutions, DevOps Consulting, Digital Transformation, and AI/ML solutions.
-                        </p>
-
-                        <div class="about-btn">
-                            <a href="#" class="btn--base" data-toggle="modal" data-target="#myModal">Send
-                                Message</a>
-
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center align-items-center mb-30-none">
+          <div class="col-xl-6 col-lg-6 mb-30">
+            <div class="about-thumb">
+              <img
+                src="assets/images/element/element-3_servicepage.png"
+                alt="element"
+              />
             </div>
-        </div>
-    </section>
+          </div>
+          <div class="col-xl-6 col-lg-6 mb-30">
+            <div class="about-content">
+              <h2 class="title">
+                Have a project in mind?
+                <span class="text--base">Let's connect</span>
+              </h2>
+              <!-- <p class="para">Welcome to Utkal Labs, a software development organisation, that will help
+                                to digitise your business </p> -->
+              <p>
+                Welcome to Utkal Labs, a software development organization, that
+                will help to digitize your business by offering all the prime
+                services such as Web & Mobile Applications, Enterprise
+                Solutions, DevOps Consulting, Digital Transformation, and AI/ML
+                solutions.
+              </p>
 
+              <div class="about-btn">
+                <a
+                  href="#"
+                  class="btn--base"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  >Send Message</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   6.  End About
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
     <!--====================@@ Start Footer @@====================-->
-      <footer class="footer-section pt-120">
-
-            <div class="waves_left">
-                <img src="/assets/images/footer/bg_left_top.png" class="wave_left" id="wave_left1">
-                <img src="/assets/images/footer/bg_left_top.png" class="wave_left" id="wave_left2">
-                <img src="/assets/images/footer/bg_left_top.png" class="wave_left" id="wave_left3">
-                <img src="/assets/images/footer/bg_left_top.png" class="wave_left" id="wave_left4">
-            </div>
-            
-            <div class="waves_right">
-                <img src="/assets/images/footer/bg_right_bottom.png" class="wave_right" id="wave_right1">
-                <img src="/assets/images/footer/bg_right_bottom.png" class="wave_right" id="wave_right2">
-                <img src="/assets/images/footer/bg_right_bottom.png" class="wave_right" id="wave_right3">
-                <img src="/assets/images/footer/bg_right_bottom.png" class="wave_right" id="wave_right4">
-            </div>
-            
- 
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-6 col-md-6 order-xl-1 order-lg-1 order-md-1 order-sm-1 order-xs-1 pe-5 ">
-                    <div class="footer-widget pr-5">
-                        <div class="footer-logo">
-                            <a href="index.html">
-                                <img src="assets/images/logo-two-white.png" alt="site-logo">
-
-                            </a>
-                        </div>
-                        <p>We are constantly evolving and committed to serve the best to our customers.
-                            Delivering
-                            quality solutions has been a top priority
-                            for us.</p>
-
-                        <ul class="footer-social">
-                            <li class="linkedin"><a href="https://www.linkedin.com/company/utkal-labs" target=”_blank”
-                                    class="d-flex justify-content-center align-items-center"><i
-                                        class="lab la-linkedin-in"></i></a>
-
-                            </li>
-                            <li class="facebook"><a href="https://www.facebook.com/utkallabsindia/" target=”_blank”
-                                    class="d-flex justify-content-center align-items-center">
-                                    <i class='lab la-facebook-f'></i></a>
-                            </li>
-
-                            <li class="twitter">
-                                <a href="https://twitter.com/UtkalLabs" target=”_blank”
-                                    class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-brands fa-x-twitter"></i></a>
-                            </li>
-                            <li class="instagram">
-                                <a href="https://www.instagram.com/utkallabs/" target=”_blank”
-                                    class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div
-                    class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 order-xl-3 order-lg-2 order-md-2 order-sm-2 order-xs-2">
-                    <div class="row ps-xl-5 mt-md-0 mt-sm-5 mt-5">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                            <div class="footer-widget">
-                                <h4 class="title">Company</h4>
-                                <ul class="footer-list">
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="newsletter.html">Newsletter</a></li>
-                                    <li><a href="case-studies.html">Case Studies</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" style="margin-bottom: 40px;">
-                            <div class="footer-widget">
-                                <h4 class="title">Quick Links </h4>
-                                <ul class="footer-list">
-                                    <li><a href="http://blog.utkallabs.com" target="_blank">Blogs</a></li>
-                                    <li><a href="service.html">Services</a></li>
-                                    <li><a href="career.html">Career</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="col-xl-5 col-lg-6 col-md-12  order-xl-2 order-lg-3 order-md-3 order-sm-3 order-xs-3 img_container_main">
-                    <div class="img_container">
-                        <img class="img_monuments" src="assets/images/footer/footer_img.png" id="img_monuments">
-                        <img src="assets/images/footer/pointer.png" id="pointer_left" alt="">
-                        <img src="assets/images/footer/pointer.png" id="pointer_right" alt="">
-                        <div id="usa_address" class="address">
-                            <h2>USA</h2>
-                            <p>PO Box 56903 <br> Sherman Oaks CA - 91413 </p>
-                        </div>
-                        <div id="ind_address" class="address">
-                            <h2>INDIA</h2>
-                            <p>D110, Raghunathpur <br> Bhubaneswar, Odisha - 751024 </p>
-                        </div>
-                        <svg height="0">
-                            <!-- THE mask -->
-                            <mask id="mask-image-container">
-                                <image id="mask-image" xlink:href="assets/images/footer/footer_img.png" filter="url(#filter)" /> 
-                            </mask>
-                            
-                            <!-- the filter to make the image white -->
-                            <filter id="filter">
-                                <feFlood flood-color="white" />
-                                <feComposite in2="SourceAlpha" operator="in" />
-                            </filter>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="copyright-wrapper">
-            <div class="container">
-                <div class="copyright-area d-flex align-items-center justify-content-md-between justify-content-center">
-                    <p>© 2024 Utkal Labs Pvt. Ltd. All Rights Reserved.</p>
-                    <div>
-                        <p><a href="privacypolicy.html" class="text-decoration-none">Privacy Policy</a> |
-                            <a href="termsandconditions.html" class="text-decoration-none"> Terms &
-                                Conditions</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </footer>
+    <special-footer></special-footer>
     <!--====================// End Footer //====================-->
+
+    <!-- header and footer manager -->
+    <script src="assets/js/header-footer-manager.js"></script>
+
     <!-- chatbot -->
     <script src="assets/js/chatbot.js"></script>
 
@@ -728,7 +608,10 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZQD6FQ477"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9ZQD6FQ477"
+    ></script>
     <script src="assets/js/google-tag.js"></script>
 
     <!-- aos js file -->
@@ -750,6 +633,5 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <script src="assets/js/main.js"></script>
     <script src="assets/js/footer.animation.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</body>
-
+  </body>
 </html>

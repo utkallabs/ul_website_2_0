@@ -18,7 +18,7 @@ $(document).ready(function () {
               "</div>"
           );
           $("#contactForm")[0].reset();
-          $('#chooseFile').val('');
+          $("#chooseFile").val("");
         } else {
           $("#responseMsg").html(
             '<div class="alert alert-danger" role="alert">' +
@@ -27,10 +27,10 @@ $(document).ready(function () {
           );
         }
       },
-      complete: function() {
+      complete: function () {
         // Hide loader
         $(".loader-container").hide();
-      }
+      },
     });
     e.preventDefault();
   });
