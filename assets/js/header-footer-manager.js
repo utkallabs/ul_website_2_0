@@ -1,61 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Utkal Labs</title>
-    <script type="text/javascript">
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "iiprgz27ni");
-    </script>
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
-
-    <!-- GoogleFont -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <!-- All Assets Css File -->
-    <!-- bootstrap css link -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!-- line-awesom css link //for icon use-->
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-    <!-- main style css  -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/common.css">
-
-    <!-- bing search engine  -->
-    <meta name="msvalidate.01" content="66F1FC2FBD2F6026A58876CBED73A077" />
-
-</head>
-
-
-<body>
-
-    <!-- /*--------------------------------------------------------------
-# Start topnavbar
---------------------------------------------------------------*/ -->
-    <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+class SpeacialTopHeader extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+        <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
         <div class="container2 d-flex align-items-center justify-content-between">
             <div class="upper-section">
 
                 <div class="letside-topnavbar">
 
+                    <!-- <div class="topnavbar-email">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:sales@utkallabs.com">
+                            <span>sales@utkallabs.com</span></a>
+                    </div> -->
+
+                    <!-- <div class="topnavbar-call">
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:+91 93383 08255">
+                            <span>+91 93383 08255</span></a>
+
+                    </div> -->
 
                     <div class="topnavbar-call2">
                         <a href="mailto:sales@utkallabs.com">
@@ -97,22 +60,25 @@
             </div>
         </div>
     </div>
-    <!-- /*--------------------------------------------------------------
-# end topnavbar
---------------------------------------------------------------*/ -->
+        `;
+  }
+}
 
-    <header id="header" class="fixed-top">
+class SpeacialHeader extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+         <header id="header" class="fixed-top">
         <div class="container2 d-flex ">
             <!--  logo -->
             <a href="index.html" class="logo mr-auto">
-                <img src="assets/images/logo.png" alt="logo"></a>
+                <img src="assets/images/logo.png" alt=""></a>
             <!--  nav start-->
             <nav class="nav-menu d-none d-lg-block">
                 <ul class="nav-list">
                     <!-- added a class for active -->
-                    <li class="#"><a href="index.html">Home</a></li>
-                    <li class="#"><a href="aboutus.html">About Us</a></li>
-                    <li class="drop-down"><a>Services<i class="las la-angle-down"></i></a>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="aboutus.html">About Us</a></li>
+                    <li class="nav-item drop-down"><a>Services<i class="las la-angle-down"></i></a>
                         <ul>
                             <li><a href="service.html">All Services</a></li>
                             <li><a href="service-web-mobile-application.html">Web & Mobile Application</a></li>
@@ -120,13 +86,14 @@
                             </li>
                             <li><a href="service-blockchain-nft.html">Blockchain & NFT</a></li>
                             <li><a href="service-digital-transformation.html">Digital Transformation</a></li>
-                            <li><a href="service-devops-consulting.html">DevOps Consulting</a></li>
+                            <li><a href="service-devops-consulting.html">Devops Consulting</a></li>
                             <li><a href="service-enterprise-solution.html">Enterprise Solution</a></li>
                             <li><a href="service-alml-solution.html">Al/ML Solution</a></li>
                             <li><a href="service-qa-services.html">QA Services</a></li>
                         </ul>
                     </li>
-                    <li class="drop-down">
+
+                    <li class="nav-item drop-down">
                         <a href="">Publications<i class="las la-angle-down"></i></a>
                         <ul>
                             <li><a href="portfolio.html">Portfolio</a></li>
@@ -136,104 +103,44 @@
                             <li><a href="tech-byte.html">Tech Bytes</a></li>
                         </ul>
                     </li>
-                    <li class="drop-down"><a href="#">Activities<i class="las la-angle-down"></i></a>
+                    <li class="nav-item drop-down"><a href="#">Activities<i class="las la-angle-down"></i></a>
                         <ul>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="newsletter.html">Newsletter</a></li>
+
                         </ul>
                     </li>
-                    <li class="active"><a href="career.html">Career</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+
+                    <li class="nav-item"><a href="career.html">Career</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <!-- .nav-menu end-->
         </div>
     </header>
+        `;
+    this.updateActiveNav();
+  }
 
-    <!-- /*--------------------------------------------------------------
-# Navbar Header end
---------------------------------------------------------------*/ -->
+  updateActiveNav() {
+    const navItems = this.querySelectorAll(".nav-item a");
+    let currentPath = window.location.pathname;
+    currentPath = currentPath.slice(1, currentPath.length);
 
-    <!--====================Start Scroll-To-Top====================-->
-    <!-- <a href="#" class="scrollToTop">
-        <i class="las la-angle-double-up"></i>
-    </a> -->
-    <!--====================
-    End Scroll-To-Top====================-->
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-        <div class="breadcrumb-hero">
-            <div class="container">
-                <h2>Privacy Policy</h2>
-                <div class="breadcrumb-area">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+    navItems.forEach((item) => {
+      if (item.getAttribute("href") === currentPath) {
+        item.parentElement.classList.add("active");
+      } else {
+        item.parentElement.classList.remove("active");
+      }
+    });
+  }
+}
 
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ======= Breadcrumbs ======= -->
-
-    <!-- ======= Top Career section ======= -->
-    <section class="privacypolicy">
-        <div class="container">
-            <div class="col-xl-12">
-                <p>
-                    At <strong>Utkal Labs</strong>, we take your privacy seriously. This Privacy Policy describes how we
-                    collect, use,
-                    and share information about you when you use our website, <strong>www.utkallabs.com</strong> (the
-                    “Site”).
-                </p>
-
-                <h3>Information We Collect
-                </h3>
-
-                <P>
-                    We collect information about you when you visit our Site, including information about your device,
-                    browser, and IP address. We also collect information about how you use our Site, such as the pages
-                    you visit and the links you click on.
-                </P>
-
-                <h3>How We Use Your Information
-                </h3>
-
-                <P> We use the information we collect to improve our Site and to provide you with a better user
-                    experience. We may also use your information to send you marketing communications about our products
-                    and services.
-                </P>
-                <h3>Sharing Your Information
-                </h3>
-
-                <P> We do not share your information with third parties for their own marketing purposes. However, we
-                    may share your information with service providers who help us operate our Site.
-                </P>
-                <h3>Your Choices
-                </h3>
-
-                <P> You can opt out of receiving marketing communications from us at any time by clicking the
-                    “unsubscribe” link in our emails. You can also disable cookies in your browser settings.
-                </P>
-                <h3>Contact Us
-
-                </h3>
-                <P> If you have any questions about this Privacy Policy, please contact us at
-                    <strong>contact@utkallabs.com</strong>.
-
-                </P>
-            </div>
-        </div>
-        </div>
-        </div>
-    </section>
-    <!-- ======= Top Career section end======= -->
-
-    <!--====================@@ Start Footer @@====================-->
-      <footer class="footer-section pt-120">
+class SpeacialFooter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+        <footer class="footer-section pt-120">
 
             <div class="waves_left">
                 <img src="/assets/images/footer/bg_left_top.png" class="wave_left" id="wave_left1">
@@ -366,27 +273,10 @@
         </div>
 
     </footer>
-    <!--====================// End Footer //====================-->
+        `;
+  }
+}
 
-    <!-- ==================All JS Library ===================-->
-    <!-- chatbot -->
-    <script src="assets/js/chatbot.js"></script>
-
-    <!-- jquery -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-
-    <!-- bootstrap js -->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZQD6FQ477"></script>
-    <script src="assets/js/google-tag.js"></script>
-
-    <!-- main -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/footer.animation.js"></script>
-
-</body>
-
-</html>
+customElements.define("special-top-header", SpeacialTopHeader);
+customElements.define("special-header", SpeacialHeader);
+customElements.define("special-footer", SpeacialFooter);
