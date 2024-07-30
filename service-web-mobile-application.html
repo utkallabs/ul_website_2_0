@@ -274,7 +274,8 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                     <!-- added a class for active -->
                     <li class="#ECF2FF"><a href="index.html">Home</a></li>
                     <li class="#"><a href="aboutus.html">About Us</a></li>
-                     <li class="drop-down active"><a>Services<i class="las la-angle-down"></i></a>                        <ul>
+                    <li class="drop-down active"><a>Services<i class="las la-angle-down"></i></a>
+                        <ul>
                             <li><a href="service.html">All Services</a></li>
                             <li><a href="service-web-mobile-application.html">Web & Mobile Application</a></li>
                             <li><a href="service-robotic-process-automation.html">Robotic Process Automation</a>
@@ -361,7 +362,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- ======= Breadcrumbs ======= -->
 
     <!-- /* [history] */ -->
-    <div class="service">
+    <div class="service container align-items-start">
         <div class="col-lg-8 col-md-6 service-details">
             <img src="assets/images/service/service-web-mobile-application.png">
             <h2>Web & Mobile Application</h2>
@@ -374,15 +375,18 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
             </p>
             <h2>Service Description</h2>
 
-            <p>Our web and mobile app development services deliver tailored solutions to meet your digital needs. With a
-                focus on user experience and functionality, we create fully functional and responsive applications. From
+            <p>Our web and mobile app development services deliver tailored solutions to meet your digital needs.
+                With a
+                focus on user experience and functionality, we create fully functional and responsive applications.
+                From
                 gathering requirements to designing interfaces and writing clean code, our expert team ensures
                 high-quality development.
 
             </p>
 
             <p>We conduct thorough testing and optimization to deliver top-notch performance. With a commitment to
-                staying updated with the latest technologies, we offer innovative mobile products and suggest protocols
+                staying updated with the latest technologies, we offer innovative mobile products and suggest
+                protocols
                 to enhance your digital presence and meet evolving user expectations.
             </p>
 
@@ -393,7 +397,8 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
             <div class="Services">
                 <ul>
 
-                    <li class="open"> <a href="service-web-mobile-application.html">Web & Mobile Application</a></li>
+                    <li class="open"> <a href="service-web-mobile-application.html">Web & Mobile Application</a>
+                    </li>
                     <li><a href="service-robotic-process-automation.html"> Robotic Process Automation</a></li>
                     <li><a href="service-blockchain-nft.html"> Blockchain & NFT</a></li>
 
@@ -413,12 +418,15 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         <p>For More Information Feel Free Please Contact With Us.</p>
                         <label for="fname"></label>
 
-                        <input type="text" class="service-form-group" id="fname" name="name" maxlength="100" placeholder="Name" required>
+                        <input type="text" class="service-form-group" id="fname" name="name" maxlength="100"
+                            placeholder="Name" required>
 
                         <label for="Email"></label>
-                        <input type="email" class="service-form-group" id="email" name="email" maxlength="100" placeholder="Email" required>
+                        <input type="email" class="service-form-group" id="email" name="email" maxlength="100"
+                            placeholder="Email" required>
                         <label for="number"></label>
-                        <input type="text" class="service-form-group" id="text" name="phone" maxlength="14" onkeypress="return /^[0-9+-]+$/i.test(event.key)" placeholder="Phone" required>
+                        <input type="text" class="service-form-group" id="text" name="phone" maxlength="14"
+                            onkeypress="return /^[0-9+-]+$/i.test(event.key)" placeholder="Phone" required>
                         <div class="g-recaptcha mt-3" data-sitekey="6LekdHEpAAAAAN5FrOIsTeUG3G-0SQpYZJqCkB6J">
                         </div>
                         <button type="submit" name="submit" class="Request-a-quotes">Request a quotes</button>
@@ -427,12 +435,29 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
                         </div>
                     </form>
                 </div>
+
             </div>
+
         </div>
 
 
 
+
+
     </div>
+    <div class=" p-0 container">
+        <div id="casestudies" class="casestudies-card pb-5">
+            <h3 class="pb-2 ">Case Studies on Web & Mobile</h3>
+            <div id="case-studies" class="scrolling-wrapper  flex-nowrap row h-100card-deck"></div>
+
+        </div>
+        <div id="solutions" class="">
+            <h3>Our Solutions on Web & Mobile</h3>
+            <section class="solution-card p-0 pt-2 pb-5">
+                <div id="solutions-lists" class="scrolling-wrapper  flex-nowrap row h-100card-deck">
+                </div>
+            </section>
+        </div>
     </div>
     <div class="visme_d" data-title="Sales Blog Subscription Form" data-url="76rmkgmy-sales-blog-subscription-form?fullPage=true" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="82997"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
 
@@ -555,6 +580,7 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <!-- bootstrap js -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZQD6FQ477"></script>
@@ -578,6 +604,9 @@ landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- main -->
     <script src="assets/js/main.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="assets/js/solutions-web-mobile.js" type="module"></script>
+    <script src="assets/js/case-studies-web-mob.js" type="module"></script>
+
 </body>
 
 </html>
