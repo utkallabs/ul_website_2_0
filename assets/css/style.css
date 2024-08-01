@@ -3558,7 +3558,7 @@ Contact Page /////
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #fff;
+  color: #fff !important;
   padding: 12px 15px;
   font-weight: 500;
   transition: ease-in-out 0.3s;
@@ -4420,3 +4420,49 @@ border-radius: 50%;
     display: none !important;
   }
 }
+
+/*--------------------------------------------------------------
+  /////////////  common modal and button  start  ///////////////
+--------------------------------------------------------------*/
+
+.send-enquiry {
+    position: fixed;
+    right: -173px;
+    color: #000 !important;
+    background-image: linear-gradient(
+      to right top,
+      #00e9d8,
+      #1eebd2,
+      #31eecb,
+      #42f0c4,
+      #51f2bc,
+      #5ff3b5,
+      #6cf5af,
+      #79f6a8,
+      #88f7a0,
+      #96f899,
+      #a4f992,
+      #b2f98b
+    );
+    top: 50%;
+    z-index: 10;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+
+.send-enquiry img {
+  width: 15%;}
+  
+.common-modal-head-bold-text{
+  font-size: 2em;
+}
+
+.common-modal-head{
+  background-color: #F4FFFA;
+}
+
+/*--------------------------------------------------------------
+  /////////////  common modal and button  end  ///////////////
+--------------------------------------------------------------*/
