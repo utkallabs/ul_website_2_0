@@ -61,6 +61,11 @@ class SpeacialTopHeader extends HTMLElement {
           </div>
       </div>
           `;
+          
+    const script = document.createElement('script');
+    script.src = "//code.tidio.co/mxyjcnentsyge1vrrztl3hixdvtd9bws.js";
+    script.async = true;
+    document.body.appendChild(script);
     }
   }
   
