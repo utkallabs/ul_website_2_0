@@ -1,5 +1,9 @@
-class SpeacialTopHeader extends HTMLElement {
+class SpecialTopHeader extends HTMLElement {
     connectedCallback() {
+        const script = document.createElement('script');
+        script.src = "//code.tidio.co/mxyjcnentsyge1vrrztl3hixdvtd9bws.js";
+        document.body.appendChild(script);
+        
       this.innerHTML = `
           <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
           <div class="container2 d-flex align-items-center justify-content-between">
@@ -61,15 +65,12 @@ class SpeacialTopHeader extends HTMLElement {
           </div>
       </div>
           `;
-          
-    const script = document.createElement('script');
-    script.src = "//code.tidio.co/mxyjcnentsyge1vrrztl3hixdvtd9bws.js";
-    script.async = true;
-    document.body.appendChild(script);
+
+
     }
   }
   
-  class SpeacialHeader extends HTMLElement {
+  class SpecialHeader extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
            <header id="header" class="fixed-top">
@@ -142,7 +143,7 @@ class SpeacialTopHeader extends HTMLElement {
     }
   }
   
-  class SpeacialFooter extends HTMLElement {
+  class SpecialFooter extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
               <footer class="footer-section pt-120">
@@ -253,7 +254,7 @@ class SpeacialTopHeader extends HTMLElement {
     }
   }
   
-  customElements.define("special-top-header", SpeacialTopHeader);
-  customElements.define("special-header", SpeacialHeader);
-  customElements.define("special-footer", SpeacialFooter);
+  customElements.define("special-top-header", SpecialTopHeader);
+  customElements.define("special-header", SpecialHeader);
+  customElements.define("special-footer", SpecialFooter);
   
