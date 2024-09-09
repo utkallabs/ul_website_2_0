@@ -3,7 +3,6 @@ class SpecialTopHeader extends HTMLElement {
         const script = document.createElement('script');
         script.src = "//code.tidio.co/mxyjcnentsyge1vrrztl3hixdvtd9bws.js";
         document.body.appendChild(script);
-        
       this.innerHTML = `
           <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
           <div class="container2 d-flex align-items-center justify-content-between">
