@@ -2873,20 +2873,29 @@ form h4 {
   margin-bottom: 55px;
 }
 
-@media only screen and (max-width: 1300px) {
+@media (max-width: 1300px) {
   .contact-area {
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  .clutch-review img{
+    width: 100%;
+  }
 }
 
 .contact-content {
-  margin-left: 30px;
+  /* margin-left: 30px; */
+  background-color: #FAFBFB;
+  border-color: #DBDBDB;
 }
 
 @media only screen and (max-width: 991px) {
   .contact-content {
     margin-left: 0;
+  }
+  .contact-address{
+    margin-top: 40px;
   }
 }
 
@@ -2901,11 +2910,83 @@ form h4 {
   margin-top: 60px;
 }
 
+.contact-btn i{
+  -webkit-transform: rotate(320deg);
+  transform: rotate(320deg);
+}
+
 @media only screen and (max-width: 575px) {
   .contact-btn {
     margin-top: 40px;
   }
+  .clutch-review img{
+    width: 70%;
+  }
+
 }
+
+.social-media .footer-social i{
+  color: #000;
+}
+
+.social-media .footer-social i:hover{
+  color: #ffffff;
+}
+
+.contact-address-img{
+  height: 85px;
+}
+
+.google-clutch-review{
+  background-image: url(/assets/images/contact/review-bg.png);
+}
+
+.clutch-review{
+  border: #03827A solid;
+}
+
+.clutch-review img{
+  width: 70%;
+}
+
+.clutch-review .fa-quote-left{
+  color: #318BA2;
+  font-size: 80px;
+  position: absolute;
+  top: -40px;
+  left: -20px;
+}
+
+.clutch-review .fa-quote-right{
+  color: #318BA2;
+  font-size: 80px;
+  position: absolute;
+  bottom: -40px;
+  right: -20px;
+}
+
+
+@media only screen and (max-width: 990px) {
+  .clutch-review img{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .clutch-review img{
+    width: 30%;
+  }
+  .clutch-review{
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .clutch-review img{
+    width: 50%;
+  }
+}
+
 /* ---------------------
 3.Get In Touch With Us
 --------------------- */
