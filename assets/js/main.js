@@ -300,6 +300,8 @@ for (i = 0; i < acc.length; i++) {
     $(".plan-area").toggleClass("change-subs-duration");
   });
 
+  
+
   // slider
   var swiper = new Swiper(".banner-slider", {
     slidesPerView: 2,
@@ -456,3 +458,4 @@ slideshowContainer.addEventListener("mouseenter", stopSlider);
 slideshowContainer.addEventListener("mouseleave", startSlider);
 
 //// sliderhome////
+
