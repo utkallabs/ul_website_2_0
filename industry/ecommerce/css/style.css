@@ -2,6 +2,13 @@
   ///////////// E-commerce-casestudy  start  ///////////////
 --------------------------------------------------------------*/
 
+.ecommerce-color-highlight{
+  background: #5864FF;
+  /* border-top: solid 2px red;
+  padding: 2px;
+  margin: 2px; */
+}
+
 /* ----------hero----------- */
 .hero-section {
     position: relative;
@@ -238,18 +245,7 @@
     width: 100%;
     height: 100%;
   }
-  
-  .ecommerce-modal-input {
-    background-color: #fbfbff;
-    border: solid 1px #aeb2f4;
-  }
-  
-  .get-start-btn {
-    background-color: #5864ff;
-    border: none;
-    border-radius: 40px;
-  }
-  
+
   /* <!-- technology start --> */
   
   .tabs-container {

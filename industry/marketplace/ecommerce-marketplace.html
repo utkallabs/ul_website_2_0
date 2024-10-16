@@ -34,6 +34,7 @@
     <link href="../../assets/css/common.css" rel="stylesheet">
     <link href="../header-footer.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+    <link href="../modal-popup.css" rel="stylesheet">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -62,8 +63,8 @@
                             <p class="text-white pb-3 animated slideInDown">Unlock the potential of multi-vendor
                                 marketplaces with innovative technology that drives growth, efficiency, and customer
                                 satisfaction.</p>
-                            <a href=""
-                                class="btn btn-primary-gradient py-3 px-4 px-sm-5 me-3 animated slideInLeft">Start
+                            <a
+                                class="btn btn-primary-gradient py-3 px-4 px-sm-5 me-3 animated slideInLeft"  data-bs-target="#staticBackdrop" data-bs-toggle="modal">Start
                                 Now</a>
                         </div>
                     </div>
@@ -181,7 +182,7 @@
                                 </div>
                             </div>
                         </div> -->
-                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3">Start
+                        <a class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3" data-bs-target="#staticBackdrop" data-bs-toggle="modal">Start
                             Now</a>
                     </div>
                 </div>
@@ -222,7 +223,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3">Start Now</a>
+                        <a class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3"  data-bs-target="#staticBackdrop" data-bs-toggle="modal">Start Now</a>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 ">
                         <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/mob_example.png">
@@ -244,7 +245,7 @@
                         <h1 class="mb-4">Vendor Dashboard</h1>
                         <p class="mb-4">Empower Vendors to Reach New Heights with Intuitive Merchant Panel for Seamless
                             Customer Connection, Order Management, and Transaction Tracking</p>
-                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3">Start Now</a>
+                        <a class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3"  data-bs-target="#staticBackdrop" data-bs-toggle="modal">Start Now</a>
                     </div>
                 </div>
             </div>
@@ -261,7 +262,7 @@
                         <p class="mb-4">Ensure Business Resilience with a Comprehensive Admin Panel: Monitor, Manage,
                             and Mitigate Risks in Real-Time.</p>
 
-                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3">Start Now</a>
+                        <a class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3"  data-bs-target="#staticBackdrop" data-bs-toggle="modal">Start Now</a>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/admin_ashboard.png">
@@ -801,7 +802,7 @@
                                 Make e-shopping a seamless experience with an array of feature-loaded mobile apps and
                                 website development.
                             </p>
-                            <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3">Start Now</a>
+                            <a class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3 " data-bs-target="#staticBackdrop" data-bs-toggle="modal">Start Now</a>
                         </div>
                     </div>
                     <div class=" col-xl-7 col-lg-6 col-md-12 text-lg-right text-center">
@@ -905,6 +906,9 @@
         </div> -->
         <!-- Testimonial End -->
 
+          <!-- Modal -->
+  <special-modal></special-modal>
+
         <!-- Footer -->
 
         <special-footer></special-footer>
@@ -927,6 +931,7 @@
     <script src="../header-footer-manager.js"></script>
     <script src="js/main.js"></script>
     <script src="js/progressbar.js"></script>
+    <script src="../modal-popup.js"></script>
 
 </body>
 

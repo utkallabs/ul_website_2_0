@@ -1,6 +1,6 @@
 class SpecialHeader extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
            <header id="header" class="fixed-top">
           <div class="container container2 d-flex ">
               <!--  logo -->
@@ -35,13 +35,14 @@ class SpecialHeader extends HTMLElement {
                               <li><a href="../../case-studies.html">Case Studies</a></li>
                               <li><a href="../../our-solutions.html">Our Solutions</a></li>
                               <li><a href="../../tech-byte.html">Tech Bytes</a></li>
+                                                            <li><a href="../../newsletter.html">Newsletter</a></li>
+
                           </ul>
                       </li>
-                      <li class="nav-item drop-down"><a href="#">Activities<i class="fas fa-angle-down"></i></a>
+                      <li class="nav-item drop-down"><a href="#">Industries<i class="fas fa-angle-down"></i></a>
                           <ul>
-                              <li><a href="../../gallery.html">Gallery</a></li>
-                              <li><a href="../../newsletter.html">Newsletter</a></li>
-  
+                              <li><a href="ecommerce.html">Ecommerce Delivery</a></li>
+                                <li><a href="ecommerce-marketplace.html">Ecommerce</a></li>
                           </ul>
                       </li>
   
@@ -53,27 +54,27 @@ class SpecialHeader extends HTMLElement {
           </div>
       </header>
           `;
-    this.updateActiveNav();
-  }
+        this.updateActiveNav();
+    }
 
-  updateActiveNav() {
-    const navItems = this.querySelectorAll(".nav-item a");
-    let currentPath = window.location.pathname;
-    currentPath = currentPath.slice(1, currentPath.length);
+    updateActiveNav() {
+        const navItems = this.querySelectorAll(".nav-item a");
+        let currentPath = window.location.pathname;
+        currentPath = currentPath.slice(1, currentPath.length);
 
-    navItems.forEach((item) => {
-      if (item.getAttribute("href") === currentPath) {
-        item.parentElement.classList.add("active");
-      } else {
-        item.parentElement.classList.remove("active");
-      }
-    });
-  }
+        navItems.forEach((item) => {
+            if (item.getAttribute("href") === currentPath) {
+                item.parentElement.classList.add("active");
+            } else {
+                item.parentElement.classList.remove("active");
+            }
+        });
+    }
 }
 
 class SpecialFooter extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
           <footer class="footer-section pt-120">
   
               <div class="waves_left">
@@ -208,7 +209,7 @@ class SpecialFooter extends HTMLElement {
   
       </footer>
           `;
-  }
+    }
 }
 
 customElements.define("special-header", SpecialHeader);
