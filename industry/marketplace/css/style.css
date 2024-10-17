@@ -442,3 +442,9 @@ h6,
   width: 24px;
   height: auto;
 }
+
+.marketplace-color-highlight{
+  background-color: var(--primary);
+  margin-top: -12px;
+  height: 4px;
+}

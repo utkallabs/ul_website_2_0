@@ -2,8 +2,8 @@ class SpecialHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
            <header id="header" class="fixed-top d-flex flex-column">
-           <div class="p-1  ecommerce-color-highlight"></div>
-          <div class="container container2 d-flex ">
+           <div class="ecommerce-color-highlight marketplace-color-highlight"></div>
+          <div class="container container2 d-flex pt-2">
           
               <!--  logo -->
               <a href="../../index.html" class="logo mr-auto">
@@ -14,7 +14,7 @@ class SpecialHeader extends HTMLElement {
                       <!-- added a class for active -->
                       <li class="nav-item"><a href="../../index.html">Home</a></li>
                       <li class="nav-item"><a href="../../aboutus.html">About Us</a></li>
-                      <li class="nav-item drop-down"><a href="">Services<i class="fas fa-angle-down"></i></a>
+                      <li class="nav-item drop-down"><a href="">Services<i class="fas fa-angle-down ms-1 pt-1"></i></a>
                           <ul>
                               <li><a href="../../service.html">All Services</a></li>
                               <li><a href="../../service-web-mobile-application.html">Web & Mobile Application</a></li>
@@ -30,7 +30,7 @@ class SpecialHeader extends HTMLElement {
                       </li>
   
                       <li class="nav-item drop-down">
-                          <a href="">Publications<i class="fas fa-angle-down"></i></a>
+                          <a href="">Publications<i class="fas fa-angle-down ms-1 pt-1"></i></a>
                           <ul>
                               <li><a href="../../portfolio.html">Portfolio</a></li>
                               <li><a href="../../product.html">Products</a></li>
@@ -41,7 +41,7 @@ class SpecialHeader extends HTMLElement {
 
                           </ul>
                       </li>
-                      <li class="nav-item drop-down"><a href="#">Industries<i class="fas fa-angle-down"></i></a>
+                      <li class="nav-item drop-down"><a href="#">Industries<i class="fas fa-angle-down ms-1 pt-1"></i></a>
                           <ul>
                               <li><a href="/industry/ecommerce/ecommerce.html">Ecommerce</a></li>
                                 <li><a href="/industry/marketplace/ecommerce-marketplace.html">Ecommerce Marketplace</a></li>
