@@ -2,69 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Marketplace</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta charset="utf-8" />
+    <title>Ecommerce Marketplace</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="../../assets/css/common.css" rel="stylesheet">
-    <link href="../header-footer.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="../../assets/css/common.css" rel="stylesheet" />
+    <link href="../header-footer.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+    <link href="../modal-popup.css" rel="stylesheet" />
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-
     <!-- Header || Navbar -->
     <special-header></special-header>
-
 
     <div class="bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
         <!-- Spinner End -->
 
         <!-- Hero Start -->
-        <div class=" position-relative p-0" id="home">
-            <div class=" bg-primary hero-header">
+        <div class="position-relative p-0" id="home">
+            <div class="bg-primary hero-header">
                 <div class="container px-lg-5">
                     <div class="row g-5">
                         <div class="col-lg-8 m-auto text-center">
-                            <h1 class="text-white mb-4 animated slideInDown">Unlock Your Marketplace Potential</h1>
-                            <p class="text-white pb-3 animated slideInDown">Unlock the potential of multi-vendor
-                                marketplaces with innovative technology that drives growth, efficiency, and customer
-                                satisfaction.</p>
-                            <a href=""
-                                class="btn btn-primary-gradient py-3 px-4 px-sm-5 me-3 animated slideInLeft">Start
-                                Now</a>
+                            <h1 class="text-white mb-4 animated slideInDown">
+                                Unlock Your Marketplace Potential
+                            </h1>
+                            <p class="text-white pb-3 animated slideInDown">
+                                Unlock the potential of multi-vendor marketplaces with
+                                innovative technology that drives growth, efficiency, and
+                                customer satisfaction.
+                            </p>
+                            <a class="btn btn-primary-gradient py-3 px-4 px-sm-5 me-3 animated slideInLeft"
+                            data-bs-toggle="modal"
+                            data-bs-target="#myModal">Start Now</a>
                         </div>
                     </div>
                 </div>
@@ -73,11 +76,11 @@
         <!-- Hero End -->
 
         <!-- Image Section  -->
-        <Section class="container-xxl py-xl-5 position-relative ">
+        <section class="container-xxl py-xl-5 position-relative">
             <div class="container group-img d-flex justify-content-center">
-                <img src="./img/ecom_hero.png" alt="ecommerce" width="100%">
+                <img src="./img/ecom_hero.png" alt="ecommerce" width="100%" />
             </div>
-        </Section>
+        </section>
 
         <!-- Features Start -->
         <div class="container-xxl py-5 position-relative" id="chalenges">
@@ -90,56 +93,68 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="feature-item bg-light rounded p-4">
                             <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
+                                style="width: 60px; height: 60px">
                                 <i class="fa fa-eye text-white fs-4"></i>
                             </div>
                             <h5 class="mb-3">Vendor Management</h5>
-                            <p class="m-0">Managing hundreds or thousands of vendors with different inventory, shipping
-                                times, and prices.</p>
+                            <p class="m-0">
+                                Managing hundreds or thousands of vendors with different
+                                inventory, shipping times, and prices.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="feature-item bg-light rounded p-4">
                             <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
+                                style="width: 60px; height: 60px">
                                 <i class="fa fa-layer-group text-white fs-4"></i>
                             </div>
                             <h5 class="mb-3">Product & Order Management</h5>
-                            <p class="m-0">Ensuring accurate listings, order fulfillment, and inventory syncing.</p>
+                            <p class="m-0">
+                                Ensuring accurate listings, order fulfillment, and inventory
+                                syncing.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="feature-item bg-light rounded p-4">
                             <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
+                                style="width: 60px; height: 60px">
                                 <i class="fa fa-edit text-white fs-4"></i>
                             </div>
                             <h5 class="mb-3">Customer Experience</h5>
-                            <p class="m-0">Delivering a seamless shopping experience with personalized recommendations
-                                and easy returns.</p>
+                            <p class="m-0">
+                                Delivering a seamless shopping experience with personalized
+                                recommendations and easy returns.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="feature-item bg-light rounded p-4">
                             <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
+                                style="width: 60px; height: 60px">
                                 <i class="fa fa-shield-alt text-white fs-4"></i>
                             </div>
                             <h5 class="mb-3">Payment & Security</h5>
-                            <p class="m-0">Offering secure and flexible payment methods for vendors and customers.</p>
+                            <p class="m-0">
+                                Offering secure and flexible payment methods for vendors and
+                                customers.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="feature-item bg-light rounded p-4">
                             <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
+                                style="width: 60px; height: 60px">
                                 <i class="fa fa-cloud text-white fs-4"></i>
                             </div>
                             <h5 class="mb-3">Logistics Coordination</h5>
-                            <p class="m-0">Managing multiple delivery providers while keeping customers informed.</p>
+                            <p class="m-0">
+                                Managing multiple delivery providers while keeping customers
+                                informed.
+                            </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -153,14 +168,16 @@
                     <h1 class="mb-5">Solutions to the chalenges</h1>
                 </div>
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 ">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/web_example.png">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/web_example.png" />
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">Robust</h5>
-                        <h1 class="mb-4"> Ecommerce Platform</h1>
-                        <p class="mb-4">Sell Multiple Products to Customers online, with a Feature-Rich,
-                            User-Friendly Website.</p>
+                        <h1 class="mb-4">Ecommerce Platform</h1>
+                        <p class="mb-4">
+                            Sell Multiple Products to Customers online, with a Feature-Rich,
+                            User-Friendly Website.
+                        </p>
                         <!-- <div class="row g-4 mb-4">
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="d-flex">
@@ -181,17 +198,13 @@
                                 </div>
                             </div>
                         </div> -->
-                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3">Start
-                            Now</a>
+                        <a class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3" data-bs-toggle="modal"
+                        data-bs-target="#myModal">Start Now</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- About End -->
-
-
-
-
 
         <!-- Screenshot Start -->
         <div class="container-xxl py-5">
@@ -200,8 +213,10 @@
                     <div class="col-lg-6 order-2 order-lg-1 wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">Creative</h5>
                         <h1 class="mb-4">Mobile Apps</h1>
-                        <p class="mb-4">Launch your online store with featuristic platform independent ecommerce mobile
-                            apps.</p>
+                        <p class="mb-4">
+                            Launch your online store with featuristic platform independent
+                            ecommerce mobile apps.
+                        </p>
                         <div class="row g-4 mb-4">
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="d-flex">
@@ -222,10 +237,11 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3">Start Now</a>
+                        <a class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3" data-bs-toggle="modal"
+                        data-bs-target="#myModal">Start Now</a>
                     </div>
-                    <div class="col-lg-6 order-1 order-lg-2 ">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/mob_example.png">
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/mob_example.png" />
                     </div>
                 </div>
             </div>
@@ -237,14 +253,18 @@
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/vendor_panel.png">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/vendor_panel.png" />
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                         <h5 class="text-primary-gradient fw-medium">Seamless</h5>
                         <h1 class="mb-4">Vendor Dashboard</h1>
-                        <p class="mb-4">Empower Vendors to Reach New Heights with Intuitive Merchant Panel for Seamless
-                            Customer Connection, Order Management, and Transaction Tracking</p>
-                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3">Start Now</a>
+                        <p class="mb-4">
+                            Empower Vendors to Reach New Heights with Intuitive Merchant
+                            Panel for Seamless Customer Connection, Order Management, and
+                            Transaction Tracking
+                        </p>
+                        <a class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3" data-bs-toggle="modal"
+                        data-bs-target="#myModal">Start Now</a>
                     </div>
                 </div>
             </div>
@@ -258,13 +278,16 @@
                     <div class="col-lg-6 order-sm-1 order-lg-0 wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">Extensive</h5>
                         <h1 class="mb-4">Admin Panel</h1>
-                        <p class="mb-4">Ensure Business Resilience with a Comprehensive Admin Panel: Monitor, Manage,
-                            and Mitigate Risks in Real-Time.</p>
+                        <p class="mb-4">
+                            Ensure Business Resilience with a Comprehensive Admin Panel:
+                            Monitor, Manage, and Mitigate Risks in Real-Time.
+                        </p>
 
-                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3">Start Now</a>
+                        <a class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3" data-bs-toggle="modal"
+                        data-bs-target="#myModal">Start Now</a>
                     </div>
                     <div class="col-lg-6 order-lg-1">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/admin_ashboard.png">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/admin_ashboard.png" />
                     </div>
                 </div>
             </div>
@@ -277,43 +300,50 @@
                 <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="text-primary-gradient fw-medium">Why choose</h5>
                     <h1 class="mb-2">Utkal Labs</h1>
-                    <p class="mb-5">As the go-to authority for entrepreneurs worldwide, we specialize in designing and
-                        developing exceptional eCommerce mobile apps and websites that drive innovative marketplaces.
+                    <p class="mb-5">
+                        As the go-to authority for entrepreneurs worldwide, we specialize
+                        in designing and developing exceptional eCommerce mobile apps and
+                        websites that drive innovative marketplaces.
                     </p>
                 </div>
                 <div class="row gy-5 gx-4 justify-content-center">
                     <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
                             <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
-                                style="width: 100px; height: 100px;">
+                                style="width: 100px; height: 100px">
                                 <i class="fa fa-code fa-3x text-white"></i>
                             </div>
                             <h5 class="mt-4 mb-3">No Code Required</h5>
-                            <p class="mb-0">Not a coding expert! Don't wory, we will help you to build your ecommerce
-                                platform and let you start your store online.</p>
+                            <p class="mb-0">
+                                Not a coding expert! Don't wory, we will help you to build
+                                your ecommerce platform and let you start your store online.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
                             <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
-                                style="width: 100px; height: 100px;">
+                                style="width: 100px; height: 100px">
                                 <i class="fa fa-sliders-h fa-3x text-white"></i>
                             </div>
                             <h5 class="mt-4 mb-3">Personalized Store</h5>
-                            <p class="mb-0">Customize your ecommerce marketplace with our adaptive and easy to use app
-                                development
-                                solutions</p>
+                            <p class="mb-0">
+                                Customize your ecommerce marketplace with our adaptive and
+                                easy to use app development solutions
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
                             <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
-                                style="width: 100px; height: 100px;">
+                                style="width: 100px; height: 100px">
                                 <i class="fa fa-shield-alt fa-3x text-white"></i>
                             </div>
                             <h5 class="mt-4 mb-3">Robust Solution</h5>
-                            <p class="mb-0">Your sensitive data remains secure and protected from prying eyes, with our
-                                robust data protection system.</p>
+                            <p class="mb-0">
+                                Your sensitive data remains secure and protected from prying
+                                eyes, with our robust data protection system.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -332,10 +362,14 @@
                     <ul
                         class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
                         <li class="nav-item">
-                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Mobile</button>
+                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">
+                                Mobile
+                            </button>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Web</button>
+                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">
+                                Web
+                            </button>
                         </li>
                     </ul>
                     <div class="tab-content text-start">
@@ -364,7 +398,7 @@
                         <div id="tab-1" class="tab-pane fade show p-0 active">
                             <div class="row g-4">
                                 <div class="col-lg-4">
-                                    <div class="bg-light rounded border" style="min-height: 300px;">
+                                    <div class="bg-light rounded border" style="min-height: 300px">
                                         <div class="border-bottom p-4 mb-4">
                                             <h4 class="text-primary-gradient mb-1">Frontend</h4>
                                             <span>Powerful & Awesome Features</span>
@@ -373,38 +407,65 @@
                                             <div class="d-flex flex-wrap gap-2">
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/swift.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Swift</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Swift
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/kotlin.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Kotlin</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Kotlin
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/native.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">React Native
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        React Native
                                                     </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/flutter.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Flutter</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Flutter
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/java.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Java
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Java
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-light rounded border" style="min-height: 300px;">
+                                    <div class="bg-light rounded border" style="min-height: 300px">
                                         <div class="border-bottom p-4 mb-4">
                                             <h4 class="text-primary-gradient mb-1">Backend</h4>
                                             <span>Powerful & Awesome Features</span>
@@ -413,29 +474,57 @@
                                             <div class="d-flex flex-wrap gap-2">
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/django.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Django</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Django
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/node.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Node JS</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Node JS
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/spring.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Spring Boot
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Spring Boot
                                                     </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/firebase.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Firebase</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Firebase
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/net.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">.Net Core
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        .Net Core
                                                     </p>
                                                 </div>
                                             </div>
@@ -443,7 +532,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-light rounded border" style="min-height: 300px;">
+                                    <div class="bg-light rounded border" style="min-height: 300px">
                                         <div class="border-bottom p-4 mb-4">
                                             <h4 class="text-primary-gradient mb-1">Database</h4>
                                             <span>Powerful & Awesome Features</span>
@@ -452,27 +541,48 @@
                                             <div class="d-flex flex-wrap gap-2">
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/postgre.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Postgre SQL
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Postgre SQL
                                                     </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/mysql.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">My SQL</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        My SQL
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/mongo.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Mongo DB
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Mongo DB
                                                     </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/firebase.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Firebase</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Firebase
+                                                    </p>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -480,7 +590,7 @@
                             </div>
                             <div class="row g-4 mt-2">
                                 <div class="col-lg-6">
-                                    <div class="bg-light rounded border" style="min-height: 250px;">
+                                    <div class="bg-light rounded border" style="min-height: 250px">
                                         <div class="border-bottom p-4 mb-4">
                                             <h4 class="text-primary-gradient mb-1">Cloud</h4>
                                             <span>Powerful & Awesome Features</span>
@@ -489,68 +599,119 @@
                                             <div class="d-flex flex-wrap gap-2">
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/azure.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Azure</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Azure
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/aws.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">AWS</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        AWS
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/firebase.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Firebase</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Firebase
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/gcp.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Google Cloud
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Google Cloud
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-light rounded border" style="min-height: 250px;">
+                                    <div class="bg-light rounded border" style="min-height: 250px">
                                         <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Payment Gateway</h4>
+                                            <h4 class="text-primary-gradient mb-1">
+                                                Payment Gateway
+                                            </h4>
                                             <span>Powerful & Awesome Features</span>
                                         </div>
                                         <div class="p-4 pt-0">
                                             <div class="d-flex flex-wrap gap-2">
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/stripe.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Stripe</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Stripe
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/razorpay.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Razorpay</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Razorpay
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/paypal.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">PayPal
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        PayPal
                                                     </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/square.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Square</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Square
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/paynow.png" height="auto" width="24px"
-                                                        alt="" style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">paynow
+                                                        alt="" style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        paynow
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -558,7 +719,7 @@
                         <div id="tab-2" class="tab-pane fade p-0">
                             <div class="row g-4">
                                 <div class="col-lg-4">
-                                    <div class="bg-light rounded border" style="min-height: 300px;">
+                                    <div class="bg-light rounded border" style="min-height: 300px">
                                         <div class="border-bottom p-4 mb-4">
                                             <h4 class="text-primary-gradient mb-1">Frontend</h4>
                                             <span>Powerful & Awesome Features</span>
@@ -567,35 +728,68 @@
                                             <div class="d-flex flex-wrap gap-2">
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/react.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">React</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        React
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/angular.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Angular</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Angular
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/vue.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Vue
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Vue
                                                     </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/svelte.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Svelte</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Svelte
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/bootstrap.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Bootstrap
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Bootstrap
                                                     </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/tailwind.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Tailwind
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Tailwind
                                                     </p>
                                                 </div>
                                             </div>
@@ -603,7 +797,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-light rounded border" style="min-height: 300px;">
+                                    <div class="bg-light rounded border" style="min-height: 300px">
                                         <div class="border-bottom p-4 mb-4">
                                             <h4 class="text-primary-gradient mb-1">Backend</h4>
                                             <span>Powerful & Awesome Features</span>
@@ -612,24 +806,46 @@
                                             <div class="d-flex flex-wrap gap-2">
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/django.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Django</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Django
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/spring.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">SpringBoot
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        SpringBoot
                                                     </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/node.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Node JS</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Node JS
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/express.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">ExpressJS
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        ExpressJS
                                                     </p>
                                                 </div>
                                             </div>
@@ -637,7 +853,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-light rounded border" style="min-height: 300px;">
+                                    <div class="bg-light rounded border" style="min-height: 300px">
                                         <div class="border-bottom p-4 mb-4">
                                             <h4 class="text-primary-gradient mb-1">Database</h4>
                                             <span>Powerful & Awesome Features</span>
@@ -646,32 +862,59 @@
                                             <div class="d-flex flex-wrap gap-2">
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/postgre.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Postgre SQL
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Postgre SQL
                                                     </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/mysql.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">My SQL</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        My SQL
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/mongo.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Mongo DB
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Mongo DB
                                                     </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/firebase.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Firebase</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Firebase
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/sqlite.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">SQLite</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        SQLite
+                                                    </p>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -679,7 +922,7 @@
                             </div>
                             <div class="row g-4 mt-2">
                                 <div class="col-lg-6">
-                                    <div class="bg-light rounded border" style="min-height: 250px;">
+                                    <div class="bg-light rounded border" style="min-height: 250px">
                                         <div class="border-bottom p-4 mb-4">
                                             <h4 class="text-primary-gradient mb-1">Cloud</h4>
                                             <span>Powerful & Awesome Features</span>
@@ -688,68 +931,119 @@
                                             <div class="d-flex flex-wrap gap-2">
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/azure.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Azure</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Azure
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/aws.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">AWS</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        AWS
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/firebase.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Firebase</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Firebase
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/gcp.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Google Cloud
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Google Cloud
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-light rounded border" style="min-height: 250px;">
+                                    <div class="bg-light rounded border" style="min-height: 250px">
                                         <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Payment Gateway</h4>
+                                            <h4 class="text-primary-gradient mb-1">
+                                                Payment Gateway
+                                            </h4>
                                             <span>Powerful & Awesome Features</span>
                                         </div>
                                         <div class="p-4 pt-0">
                                             <div class="d-flex flex-wrap gap-2">
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/stripe.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Stripe</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Stripe
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/razorpay.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Razorpay</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Razorpay
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/paypal.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">PayPal
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        PayPal
                                                     </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/square.png" height="24px" alt=""
-                                                        style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">Square</p>
+                                                        style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        Square
+                                                    </p>
                                                 </div>
                                                 <div class="capsuls d-flex gap-3 align-items-center p-2 pe-3 rounded">
                                                     <img src="./img/tech_icons/paynow.png" height="auto" width="24px"
-                                                        alt="" style="border-radius: 5px;">
-                                                    <p style="font-size: 16px; color: black; margin: auto;">paynow
+                                                        alt="" style="border-radius: 5px" />
+                                                    <p style="
+                                font-size: 16px;
+                                color: black;
+                                margin: auto;
+                              ">
+                                                        paynow
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -761,7 +1055,7 @@
         <!-- Pricing End -->
 
         <div class="container-xxl py-5">
-            <div class="container py-5 px-lg-5 stats-section ">
+            <div class="container py-5 px-lg-5 stats-section">
                 <!-- <h1>Impact and Growth Stats</h1> -->
                 <div class="progress-container wow fadeInUp">
                     <div class="circular-progress">
@@ -794,27 +1088,26 @@
                 <div class="row align-items-center rounded no-gutters cta-banner">
                     <div class="col-xl-5 col-lg-6 col-md-12">
                         <div class="py-5 px-3">
-                            <h3 class="text-white fw-bold">Power Up Your Business With Our
-                                Ready-To-Launch Ecommerce Solution
+                            <h3 class="text-white fw-bold">
+                                Power Up Your Business With Our Ready-To-Launch Ecommerce
+                                Solution
                             </h3>
                             <p class="text-white-50 mb-4 lead">
-                                Make e-shopping a seamless experience with an array of feature-loaded mobile apps and
-                                website development.
+                                Make e-shopping a seamless experience with an array of
+                                feature-loaded mobile apps and website development.
                             </p>
-                            <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3">Start Now</a>
+                            <a class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 mt-3"
+                            data-bs-toggle="modal"
+                            data-bs-target="#myModal">Start Now</a>
                         </div>
                     </div>
-                    <div class=" col-xl-7 col-lg-6 col-md-12 text-lg-right text-center">
-                        <img src="./img/cta-img.png" alt="" class="img-fluid">
+                    <div class="col-xl-7 col-lg-6 col-md-12 text-lg-right text-center">
+                        <img src="./img/cta-img.png" alt="" class="img-fluid" />
                     </div>
                 </div>
             </div>
         </div>
         <!-- CTA end -->
-
-
-
-
 
         <!-- Testimonial Start -->
         <!-- <div class="container-xxl py-5" id="review">
@@ -905,12 +1198,14 @@
         </div> -->
         <!-- Testimonial End -->
 
-        <!-- Footer -->
+        <!-- Modal -->
+        <special-modal></special-modal>
 
+        <!-- Footer -->
+        <div class="marketplace-color-highlight"></div>
         <special-footer></special-footer>
 
         <!-- Back to Top -->
-
     </div>
 
     <!-- JavaScript Libraries -->
@@ -927,7 +1222,7 @@
     <script src="../header-footer-manager.js"></script>
     <script src="js/main.js"></script>
     <script src="js/progressbar.js"></script>
-
+    <script src="../modal-popup.js"></script>
 </body>
 
 </html>
