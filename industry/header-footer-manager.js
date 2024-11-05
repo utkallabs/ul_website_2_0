@@ -2,7 +2,7 @@ class SpecialHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
            <header id="header" class="fixed-top d-flex flex-column">
-           <div class="ecommerce-color-highlight marketplace-color-highlight"></div>
+           <div class="ecommerce-color-highlight marketplace-color-highlight food-delivery-highlight"></div>
           <div class="container container2 d-flex pt-2">
           
               <!--  logo -->
