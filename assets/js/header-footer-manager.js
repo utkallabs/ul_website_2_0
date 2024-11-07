@@ -1,9 +1,9 @@
 class SpecialTopHeader extends HTMLElement {
-    connectedCallback() {
-        const script = document.createElement('script');
-        script.src = "//code.tidio.co/mxyjcnentsyge1vrrztl3hixdvtd9bws.js";
-        document.body.appendChild(script);
-      this.innerHTML = `
+  connectedCallback() {
+    const script = document.createElement("script");
+    script.src = "//code.tidio.co/mxyjcnentsyge1vrrztl3hixdvtd9bws.js";
+    document.body.appendChild(script);
+    this.innerHTML = `
           <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
           <div class="container2 d-flex align-items-center justify-content-between">
               <div class="upper-section">
@@ -64,14 +64,12 @@ class SpecialTopHeader extends HTMLElement {
           </div>
       </div>
           `;
-
-
-    }
   }
-  
-  class SpecialHeader extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+}
+
+class SpecialHeader extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
            <header id="header" class="fixed-top">
           <div class="container2 d-flex ">
               <!--  logo -->
@@ -111,9 +109,10 @@ class SpecialTopHeader extends HTMLElement {
                       </li>
                      <li class="nav-item drop-down"><a href="#">Industries<i class="fas la-angle-down ms-1 pt-1 "></i></a>
                           <ul>
-                              <li><a href="/industry/ecommerce/ecommerce.html">Ecommerce</a></li>
+                                <li><a href="/industry/ecommerce/ecommerce.html">Ecommerce</a></li>
                                 <li><a href="/industry/marketplace/ecommerce-marketplace.html">Ecommerce Marketplace</a></li>
-                                                                <li><a href="/industry/Food-delivery/food-delivery.html">Food Delivery</a></li>
+                                <li><a href="/industry/Food-delivery/food-delivery.html">Food Delivery</a></li>
+                                <li><a href="/industry/healthcare/healthcare.html">Health Care</a></li>
 
                           </ul>
                       </li>
@@ -126,27 +125,27 @@ class SpecialTopHeader extends HTMLElement {
           </div>
       </header>
           `;
-      this.updateActiveNav();
-    }
-  
-    updateActiveNav() {
-      const navItems = this.querySelectorAll(".nav-item a");
-      let currentPath = window.location.pathname;
-      currentPath = currentPath.slice(1, currentPath.length);
-  
-      navItems.forEach((item) => {
-        if (item.getAttribute("href") === currentPath) {
-          item.parentElement.classList.add("active");
-        } else {
-          item.parentElement.classList.remove("active");
-        }
-      });
-    }
+    this.updateActiveNav();
   }
-  
-  class SpecialFooter extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+
+  updateActiveNav() {
+    const navItems = this.querySelectorAll(".nav-item a");
+    let currentPath = window.location.pathname;
+    currentPath = currentPath.slice(1, currentPath.length);
+
+    navItems.forEach((item) => {
+      if (item.getAttribute("href") === currentPath) {
+        item.parentElement.classList.add("active");
+      } else {
+        item.parentElement.classList.remove("active");
+      }
+    });
+  }
+}
+
+class SpecialFooter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
           <footer class="footer-section pt-120">
   
               <div class="waves_left">
@@ -281,10 +280,9 @@ class SpecialTopHeader extends HTMLElement {
   
       </footer>
           `;
-    }
   }
-  
-  customElements.define("special-top-header", SpecialTopHeader);
-  customElements.define("special-header", SpecialHeader);
-  customElements.define("special-footer", SpecialFooter);
-  
+}
+
+customElements.define("special-top-header", SpecialTopHeader);
+customElements.define("special-header", SpecialHeader);
+customElements.define("special-footer", SpecialFooter);
