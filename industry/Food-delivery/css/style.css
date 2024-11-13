@@ -102,7 +102,7 @@
 
 /*** Technology ***/
 
-.technology-bg {
+ .technology-bg {
   background-color: #fef5e8;
   /* height: 50px; */
 }
@@ -127,7 +127,7 @@
 
 .service-item:hover * {
     color: var(--light) !important;
-} 
+}
 
 
  /* about section */
