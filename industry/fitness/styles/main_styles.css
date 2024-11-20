@@ -453,15 +453,19 @@ section
 }
 .box:first-child
 {
-	background: #262626;
+	/* background: #262626; */
+	background: #ffb011;
+
 }
 .box:nth-child(2)
 {
-	background: #ef8701;
+	/* background: #ffb011; */
+	background: #ff8811;
+
 }
 .box:nth-child(3)
 {
-	background: #ff9711;
+	background: #ff7011;
 }
 .box_icon
 {
