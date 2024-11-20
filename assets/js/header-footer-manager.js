@@ -115,6 +115,8 @@ class SpecialTopHeader extends HTMLElement {
                                 <li><a href="/industry/marketplace/ecommerce-marketplace.html">Ecommerce Marketplace</a></li>
                                <li><a href="/industry/Food-delivery/food-delivery.html">Food Delivery</a></li>
                             <li><a href="/industry/education/education.html">Education</a></li>
+                            <li><a href="/industry/fitness/fitness.html">Fitness</a></li>
+
 
                           </ul>
                       </li>
