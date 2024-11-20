@@ -2,8 +2,9 @@ class SpecialHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
            <header id="header" class="fixed-top d-flex flex-column">
-           <div class="ecommerce-color-highlight marketplace-color-highlight food-delivery-highlight  education-highlight"></div>
-          <div class="container container2 d-flex pt-2">
+           <div class="ecommerce-color-highlight marketplace-color-highlight food-delivery-highlight  education-highlight food-delivery-highlight"></div>
+           <div class="container2 d-flex justify-content-between mt-2 mx-auto">
+
           
               <!--  logo -->
               <a href="../../index.html" class="logo mr-auto">
@@ -47,7 +48,7 @@ class SpecialHeader extends HTMLElement {
                                <li><a href="/industry/marketplace/ecommerce-marketplace.html">Ecommerce Marketplace</a></li>
                               <li><a href="/industry/Food-delivery/food-delivery.html">Food Delivery</a></li>
                             <li><a href="/industry/education/education.html">Education</a></li>
-
+                            <li><a href="/industry/healthcare/healthcare.html">Health Care</a></li>
                           </ul>
                       </li>
   
@@ -58,14 +59,6 @@ class SpecialHeader extends HTMLElement {
               <!-- .nav-menu end-->
           </div>
       </header>
-
-      <style>
-
-      #header{
-      display:flex;
-      flex-direction: row;
-      }
-      </style>
           `;
     this.updateActiveNav();
   }
