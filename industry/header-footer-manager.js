@@ -2,9 +2,8 @@ class SpecialHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
            <header id="header" class="fixed-top d-flex flex-column">
-           <div class="ecommerce-color-highlight marketplace-color-highlight food-delivery-highlight rehabilitation-highlight"></div>
-          <div class="container container2 d-flex pt-2">
-          
+           <div class="ecommerce-color-highlight marketplace-color-highlight food-delivery-highlight  education-highlight food-delivery-highlight rehabilitation-highlight"></div>
+           <div class="container2 d-flex justify-content-between mt-2 mx-auto">
               <!--  logo -->
               <a href="../../index.html" class="logo mr-auto">
                   <img src="../../assets/images/logo.png" alt=""></a>
@@ -14,7 +13,7 @@ class SpecialHeader extends HTMLElement {
                       <!-- added a class for active -->
                       <li class="nav-item"><a href="../../index.html">Home</a></li>
                       <li class="nav-item"><a href="../../aboutus.html">About Us</a></li>
-                      <li class="nav-item drop-down"><a href="">Services<i class="fas fa-angle-down ms-1 pt-1"></i></a>
+                      <li class="nav-item drop-down"><a href="">Services<i class="fas fa-angle-down ml-1 ms-1 pt-1"></i></a>
                           <ul>
                               <li><a href="../../service.html">All Services</a></li>
                               <li><a href="../../service-web-mobile-application.html">Web & Mobile Application</a></li>
@@ -30,24 +29,25 @@ class SpecialHeader extends HTMLElement {
                       </li>
   
                       <li class="nav-item drop-down">
-                          <a href="">Publications<i class="fas fa-angle-down ms-1 pt-1"></i></a>
+                          <a href="">Publications<i class="fas fa-angle-down ml-1 ms-1 pt-1"></i></a>
                           <ul>
                               <li><a href="../../portfolio.html">Portfolio</a></li>
                               <li><a href="../../product.html">Products</a></li>
                               <li><a href="../../case-studies.html">Case Studies</a></li>
                               <li><a href="../../our-solutions.html">Our Solutions</a></li>
                               <li><a href="../../tech-byte.html">Tech Bytes</a></li>
-                                                            <li><a href="../../newsletter.html">Newsletter</a></li>
+                              <li><a href="../../newsletter.html">Newsletter</a></li>
 
                           </ul>
                       </li>
-                      <li class="nav-item drop-down"><a href="#">Industries<i class="fas fa-angle-down ms-1 pt-1"></i></a>
+                      <li class="nav-item drop-down"><a href="#">Industries<i class="fas fa-angle-down ml-1 ms-1 pt-1"></i></a>
                           <ul>
                               <li><a href="/industry/ecommerce/ecommerce.html">Ecommerce</a></li>
-                                <li><a href="/industry/marketplace/ecommerce-marketplace.html">Ecommerce Marketplace</a></li>
-                                                                <li><a href="/industry/Food-delivery/food-delivery.html">Food Delivery</a></li>
-                                                                <li><a href="/industry/rehabilitation/index.html">Rehabilitation</a></li>
-
+                               <li><a href="/industry/marketplace/ecommerce-marketplace.html">Ecommerce Marketplace</a></li>
+                              <li><a href="/industry/Food-delivery/food-delivery.html">Food Delivery</a></li>
+                            <li><a href="/industry/education/education.html">Education</a></li>
+                            <li><a href="/industry/healthcare/healthcare.html">Health Care</a></li>
+                            <li><a href="/industry/rehabilitation/index.html">Rehabilitation</a></li>
                           </ul>
                       </li>
   
@@ -58,14 +58,6 @@ class SpecialHeader extends HTMLElement {
               <!-- .nav-menu end-->
           </div>
       </header>
-
-      <style>
-
-      #header{
-      display:flex;
-      flex-direction: row;
-      }
-      </style>
           `;
     this.updateActiveNav();
   }
