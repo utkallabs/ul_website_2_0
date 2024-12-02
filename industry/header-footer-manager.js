@@ -3,11 +3,9 @@ class SpecialHeader extends HTMLElement {
     this.innerHTML = `
            <header id="header" class="fixed-top d-flex flex-column">
 
-           <div class="ecommerce-color-highlight marketplace-color-highlight food-delivery-highlight  education-highlightt fitness-highlight"></div>
+           <div class="ecommerce-color-highlight marketplace-color-highlight food-delivery-highlight  education-highlight fitness-highlight rehabilitation-highlight"></div>
            <div class="container2 d-flex justify-content-between mt-2 mx-auto">
 
-
-          
               <!--  logo -->
               <a href="../../index.html" class="logo mr-auto">
                   <img src="../../assets/images/logo.png" alt=""></a>
@@ -56,6 +54,7 @@ class SpecialHeader extends HTMLElement {
 
 
                             <li><a href="/industry/healthcare/healthcare.html">Health Care</a></li>
+                            <li><a href="/industry/rehabilitation/index.html">Rehabilitation</a></li>
                           </ul>
                       </li>
   
