@@ -62,6 +62,13 @@ a:hover {
   color: inherit;
 }
 
+.container2 {
+  width: 95%;
+}
+
+.nav-item i {
+  margin-top: -2px;
+}
 /*-------------------------------------------------
     [ ## padding for responsive]
 ----------------*/
