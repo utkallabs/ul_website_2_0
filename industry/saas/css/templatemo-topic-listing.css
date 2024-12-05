@@ -208,6 +208,17 @@ https://templatemo.com/tm-590-topic-listing
     color: var(--primary-color) !important;
   
   }
+
+  .saas-highlight{
+    background-color: var(--primary-color);
+    height: 4px;
+    margin-top: -12px;
+  }
+
+  .saas-highlight-btn{
+    background-color: var(--primary-color);
+    height: 4px;
+   }
   
   
   /*---------------------------------------
@@ -1396,4 +1407,24 @@ https://templatemo.com/tm-590-topic-listing
   }
   
 
- 
+  /*** Technology ***/
+  
+  .technology-bg {
+    background-color: #f5f8fb;
+    /* height: 50px; */
+  }
+  
+  .technology .nav .nav-link {
+    background: var(--section-bg-color);
+    transition: .5s;
+  }
+  
+  
+  .technology .nav .nav-link.active {
+    background: var(--primary-color);
+   
+  }
+  
+  .technology .nav .nav-link.active h4 {
+    color: #FFFFFF !important;
+  }
